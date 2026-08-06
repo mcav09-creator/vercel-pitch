@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Matt Cavallaro → Vercel pitch site
 
-## Getting Started
+A single-page pitch built for Vercel's **Account Executive, Majors (APAC)** role.
+Every section is copy-mapped to a line in the JD — see `lib/content/` for the
+source-of-truth data behind each claim, pulled from the CV and the strategic
+brief this repo was built from.
 
-First, run the development server:
+Built with Claude Code. Shipped on Vercel.
+
+## Stack
+
+- Next.js 16 (App Router) + TypeScript, Turbopack
+- Tailwind CSS v4, hand-rolled Geist-inspired dark theme
+- Vercel AI SDK (`ai`, `@ai-sdk/react`) + AI Gateway for the live chat panel
+- Framer Motion for the hero terminal animation
+
+## Local setup
 
 ```bash
+npm install
+cp .env.local.example .env.local
+# fill in AI_GATEWAY_API_KEY (or OPENAI_API_KEY as a fallback)
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Without an API key, the site still builds and runs fully — the
+"Technical Fluency" chat panel just shows a clear "chat disabled" state
+instead of crashing.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## The chat panel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`app/api/chat/route.ts` streams responses via `streamText`, grounded by a
+small keyword-overlap retrieval step (`lib/rag.ts`) over `lib/content/knowledge-chunks.ts`
+— no vector DB, no embedding calls, just enough retrieval to keep the model
+honest about what it does and doesn't know. The system prompt instructs the
+model to answer in Matt's voice, in first person, and to say "I'd want to
+validate that before the interview" rather than invent specifics.
 
-## Learn More
+## Deploying
 
-To learn more about Next.js, take a look at the following resources:
+This repo is meant to be linked to a Vercel project and a custom domain by
+hand (not scripted here):
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. `vercel link` (or import the GitHub repo from the Vercel dashboard)
+2. Add `AI_GATEWAY_API_KEY` (or `OPENAI_API_KEY`) as an environment variable
+   in the Vercel project settings
+3. Attach the domain in the Vercel dashboard
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Updating content
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All copy and stats live in `lib/content/*.ts` as typed data — correct a
+number or reword a claim there without touching any component.
