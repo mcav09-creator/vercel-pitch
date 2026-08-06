@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Matt Cavallaro — built for Vercel's ANZ Majors book",
+  title: "Matt Cavallaro, built for Vercel's ANZ Majors book",
   description:
     "Enterprise AE who built the ANZ K-12 market from $0, and builds the AI prototypes he sells with. Pitch site for Vercel's Account Executive, Majors (APAC) role.",
 };

@@ -13,7 +13,7 @@ export function TechnicalFluency({ aiConfigured }: { aiConfigured: boolean }) {
           <span className="text-foreground">Vercel AI SDK</span>, routed through{" "}
           <span className="text-foreground">AI Gateway</span>, grounded on a small
           retrieval layer over this résumé, this plan, and Vercel&apos;s product
-          surface — not a scripted demo. It answers as me, in first person, and
+          surface, not a scripted demo. It answers as me, in first person, and
           says &ldquo;I&apos;d want to validate that&rdquo; when it doesn&apos;t
           have grounding, the same way I would.
         </p>

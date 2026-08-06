@@ -14,7 +14,7 @@ export function TargetAccounts() {
           build a territory plan.
         </h2>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
-          Depth over breadth — these three (financial services, media, and a
+          Depth over breadth: these three (financial services, media, and a
           regulated challenger bank) got the full research pass. Two more
           retail accounts are on my radar below, not yet worked to the same
           level.
@@ -54,7 +54,7 @@ export function TargetAccounts() {
         <div className="mt-16 border-t border-border pt-10">
           <p className="section-label mb-1.5">On my radar</p>
           <p className="max-w-2xl text-sm leading-relaxed text-muted">
-            Retail accounts I&apos;d prioritize next — same vertical-fit logic,
+            Retail accounts I&apos;d prioritize next, same vertical-fit logic,
             not yet worked to the same depth as the three above.
           </p>
 

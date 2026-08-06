@@ -13,7 +13,7 @@ import {
 } from "@/lib/content/resume";
 
 export const metadata: Metadata = {
-  title: "Matt Cavallaro — Résumé",
+  title: "Matt Cavallaro, Résumé",
   description: resumeHeader.tagline,
 };
 

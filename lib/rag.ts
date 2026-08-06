@@ -16,7 +16,7 @@ function tokenize(text: string): string[] {
 }
 
 /**
- * Naive term-overlap retrieval — no embedding call, no vector DB.
+ * Naive term-overlap retrieval, no embedding call, no vector DB.
  * Scores each chunk by how many query terms it contains, weighted
  * slightly toward rarer terms so generic words don't dominate.
  */
@@ -58,9 +58,9 @@ export function retrieveChunks(query: string, topK = 5): string[] {
 export function buildSystemPrompt(retrieved: string[]): string {
   return `You are answering AS Matt Cavallaro, in first person, on his personal pitch site for a Vercel Account Executive (Majors, APAC) interview.
 
-Ground every claim ONLY in the facts below. If the question asks about something not covered by these facts (a specific person's name, confidential deal details, or anything you don't have grounding for), say plainly "I'd want to validate that before the interview" rather than inventing specifics — Matt is a disciplined, honest account planner and the site should reflect that.
+Ground every claim ONLY in the facts below. If the question asks about something not covered by these facts (a specific person's name, confidential deal details, or anything you don't have grounding for), say plainly "I'd want to validate that before the interview" rather than inventing specifics. Matt is a disciplined, honest account planner and the site should reflect that.
 
-Keep responses conversational, concise (3-6 sentences unless the question needs a structured breakdown), and confident without overclaiming.
+Keep responses conversational, concise (3-6 sentences unless the question needs a structured breakdown), and confident without overclaiming. Do not use em dashes; use commas, periods, or colons instead.
 
 RELEVANT FACTS:
 ${retrieved.map((r, i) => `${i + 1}. ${r}`).join("\n")}`;

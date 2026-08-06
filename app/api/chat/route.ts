@@ -13,8 +13,8 @@ export const maxDuration = 30;
 
 function resolveModel() {
   // AI Gateway auths via AI_GATEWAY_API_KEY, or falls back to the
-  // VERCEL_OIDC_TOKEN that `vercel link` / `vercel env pull` provisions —
-  // either is sufficient, no manual key required once the project is linked.
+  // VERCEL_OIDC_TOKEN that `vercel link` / `vercel env pull` provisions.
+  // Either is sufficient, no manual key required once the project is linked.
   if (process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN) {
     return gateway("anthropic/claude-sonnet-5");
   }

@@ -6,7 +6,7 @@ export function PartnerMotion() {
       <div className="mx-auto max-w-5xl">
         <p className="section-label mb-3">04 · Partner & Ecosystem Motion</p>
         <h2 className="max-w-2xl text-2xl font-semibold tracking-tight sm:text-3xl">
-          I&apos;ve run this exact motion before — mid-tier partners, a
+          I&apos;ve run this exact motion before: mid-tier partners, a
           hyperscaler, and GSIs, all in one ecosystem.
         </h2>
 
@@ -47,7 +47,7 @@ function PartnerDiagram() {
       viewBox="0 0 1340 300"
       className="w-full min-w-[1000px]"
       role="img"
-      aria-label="Diagram: starting from Vercel, a community engagement engine is built with marketing, mid-tier partners, and hyperscalers. That engine feeds a land motion that splits into two paths — Vercel direct with a mid-tier or small partner for speed to value, or Vercel large transformation with a hyperscaler and GSI in a joint staged engagement. Both paths converge on the enterprise account, which leads to the suggested next move: expand footprint."
+      aria-label="Diagram: starting from Vercel, a community engagement engine is built with marketing, mid-tier partners, and hyperscalers. That engine feeds a land motion that splits into two paths: Vercel direct with a mid-tier or small partner for speed to value, or Vercel large transformation with a hyperscaler and GSI in a joint staged engagement. Both paths converge on the enterprise account, which leads to the suggested next move: expand footprint."
     >
       <defs>
         <marker

@@ -19,7 +19,7 @@ export const resumeHeader = {
 };
 
 export const resumeSummary =
-  "Enterprise sales leader with a 5-year track record at Salesforce averaging 100% median quota attainment (vs. <50% team average), exceeding multi-year targets 3x with consecutive 200%+ performance years, and building the ANZ K-12 market from $0 to $2M TCV. Combines 15 years of hands-on experience as a school and university executive with technical execution — building custom multi-agent workflow prototypes to validate complex enterprise deals and establish a path to $2M ARR.";
+  "Enterprise sales leader with a 5-year track record at Salesforce averaging 100% median quota attainment (vs. <50% team average), exceeding multi-year targets 3x with consecutive 200%+ performance years, and building the ANZ K-12 market from $0 to $2M TCV. Combines 15 years of hands-on experience as a school and university executive with technical execution, building custom multi-agent workflow prototypes to validate complex enterprise deals and establish a path to $2M ARR.";
 
 export const resumeCurrentRole: ResumeSection = {
   heading: "Current role",
