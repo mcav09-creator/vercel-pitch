@@ -202,7 +202,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "grit-hustle-builder",
-    text: "Asked why he's suited for this role, Matt points first to grit, and to a track record of producing real results in a completely different field. He made his transition into a new career, tech sales, while working two jobs and being a single dad. There was no safety net, no shortcut, no easing into it: you do what has to be done. That's not a talking point for him, it's the actual operating system underneath everything else on this site: the K-12 market he built from zero, the first commercial deal he closed at monō ai, this pitch site itself. He doesn't wait for ideal conditions, and he genuinely enjoys the challenge of a new arena, taking the strengths that already worked in one field and pointing them at another.",
+    text: "Asked why he's suited for this role, Matt points first to grit, and to a track record of producing real results in a completely different field. He made his transition into a new career, tech sales, six years ago, while working two jobs and being a single dad. There was no safety net, no shortcut, no easing into it: you do what has to be done. That's not a talking point for him, it's the actual operating system underneath everything else on this site: the K-12 market he built from zero, the first commercial deal he closed at monō ai, this pitch site itself. He doesn't wait for ideal conditions, and he genuinely enjoys the challenge of a new arena, taking the strengths that already worked in one field and pointing them at another.",
   },
   {
     id: "ai-era-builder-thesis",
