@@ -5,6 +5,7 @@ import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
 
 const STARTER_PROMPTS = [
+  "Why are you suited for this role?",
   "How would you approach REA Group?",
   "Walk me through MEDDPICC on a transformation deal.",
   "Why Vercel over staying technical-adjacent at monō ai?",

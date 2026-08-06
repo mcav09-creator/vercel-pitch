@@ -172,4 +172,44 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     id: "vercel-partner-ecosystem",
     text: "Vercel maintains a real Solution Partner / SI ecosystem (Partner Finder) and an infrastructure partnership with AWS, the natural surfaces for a Majors AE to activate a co-sell motion in ANZ, the same pattern Matt ran with mid-tier partners and AWS at Salesforce.",
   },
+  {
+    id: "site-build-overview",
+    text: "This entire pitch site is proof, not a portfolio piece with AI branding bolted on. It's a Next.js 16 (App Router) app written in TypeScript with Tailwind CSS, deployed on Vercel with a custom domain. Every product Matt mentions below is genuinely wired up and live on the site right now, not name-dropped for effect.",
+  },
+  {
+    id: "site-build-ai-sdk-chat",
+    text: "The live chat on this site (the one answering right now) is built with the Vercel AI SDK: the useChat hook on the frontend, streamText on the backend. Model calls route through Vercel AI Gateway rather than a single hardcoded provider key, currently calling anthropic/claude-sonnet-5, authenticated with a budget-capped AI Gateway API key (with OIDC support built in as well, for local development).",
+  },
+  {
+    id: "site-build-rag-edge-config",
+    text: "The chat is grounded by a lightweight, custom-built retrieval layer that Matt built himself: no vector database, no embedding API calls, just term-overlap scoring over a set of knowledge chunks. Those grounding facts live in Vercel Edge Config, so Matt can correct or expand what the chat knows in seconds without a redeploy, with a static file checked into the repo as a fallback if Edge Config is ever unset.",
+  },
+  {
+    id: "site-build-cron-blob",
+    text: "A Vercel Cron Job runs weekly, fetches Vercel's real public customer list, and checks whether any of Matt's five target accounts show up on it yet. The result is written to a private Vercel Blob store, and the Target Accounts section of the site displays a real 'last verified' timestamp pulled from that check, not a hardcoded date someone forgot to update.",
+  },
+  {
+    id: "site-build-rate-limiting",
+    text: "The chat endpoint has two layers of rate limiting: an in-process token-bucket check that's live right now protecting against abuse and runaway AI Gateway cost, plus a Vercel Firewall custom rule (20 requests per 60 seconds per IP) that's staged as a reviewed draft rather than auto-published. Matt treats publishing a firewall rule that can block real traffic as a deliberate, reviewed production change, not something to script blindly, the same discipline he'd bring to any change on a live account.",
+  },
+  {
+    id: "site-build-analytics-og",
+    text: "Vercel Speed Insights and Web Analytics are wired into every page of the site. The Open Graph share image is generated dynamically via next/og (ImageResponse), pulling the same live headline and proof stats as the page itself, rather than a static screenshot made once and left to go stale.",
+  },
+  {
+    id: "site-build-fluid-compute-choice",
+    text: "The chat API route deliberately runs on Vercel's default Node.js runtime with Fluid Compute rather than Edge. Streaming and Server-Sent Events work natively on Node.js with Fluid Compute, and switching to Edge would only cost the AI SDK's full Node.js compatibility for no real latency benefit on this route. Matt made that call explicitly after checking, rather than defaulting to Edge out of habit.",
+  },
+  {
+    id: "grit-hustle-builder",
+    text: "Asked why he's suited for this role, Matt points first to grit, and to a track record of producing real results in a completely different field. He made his transition into a new career, tech sales, while working two jobs and being a single dad. There was no safety net, no shortcut, no easing into it: you do what has to be done. That's not a talking point for him, it's the actual operating system underneath everything else on this site: the K-12 market he built from zero, the first commercial deal he closed at monō ai, this pitch site itself. He doesn't wait for ideal conditions, and he genuinely enjoys the challenge of a new arena, taking the strengths that already worked in one field and pointing them at another.",
+  },
+  {
+    id: "ai-era-builder-thesis",
+    text: "Matt believes this AI era has unlocked a whole category of builders who don't know how to code in the traditional sense, and he's one of them. He doesn't write production software for a living, but he builds: prototypes, demos, and now an entire AI-grounded pitch site with a live chat and real infrastructure behind it. He calls himself a builder and a doer before he calls himself a salesperson, and sees that as exactly the kind of technical credibility this role asks for without leaning on a solutions engineer as a crutch.",
+  },
+  {
+    id: "team-player-vercel-excitement",
+    text: "Matt describes himself as a team player who genuinely wants the people around him to win, the same instinct behind his answer about celebrating colleagues so everyone wins together. He's explicit that he's not just looking for a role: he wants to help Vercel grow exponentially in ANZ, and he sees this site, built with Vercel's own stack, live and checkable, as the clearest proof he can offer that he'll bring that same builder energy and grit to the territory from day one.",
+  },
 ];
