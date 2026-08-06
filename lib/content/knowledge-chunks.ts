@@ -14,7 +14,19 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "christian-ed",
-    text: "Matt's largest single deal was Christian Education Ministries: a $1M ACV land that grew 20% year-over-year over 3 years. It was the first non-government K-12 contract to surpass $500k, a record-setting account with head-office recognition at Salesforce, and became a key customer voice for the worldwide K-12 pipeline with annual meetings with Education Cloud leadership.",
+    text: "Matt's flagship account was Christian Education Ministries, led by co-CEO Jeremy Kwok. It grew from a $200k footprint to roughly $400k/yr across the entire Salesforce ecosystem, with their most recent purchase being Slack. Matt built and executed the adoption roadmap start to finish and has continued the relationship even after leaving Salesforce.",
+  },
+  {
+    id: "christian-ed-origin",
+    text: "The Christian Education Ministries deal grew out of a greenfield territory Matt acquired covering most of the Australian East Coast, including Catholic and independent K-12 accounts. Matt found a partner already working in K-12 and a group of willing prospective customers, and convened an open group called The Coalition of Trailblazers — bringing in industry leaders to legitimize the conversation about what an enterprise K-12 solution could look like on Salesforce. Jeremy Kwok was part of that group and became one of its most engaged champions.",
+  },
+  {
+    id: "christian-ed-solution",
+    text: "For Christian Education Ministries, Matt and the partner ecosystem built a Student Information System (SIS) on top of Education Cloud, unifying all 17 of their schools and 14 distance-education locations onto one enterprise platform, run day to day in collaboration with the ISV Posi-ed.",
+  },
+  {
+    id: "christian-ed-recognition",
+    text: "Christian Education Ministries became a globally referenced K-12 account for Salesforce. Margo Martinez, the regional leader for Education Cloud, personally meets with Jeremy Kwok when in-region because of his leadership running K-12 organizations on Salesforce. Other Salesforce account executives now use Jeremy Kwok and Christian Education Ministries as a customer reference story at major pipeline-generation events, including with the largest school districts and the largest Catholic diocese in Australia — a reference relationship that has driven millions of dollars in pipeline.",
   },
   {
     id: "territory-expansion",
@@ -25,8 +37,8 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     text: "Matt led multi-threaded sales campaigns targeting CIOs, Chief Digital Officers, and Procurement Heads to align cloud infrastructure modernization with institutional outcomes.",
   },
   {
-    id: "partner-innovation-engine",
-    text: "Matt built an entire mid-tier partner co-sell ecosystem in education that became an innovation engine for the wider edu market — enterprise accounts landed and expanded by leveraging tech solutions those partners built, not by Salesforce selling direct.",
+    id: "partner-force-multiplier",
+    text: "Matt is naturally a networker — he builds partnerships to capture markets rather than selling solo. Early in building the K-12 market, he found a group of hungry solution SI partners looking to grow their own footprint and turned that into a force multiplier: himself, an internal marketing resource, and multiple SI/solution partners all working the market together instead of one rep going it alone. He ran two plays depending on the deal: land with smaller partners to get a foot in the door and prove value, or assemble coalitions of larger SIs for bigger enterprise deals that lacked in-house Education Cloud expertise.",
   },
   {
     id: "partner-hyperscaler",
@@ -35,6 +47,14 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   {
     id: "partner-gsi-matchmaking",
     text: "Matt worked with GSIs (Global System Integrators) on enterprise accounts, and proactively forged partnerships between partners — pairing one partner's capability gap with another's strength — so the ecosystem could keep pace with growing AI demand rather than every gap routing back to Salesforce.",
+  },
+  {
+    id: "partner-diocese-matchmaking",
+    text: "Matt's clearest partner-to-partner matchmaking example: the partner who built the innovative Student Information System for Christian Education Ministries had strong technical credibility but a limited network. Matt connected them with a larger SI that already had a deep relationship with the Melbourne Catholic Diocese — one of the largest Catholic dioceses in the ANZ region — pairing the smaller partner's innovation with the larger partner's account access to put together a solution compelling enough to open a deeper conversation with the diocese.",
+  },
+  {
+    id: "partner-pipegen-event",
+    text: "Matt ran partner-led pipeline-generation events as a major source of pipeline — working with the same partner that built the Christian Education Ministries SIS, he ran an event targeted at large Catholic dioceses, large groups of schools, and state school sectors including the Department of Education Victoria. The event was large and well-engaged and generated seven figures worth of pipeline.",
   },
   {
     id: "mono-ai-role",
@@ -69,32 +89,64 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     text: "Matt's honest gap is that his vertical experience is education and public sector, not media, retail, financial services, or digital-native — the verticals this Vercel role calls out. His approach is to close that gap live by demonstrating rapid, well-researched vertical POV rather than hiding it, and by reframing regulated public-sector procurement as a harder bar than most commercial verticals.",
   },
   {
+    id: "education-transition",
+    text: "Matt's honest answer on his education-heavy background: the content knowledge helped him get in the door — education is notoriously hard to break into without speaking the language — but the actual skill of winning deals translates directly. At monō ai, on the company's first major commercial account, Matt took over the deal from a colleague more experienced in commercial contexts but with no sales background, ran a proof of value, and won the account — the customer's executive team told him directly, 'You've proved it. No one else would do the work to prove it, and you guys actually did it,' and competitors who tried to re-engage were told it was too late. Matt's honest take is that education procurement is actually harder than commercial — slower, more bureaucratic, more political, more stakeholders — while commercial rewards showing and proving value directly to executive stakeholders, which he finds comes naturally and even prefers.",
+  },
+  {
     id: "why-vercel",
     text: "Matt's pitch for why Vercel: he doesn't just sell technical platforms, he builds on them. He's built multi-agent workflow prototypes and RAG-based demos to move enterprise deals forward at monō ai, and he's built this entire pitch site — a Next.js app on the Vercel AI SDK, deployed on Vercel — in the time it took to prepare for this interview.",
+  },
+  {
+    id: "why-vercel-personal",
+    text: "Beyond the strategic fit, Matt's personal reason for choosing Vercel is direct: as he builds AI prototypes and multi-agent UIs at monō ai, every path leads to Vercel as where to actually deploy them into production. He sees Vercel as built for the moment — AI has shortened development time and increased deployment frequency, and Vercel's explosive growth in AI-generated code and its AI SDK ecosystem reflect a company with strong product-market fit for how software gets built now.",
+  },
+  {
+    id: "what-sets-apart",
+    text: "Asked what sets him apart, Matt points to intangibles: he's a hustler and a learner who draws macro understanding across many topics. Multiple people at Salesforce pulled him aside over the years to admit they'd doubted his background and ability to sell, and were impressed by how well he could learn products and concepts and work the craft of enterprise technology sales. He describes himself as competitive, joyful to work with, and someone who celebrates the people around him so the team wins together — the same instinct that led him to start building prototypes in the terminal at monō ai, which he sees as simply how he naturally operates.",
   },
   {
     id: "target-accounts-summary",
     text: "Matt's ANZ target-account shortlist for a Vercel Majors book spans the verticals the JD calls out: Woolworths Group and Cotton On Group (retail), Airwallex (financial services / digital-native, most Vercel-native of the five), REA Group / realestate.com.au (media/marketplace), and Judo Bank or Up (financial services, challenger/digital-native). None currently appear on Vercel's public customer list, which reads as ANZ whitespace.",
   },
   {
-    id: "rea-group-plan",
-    text: "For REA Group / realestate.com.au: entry angle is a performance + AI-driven personalization narrative to a VP Engineering/CTO, framed around conversion and infrastructure cost at scale, since search/listing performance is directly tied to revenue for a major ASX-listed marketplace.",
-  },
-  {
     id: "woolworths-plan",
     text: "For Woolworths Group: entry angle is infrastructure consolidation and experience-velocity to a Chief Digital/Technology Officer, landing via a lower-risk property like a campaign microsite or loyalty experience before expanding into core commerce.",
-  },
-  {
-    id: "airwallex-plan",
-    text: "For Airwallex: the pitch is less about migration and more about deepening platform commitment — AI SDK, observability, Fluid Compute — as an already API/developer-first fintech unicorn scales its surfaces, via an engineering-led, product-led growth motion.",
   },
   {
     id: "cotton-on-plan",
     text: "For Cotton On Group: entry angle is global edge performance and faster release cycles across the dozens of regional storefronts the fast-fashion retailer runs, since multi-region performance and speed-to-market are core to its growth model.",
   },
   {
+    id: "airwallex-plan",
+    text: "For Airwallex, Matt's approach is to become a thought partner first — sharing a point of view, customer reference stories, and examples of how Vercel helps similar API/developer-first companies win — before proposing a small, jointly-built use case to get hands-on-keyboard together. He sees Airwallex and Vercel as brands that send the same signal to the market, and starts by mapping his own network: his peers at monō ai ran multiple go-to-market teams before joining, giving him a genuinely useful shared network for exactly this kind of account. He looks for accounts pushing hard on AI-enabled products that want speed to value without owning their own forward infrastructure — which is where Vercel is strongest.",
+  },
+  {
+    id: "rea-group-plan",
+    text: "REA Group (realestate.com.au, Flatmates.com.au, Realcommercial) runs an entrenched React shop with a heavy AWS footprint and a mature, self-built micro-frontend platform called Argonaut. Matt's approach: don't sell React or SSR, they already have it — show how offloading front-end infrastructure overhead from a custom-built platform like Argonaut to Vercel accelerates squad velocity while protecting the SEO-driven search revenue that real estate listings depend on.",
+  },
+  {
+    id: "rea-group-value-drivers",
+    text: "For REA Group, Matt's value drivers are: (1) lower total cost of ownership on micro-frontend orchestration — Vercel's native support for Next.js Multi-Zones and edge routing replaces the ongoing platform-engineering cost of a bespoke system like Argonaut; (2) Core Web Vitals and SEO revenue protection via the Global Edge Network, ISR, and Speed Insights, since milliseconds in LCP/INP directly affect listing rankings and conversion; (3) frictionless AWS integration — Vercel acts as a frontend cloud on top of AWS via Secure Compute, OIDC auth, the Terraform provider, and AWS Marketplace procurement, so REA's AWS backend stays untouched; (4) squad velocity via automatic production-grade Preview Deployments for every pull request, addressing the staging bottlenecks of REA's decentralized Tribe/Squad model.",
+  },
+  {
+    id: "rea-group-execution",
+    text: "Matt's REA Group unlock plan targets three personas — Platform Engineering leaders (developer experience, maintenance cost), Web/Core Architecture leaders (rendering performance, SSR resilience, micro-frontend standardization), and SEO/Product leaders (page speed, Core Web Vitals, conversion) — and follows a 3-step execution plan: run a Core Web Vitals audit on key routes, propose a proof-of-concept scoped to one isolated property (like Flatmates) rather than the core realestate.com.au engine on day one, and route procurement through the AWS Marketplace against REA's existing AWS cloud commitment to minimize commercial friction.",
+  },
+  {
     id: "judo-up-plan",
-    text: "For Judo Bank or Up: entry angle is developer velocity as a competitive moat against the majors (CBA/NAB/Westpac/ANZ), positioned to a CTO/Head of Engineering, with regulated-industry procurement rigor as the unlock for a follow-on CFO/Head of Risk conversation.",
+    text: "For Judo Bank or Up: entry angle is developer velocity as a competitive moat against the majors (CBA/NAB/Westpac/ANZ), positioned to a CTO/Head of Engineering, with regulated-industry procurement rigor as the unlock for a follow-on CFO/Head of Risk conversation. Judo specifically is further along a serverless, cloud-native transformation, which sharpens this angle considerably.",
+  },
+  {
+    id: "judo-bank-plan",
+    text: "Judo Bank is a regulated, APRA-licensed challenger bank focused on SME lending that recently completed a major cloud-native core banking transformation — migrating to Thought Machine's Vault Core on a serverless, event-driven AWS architecture (Lambda, Transit Gateway), alongside Snowflake for data and Microsoft E5 for security. Matt's approach: they don't care about consumer SEO or public traffic volume, they care about banker productivity tools, broker/partner portals, strict APRA CPS 234 / SOC2 compliance, and micro-frontend architecture — a completely different entry motion than a consumer tech account like REA Group.",
+  },
+  {
+    id: "judo-bank-value-drivers",
+    text: "For Judo Bank, Matt's value drivers are: (1) secure, serverless broker and customer portals that natively mirror Judo's AWS Lambda/event-driven backend, with loan calculators and broker dashboards deployed at the edge with no cold-start latency; (2) APRA CPS 234 and enterprise compliance alignment — Vercel Enterprise's SOC 2 Type II, ISO 27001, audit logging, SAML SSO, and RBAC, with Secure Compute routing front-end traffic into Judo's private AWS VPC via Transit Gateway without exposing internal APIs; (3) faster internal developer velocity for banker tools via per-PR Preview Deployments, addressing Judo's own focus on cutting feature cycle times; (4) decoupled micro-frontend architecture for Judo's 14+ domain services, so squads like SME Lending, Term Deposits, and Risk/Analytics can deploy independently without cross-service risk.",
+  },
+  {
+    id: "judo-bank-execution",
+    text: "Matt's Judo Bank unlock plan targets the Head of Engineering & Architecture (serverless patterns, developer velocity, AWS architecture), Digital Experience/Product leads (time-to-market for broker tools, SME drop-off), and the CISO/security architects (APRA CPS 234, SAML/Okta, secure edge routing) — and follows a 3-step plan: focus on the non-core web footprint first (rate calculators, broker portals, loan intake — not the core banking engine on day one), lead with security and AWS-compatibility architecture diagrams showing OIDC and VPC peering into their existing Lambda/API Gateway setup, and offer a pre-built APRA CPS 234 compliance mapping document to fast-track vendor risk review.",
   },
   {
     id: "vercel-ai-sdk",

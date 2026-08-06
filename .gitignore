@@ -37,6 +37,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# private source material — never published, only used locally to
+# distill lib/content/knowledge-chunks.ts
+/content-private/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

@@ -26,9 +26,9 @@ export const proofStats: ProofStat[] = [
     detail: "In a newly expanded Tier-1 university / TAFE territory",
   },
   {
-    value: "$1M ACV",
-    label: "Largest single deal — Christian Education Ministries",
+    value: "$200k→$400k/yr",
+    label: "Christian Education Ministries — flagship account",
     detail:
-      "20% YoY contract growth over 3 years. First non-government K-12 contract to surpass $500k — a record-setting account with Salesforce head-office recognition.",
+      "Grew from a $200k footprint to ~$400k/yr across the Salesforce ecosystem (Student Information System on Education Cloud + Slack), spanning 17 schools and 14 distance-education locations — now a global reference account for Education Cloud leadership.",
   },
 ];
