@@ -6,6 +6,12 @@ import { PartnerMotion } from "@/components/partner-motion";
 import { TargetAccounts } from "@/components/target-accounts";
 import { ClosePlan } from "@/components/close-plan";
 
+// The Target Accounts section reads a cron-updated "last verified" status
+// from Blob storage; revalidate hourly (ISR) rather than on every request
+// or fully statically, so it stays fresh without adding request-time
+// latency on every page load.
+export const revalidate = 3600;
+
 export default function Home() {
   const aiConfigured = Boolean(
     process.env.AI_GATEWAY_API_KEY ||

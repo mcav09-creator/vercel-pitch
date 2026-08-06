@@ -7,8 +7,18 @@ import {
 } from "ai";
 import { gateway } from "@ai-sdk/gateway";
 import { openai } from "@ai-sdk/openai";
+import { ipAddress } from "@vercel/functions";
 import { retrieveChunks, buildSystemPrompt } from "@/lib/rag";
+import { checkInProcessRateLimit } from "@/lib/rate-limit";
 
+// Fluid Compute is the default execution model for this project (created
+// on Vercel after Fluid became standard), so this route already gets
+// warm-instance reuse and Active CPU pricing with no extra config. The one
+// thing that actually matters in code: stay on the default Node.js runtime
+// rather than `runtime = "edge"` — streaming/SSE works natively on Node.js
+// with Fluid Compute, and Edge buys nothing here while losing the AI SDK's
+// full Node.js compatibility. maxDuration is generous for a chat response;
+// Fluid Compute supports up to 800s on Pro/Enterprise if ever needed.
 export const maxDuration = 30;
 
 function resolveModel() {
@@ -25,6 +35,15 @@ function resolveModel() {
 }
 
 export async function POST(req: Request) {
+  const key = ipAddress(req) ?? "unknown";
+  const { limited } = checkInProcessRateLimit(key);
+  if (limited) {
+    return new Response("Too many requests, slow down a moment and try again.", {
+      status: 429,
+      headers: { "Retry-After": "60" },
+    });
+  }
+
   const { messages }: { messages: UIMessage[] } = await req.json();
 
   const model = resolveModel();
@@ -40,7 +59,7 @@ export async function POST(req: Request) {
     .map((p) => (p as { text: string }).text)
     .join(" ") ?? "";
 
-  const retrieved = retrieveChunks(query, 6);
+  const retrieved = await retrieveChunks(query, 6);
 
   const result = streamText({
     model,

@@ -1,4 +1,5 @@
-import { knowledgeChunks } from "./content/knowledge-chunks";
+import { get } from "@vercel/edge-config";
+import { knowledgeChunks as staticKnowledgeChunks, type KnowledgeChunk } from "./content/knowledge-chunks";
 
 const STOP_WORDS = new Set([
   "the", "a", "an", "is", "are", "was", "were", "be", "been", "to", "of",
@@ -16,26 +17,50 @@ function tokenize(text: string): string[] {
 }
 
 /**
+ * The chat's grounding facts live in Vercel Edge Config so they can be
+ * corrected or expanded without a redeploy (see /content-private/voice-notes.md
+ * for the authoring workflow). If EDGE_CONFIG isn't set, or the read fails
+ * or returns something malformed, this falls back to the committed static
+ * copy in lib/content/knowledge-chunks.ts, so local dev and a fresh clone
+ * both work without any Edge Config setup.
+ */
+async function loadKnowledgeChunks(): Promise<KnowledgeChunk[]> {
+  if (!process.env.EDGE_CONFIG) {
+    return staticKnowledgeChunks;
+  }
+  try {
+    const remote = await get<KnowledgeChunk[]>("knowledgeChunks");
+    if (Array.isArray(remote) && remote.length > 0) {
+      return remote;
+    }
+  } catch {
+    // Edge Config unreachable or misconfigured — fall through to static copy.
+  }
+  return staticKnowledgeChunks;
+}
+
+/**
  * Naive term-overlap retrieval, no embedding call, no vector DB.
  * Scores each chunk by how many query terms it contains, weighted
  * slightly toward rarer terms so generic words don't dominate.
  */
-export function retrieveChunks(query: string, topK = 5): string[] {
+export async function retrieveChunks(query: string, topK = 5): Promise<string[]> {
+  const chunks = await loadKnowledgeChunks();
   const queryTerms = tokenize(query);
   if (queryTerms.length === 0) {
-    return knowledgeChunks.slice(0, topK).map((c) => c.text);
+    return chunks.slice(0, topK).map((c) => c.text);
   }
 
   const docFrequency = new Map<string, number>();
   for (const term of new Set(queryTerms)) {
     let count = 0;
-    for (const chunk of knowledgeChunks) {
+    for (const chunk of chunks) {
       if (tokenize(chunk.text).includes(term)) count++;
     }
     docFrequency.set(term, count || 1);
   }
 
-  const scored = knowledgeChunks.map((chunk) => {
+  const scored = chunks.map((chunk) => {
     const chunkTerms = tokenize(chunk.text);
     let score = 0;
     for (const term of queryTerms) {

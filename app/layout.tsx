@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mcavallaro.site"),
   title: "Matt Cavallaro, built for Vercel's ANZ Majors book",
   description:
     "Enterprise AE who built the ANZ K-12 market from $0, and builds the AI prototypes he sells with. Pitch site for Vercel's Account Executive, Majors (APAC) role.",
@@ -26,6 +29,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         {children}
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );

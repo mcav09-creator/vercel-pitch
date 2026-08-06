@@ -3,8 +3,11 @@ import {
   watchlistAccounts,
   targetAccountsFootnote,
 } from "@/lib/content/target-accounts";
+import { getTargetAccountVerification } from "@/lib/target-account-status";
 
-export function TargetAccounts() {
+export async function TargetAccounts() {
+  const verification = await getTargetAccountVerification();
+
   return (
     <section id="accounts" className="border-t border-border px-6 py-24">
       <div className="mx-auto max-w-6xl">
@@ -85,6 +88,22 @@ export function TargetAccounts() {
         <p className="mt-8 max-w-3xl text-xs leading-relaxed text-accent-dim">
           {targetAccountsFootnote}
         </p>
+
+        {verification && (
+          <p className="mt-2 max-w-3xl font-mono text-xs text-accent-dim">
+            Last verified against Vercel&apos;s public customer list:{" "}
+            {new Date(verification.checkedAt).toLocaleDateString("en-AU", {
+              day: "numeric",
+              month: "short",
+              year: "numeric",
+            })}
+            {" · "}
+            {verification.accounts.some((a) => a.foundOnCustomerList)
+              ? "one or more now appear on it"
+              : "still none appear on it"}
+            {" (automated weekly check)"}
+          </p>
+        )}
       </div>
     </section>
   );
