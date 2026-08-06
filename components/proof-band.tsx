@@ -12,7 +12,7 @@ export function ProofBand() {
         <div className="mt-10 grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-5">
           {proofStats.map((stat) => (
             <div key={stat.label} className="bg-surface p-6">
-              <div className="font-mono text-3xl font-semibold tracking-tight sm:text-4xl">
+              <div className="break-words font-mono text-2xl font-semibold tracking-tight sm:text-3xl">
                 {stat.value}
               </div>
               <div className="mt-3 text-sm font-medium text-foreground">

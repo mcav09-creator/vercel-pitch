@@ -26,7 +26,7 @@ export const proofStats: ProofStat[] = [
     detail: "In a newly expanded Tier-1 university / TAFE territory",
   },
   {
-    value: "$200k→$400k/yr",
+    value: "$400k/yr",
     label: "Christian Education Ministries — flagship account",
     detail:
       "Grew from a $200k footprint to ~$400k/yr across the Salesforce ecosystem (Student Information System on Education Cloud + Slack), spanning 17 schools and 14 distance-education locations — now a global reference account for Education Cloud leadership.",

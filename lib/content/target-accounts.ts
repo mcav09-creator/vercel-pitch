@@ -9,56 +9,58 @@ export type TargetAccount = {
   validate: string;
 };
 
-export const targetAccounts: TargetAccount[] = [
-  {
-    name: "Woolworths Group",
-    vertical: "Retail",
-    why: "Australia's largest retailer, heavy owned investment in e-commerce/digital and loyalty (Everyday Rewards), under constant pressure to match Amazon-grade experience speed at national scale.",
-    trigger: "Any public statement on digital/loyalty platform investment or a leadership change in Chief Digital/Technology Officer.",
-    entry: "Infrastructure consolidation + experience-velocity story to a Chief Digital/Technology Officer.",
-    expand: "Land via a lower-risk property (a campaign microsite or loyalty experience) before expanding into core commerce.",
-    capability: "Edge Network + ISR/PPR for national-scale traffic without the ops overhead.",
-    validate: "Current stack ownership between digital and core commerce teams — who actually owns the property I'd land on.",
-  },
-  {
-    name: "Cotton On Group",
-    vertical: "Retail / digital-native",
-    why: "Geelong-HQ'd global fast-fashion retailer running dozens of storefronts across regions; multi-region performance and speed-to-market are core to the brand's growth model.",
-    trigger: "A new regional storefront launch or a public complaint/benchmark about site speed in a growth market.",
-    entry: "Global edge performance + faster release cycles across markets, framed to whoever owns multi-region engineering.",
-    expand: "Prove the model on one region's storefront, then templatize the migration across the remaining markets.",
-    capability: "Global Edge Network + Fluid Compute for consistent performance across dozens of regional storefronts.",
-    validate: "Which regions are already fastest/slowest today, and whether that's infra or a content/CDN problem.",
-  },
+export const primaryTargetAccounts: TargetAccount[] = [
   {
     name: "Airwallex",
     vertical: "Financial services / digital-native",
-    why: "Melbourne-born fintech unicorn, API/developer-first product DNA, globally scaling — likely the most \"Vercel-native\" account on this list.",
+    why: "Melbourne-born fintech unicorn, API/developer-first product DNA, globally scaling — likely the most \"Vercel-native\" account on this list. Airwallex and Vercel send similar signals to the market, which makes this as much a brand-fit play as a technical one.",
     trigger: "New market/product launch requiring rapid surface iteration, or a public engineering blog post about DX investment.",
-    entry: "Engineering-led, product-led growth motion — not a migration pitch, a platform-commitment-deepening pitch (AI SDK, observability, Fluid Compute).",
-    expand: "Start with one high-visibility surface (docs, dashboard, or a new product line) and expand as engineering trust builds.",
-    capability: "AI SDK + AI Gateway for any AI-native surfaces they're already building, plus observability for a team that already cares about DX.",
+    entry: "Become a thought partner first — share a POV, customer reference stories, and examples of how Vercel helps similar API/developer-first companies win — before proposing a small, jointly-built use case. The monō ai network (former GTM peers who ran multiple go-to-market teams before joining) gives a genuine way in.",
+    expand: "Start with one high-visibility surface (docs, dashboard, or a new product line) and expand as engineering trust builds into deeper platform commitment — AI SDK, observability, Fluid Compute.",
+    capability: "AI SDK + AI Gateway for AI-native surfaces they're already building, plus observability for a team that already cares about DX.",
     validate: "Whether they're already on Vercel or a competitor, and who owns platform decisions vs. individual product teams.",
   },
   {
     name: "REA Group / realestate.com.au",
     vertical: "Media / marketplace",
-    why: "Major ASX-listed digital marketplace, huge traffic volumes, search/listing performance directly tied to revenue.",
+    why: "An entrenched React shop with a heavy AWS footprint and a mature, self-built micro-frontend platform called Argonaut. They don't need convincing on React or SSR — they need to be shown how offloading front-end infrastructure overhead accelerates squad velocity while protecting SEO-driven search revenue.",
     trigger: "A public performance complaint, a new personalization/search feature announcement, or infrastructure cost commentary in earnings calls.",
-    entry: "Performance + AI-driven personalization narrative to a VP Engineering/CTO, framed around conversion and infrastructure cost at scale.",
-    expand: "Land on listing search/personalization, expand into the broader marketplace surface as conversion gains prove out.",
-    capability: "ISR/PPR for listing pages at scale + AI SDK for personalization without a bespoke ML infra build.",
-    validate: "Current infra cost-per-listing-view and whether personalization is already in-house or vendor-built.",
+    entry: "Lead with lower TCO on micro-frontend orchestration — Next.js Multi-Zones and edge routing replace the ongoing platform-engineering cost of a bespoke system like Argonaut — positioned to Platform Engineering and Core Web Architecture leaders.",
+    expand: "Prove it with a Core Web Vitals audit and a PoC scoped to one isolated property (e.g. Flatmates) before touching the core realestate.com.au engine; route procurement through AWS Marketplace against their existing AWS commit.",
+    capability: "Global Edge Network + ISR + Speed Insights for Core Web Vitals at scale, plus Secure Compute, OIDC, and the Terraform provider for frictionless AWS integration.",
+    validate: "Current infra cost-per-listing-view, and whether Argonaut's roadmap has real appetite for offloading routing/SSR to a managed platform.",
   },
   {
-    name: "Judo Bank / Up",
-    vertical: "Financial services — challenger / digital-native",
-    why: "Digital-first challenger banks where product iteration speed and a clean, trustworthy digital experience are the whole value proposition.",
+    name: "Judo Bank",
+    vertical: "Financial services — regulated challenger",
+    why: "An APRA-licensed challenger bank that just completed a serverless, event-driven core banking transformation — Thought Machine's Vault Core on AWS Lambda/Transit Gateway. They don't care about consumer SEO or traffic volume; they care about banker productivity tools, broker portals, and APRA CPS 234 compliance.",
     trigger: "A new product launch, a rate/feature war with a major bank, or a public statement on engineering velocity as a differentiator.",
-    entry: "Developer velocity as a competitive moat against the majors (CBA/NAB/Westpac/ANZ), positioned to a CTO/Head of Engineering.",
-    expand: "Regulated-industry procurement rigor becomes the unlock for a CFO/Head of Risk conversation once engineering is bought in.",
-    capability: "Fluid Compute + Firewall for a security-conscious, high-velocity fintech engineering org.",
-    validate: "Current cloud/hosting vendor and whether the constraint is genuinely velocity or actually regulatory sign-off time.",
+    entry: "Meet their architecture, not fight it — Secure Compute routes front-end traffic into their private AWS VPC via Transit Gateway, positioned to the Head of Engineering & Architecture as a serverless front-end layer that mirrors their own stack.",
+    expand: "Focus on the non-core web footprint first (rate calculators, broker portals, loan intake) to win engineering trust, then use a pre-built APRA CPS 234 compliance mapping document to fast-track the CISO/risk conversation.",
+    capability: "Secure Compute + OIDC + SOC 2 Type II/ISO 27001 for compliance-first deployment, plus per-PR Preview Deployments for their 14+ decoupled domain squads.",
+    validate: "Current cloud/hosting vendor for front-end properties, and whether the real constraint is engineering velocity or regulatory sign-off time.",
+  },
+];
+
+export type WatchlistAccount = {
+  name: string;
+  vertical: string;
+  why: string;
+  nextStep: string;
+};
+
+export const watchlistAccounts: WatchlistAccount[] = [
+  {
+    name: "Woolworths Group",
+    vertical: "Retail",
+    why: "Australia's largest retailer, heavy owned investment in e-commerce/digital and loyalty (Everyday Rewards), under constant pressure to match Amazon-grade experience speed at national scale.",
+    nextStep: "Map current stack ownership between digital and core commerce teams before proposing an entry property — likely a lower-risk campaign microsite or loyalty experience rather than core commerce.",
+  },
+  {
+    name: "Cotton On Group",
+    vertical: "Retail / digital-native",
+    why: "Geelong-HQ'd global fast-fashion retailer running dozens of storefronts across regions; multi-region performance and speed-to-market are core to the brand's growth model.",
+    nextStep: "Benchmark which regions are fastest/slowest today and whether that's an infra or content/CDN problem before pitching global edge performance.",
   },
 ];
 
