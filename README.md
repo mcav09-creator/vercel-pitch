@@ -18,14 +18,18 @@ Built with Claude Code. Shipped on Vercel.
 
 ```bash
 npm install
-cp .env.local.example .env.local
-# fill in AI_GATEWAY_API_KEY (or OPENAI_API_KEY as a fallback)
+vercel link            # connect this directory to the vercel-pitch project
+vercel env pull .env.local   # provisions VERCEL_OIDC_TOKEN, no manual key needed
 npm run dev
 ```
 
-Without an API key, the site still builds and runs fully — the
-"Technical Fluency" chat panel just shows a clear "chat disabled" state
-instead of crashing.
+`@ai-sdk/gateway` authenticates via that OIDC token automatically. If you'd
+rather not link the project, copy `.env.local.example` to `.env.local` and
+fill in `AI_GATEWAY_API_KEY` (or `OPENAI_API_KEY`) by hand instead.
+
+Without either, the site still builds and runs fully — the "Technical
+Fluency" chat panel just shows a clear "chat disabled" state instead of
+crashing.
 
 ## The chat panel
 
@@ -38,13 +42,10 @@ validate that before the interview" rather than invent specifics.
 
 ## Deploying
 
-This repo is meant to be linked to a Vercel project and a custom domain by
-hand (not scripted here):
-
-1. `vercel link` (or import the GitHub repo from the Vercel dashboard)
-2. Add `AI_GATEWAY_API_KEY` (or `OPENAI_API_KEY`) as an environment variable
-   in the Vercel project settings
-3. Attach the domain in the Vercel dashboard
+The GitHub repo is connected to the `vercel-pitch` project on Vercel
+(team-cav1) and deploys on push. AI Gateway auths via OIDC automatically on
+Vercel deployments — no env var to set for that. A custom domain can be
+attached in the Vercel dashboard whenever it's ready.
 
 ## Updating content
 

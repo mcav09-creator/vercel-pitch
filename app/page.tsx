@@ -8,7 +8,9 @@ import { ClosePlan } from "@/components/close-plan";
 
 export default function Home() {
   const aiConfigured = Boolean(
-    process.env.AI_GATEWAY_API_KEY || process.env.OPENAI_API_KEY,
+    process.env.AI_GATEWAY_API_KEY ||
+      process.env.VERCEL_OIDC_TOKEN ||
+      process.env.OPENAI_API_KEY,
   );
 
   return (

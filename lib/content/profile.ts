@@ -5,7 +5,8 @@ export const profile = {
   location: "Sydney, NSW",
   email: "mcav09@gmail.com",
   linkedin: "https://www.linkedin.com/in/matt-cavallaro-51435732/",
-  resumeHref: "/matt-cavallaro-cv.pdf",
+  resumeHref: "/resume",
+  resumePdfHref: "/matt-cavallaro-cv.pdf",
   terminalLine:
     "I don't just sell technical platforms — I build on them. Give me an ANZ territory and I'll show you the account plan before you ask for it.",
   headline: "Matt Cavallaro — built for Vercel's ANZ Majors book.",

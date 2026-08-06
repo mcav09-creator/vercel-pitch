@@ -6,8 +6,7 @@ export function FitSection() {
       <div className="mx-auto max-w-5xl">
         <p className="section-label mb-3">02 · The Fit</p>
         <h2 className="max-w-2xl text-2xl font-semibold tracking-tight sm:text-3xl">
-          Mapped directly to the JD&apos;s &ldquo;About You&rdquo; bullets — including
-          the honest gap.
+          Mapped directly to the JD&apos;s &ldquo;About You&rdquo; bullets.
         </h2>
 
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">

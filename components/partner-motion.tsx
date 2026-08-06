@@ -38,13 +38,16 @@ export function PartnerMotion() {
   );
 }
 
+const LINE = "#3a3a3a";
+const LINE_DIM = "#71717a";
+
 function PartnerDiagram() {
   return (
     <svg
-      viewBox="0 0 900 220"
-      className="w-full min-w-[640px]"
+      viewBox="0 0 1340 300"
+      className="w-full min-w-[1000px]"
       role="img"
-      aria-label="Diagram: enterprise account connects to a mid-tier partner network, a hyperscaler, and GSIs, all converging on Vercel, with a land-and-expand loop back to the account."
+      aria-label="Diagram: starting from Vercel, a community engagement engine is built with marketing, mid-tier partners, and hyperscalers. That engine feeds a land motion that splits into two paths — Vercel direct with a mid-tier or small partner for speed to value, or Vercel large transformation with a hyperscaler and GSI in a joint staged engagement. Both paths converge on the enterprise account, which leads to the suggested next move: expand footprint."
     >
       <defs>
         <marker
@@ -56,52 +59,110 @@ function PartnerDiagram() {
           markerHeight="6"
           orient="auto-start-reverse"
         >
-          <path d="M 0 0 L 10 5 L 0 10 z" fill="#71717a" />
+          <path d="M 0 0 L 10 5 L 0 10 z" fill={LINE_DIM} />
         </marker>
       </defs>
 
-      {/* nodes */}
-      <NodeBox x={30} y={90} w={140} h={50} label="Enterprise account" />
-      <NodeBox x={260} y={20} w={150} h={44} label="Mid-tier partners" sub="innovation engine" />
-      <NodeBox x={260} y={90} w={150} h={44} label="Hyperscaler (AWS)" />
-      <NodeBox x={260} y={160} w={150} h={44} label="GSIs" />
-      <NodeBox x={560} y={90} w={140} h={50} label="Vercel" strong />
+      {/* stage labels */}
+      <StageLabel x={195} label="Build" />
+      <StageLabel x={755} label="Land" />
+      <StageLabel x={1140} label="Expand" />
 
-      {/* connecting lines */}
-      <path d="M 170 105 L 260 42" stroke="#3a3a3a" strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
-      <path d="M 170 115 L 260 112" stroke="#3a3a3a" strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
-      <path d="M 170 125 L 260 182" stroke="#3a3a3a" strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
+      {/* stage 1: Vercel */}
+      <NodeBox x={20} y={125} w={100} h={50} lines={["Vercel"]} strong />
 
-      <path d="M 410 42 L 560 105" stroke="#3a3a3a" strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
-      <path d="M 410 112 L 560 115" stroke="#3a3a3a" strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
-      <path d="M 410 182 L 560 125" stroke="#3a3a3a" strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
+      {/* stage 2: engagement engine inputs */}
+      <NodeBox x={170} y={34} w={150} h={36} lines={["Marketing"]} small />
+      <NodeBox x={170} y={132} w={150} h={36} lines={["Mid-tier partners"]} small />
+      <NodeBox x={170} y={230} w={150} h={36} lines={["Hyperscalers"]} small />
 
-      {/* partner-to-partner matchmaking arrow */}
-      <path
-        d="M 335 64 C 335 105, 335 105, 335 138"
-        stroke="#71717a"
-        strokeWidth="1.5"
-        strokeDasharray="3 4"
-        markerEnd="url(#arrow)"
-        fill="none"
+      {/* stage 3: community engagement engine */}
+      <NodeBox
+        x={370}
+        y={105}
+        w={200}
+        h={90}
+        lines={["Community", "engagement engine"]}
+        sub="built from marketing + partners + hyperscalers"
       />
 
-      {/* land and expand loop */}
+      {/* stage 4: land motion split */}
+      <NodeBox
+        x={630}
+        y={42}
+        w={250}
+        h={76}
+        lines={["Vercel direct", "+ mid-tier / small partner"]}
+        sub="leverage relationship · speed to value"
+      />
+      <NodeBox
+        x={630}
+        y={182}
+        w={250}
+        h={76}
+        lines={["Vercel: large transformation", "+ hyperscaler & GSI"]}
+        sub="joint, staged engagement"
+      />
+
+      {/* stage 5: enterprise account */}
+      <NodeBox x={940} y={115} w={150} h={70} lines={["Enterprise", "account"]} strong />
+
+      {/* stage 6: expand footprint (suggested next) */}
+      <NodeBox
+        x={1140}
+        y={120}
+        w={160}
+        h={60}
+        lines={["Expand footprint"]}
+        dashed
+        sub="next suggested move"
+      />
+
+      {/* Vercel -> engine inputs */}
+      <path d="M 120 150 L 170 52" stroke={LINE} strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
+      <path d="M 120 150 L 170 150" stroke={LINE} strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
+      <path d="M 120 150 L 170 248" stroke={LINE} strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
+
+      {/* engine inputs -> engine */}
+      <path d="M 320 52 L 370 128" stroke={LINE} strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
+      <path d="M 320 150 L 370 150" stroke={LINE} strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
+      <path d="M 320 248 L 370 172" stroke={LINE} strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
+
+      {/* engine -> land split */}
+      <path d="M 570 150 L 630 80" stroke={LINE} strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
+      <path d="M 570 150 L 630 220" stroke={LINE} strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
+
+      {/* land split -> enterprise account */}
+      <path d="M 880 80 L 940 150" stroke={LINE} strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
+      <path d="M 880 220 L 940 150" stroke={LINE} strokeWidth="1.5" markerEnd="url(#arrow)" fill="none" />
+
+      {/* enterprise account -> expand footprint (suggested) */}
       <path
-        d="M 630 140 C 630 200, 100 200, 100 140"
-        stroke="#71717a"
+        d="M 1090 150 L 1140 150"
+        stroke={LINE_DIM}
         strokeWidth="1.5"
         strokeDasharray="4 4"
         markerEnd="url(#arrow)"
         fill="none"
       />
-      <text x="365" y="205" fontSize="11" fill="#71717a" fontFamily="var(--font-mono)">
-        land → expand
-      </text>
-      <text x="345" y="105" fontSize="10" fill="#71717a" fontFamily="var(--font-mono)">
-        gap-fill
-      </text>
     </svg>
+  );
+}
+
+function StageLabel({ x, label }: { x: number; label: string }) {
+  return (
+    <text
+      x={x}
+      y={14}
+      textAnchor="middle"
+      fontSize="10.5"
+      letterSpacing="0.08em"
+      fill={LINE_DIM}
+      fontFamily="var(--font-mono)"
+      style={{ textTransform: "uppercase" }}
+    >
+      {label}
+    </text>
   );
 }
 
@@ -110,18 +171,27 @@ function NodeBox({
   y,
   w,
   h,
-  label,
+  lines,
   sub,
   strong,
+  dashed,
+  small,
 }: {
   x: number;
   y: number;
   w: number;
   h: number;
-  label: string;
+  lines: string[];
   sub?: string;
   strong?: boolean;
+  dashed?: boolean;
+  small?: boolean;
 }) {
+  const centerY = y + h / 2;
+  const lineHeight = small ? 13 : 15;
+  const blockHeight = (lines.length - 1) * lineHeight;
+  const firstLineY = centerY - blockHeight / 2 - (sub ? 6 : 0) + (small ? 4 : 4);
+
   return (
     <g>
       <rect
@@ -131,27 +201,31 @@ function NodeBox({
         height={h}
         rx={8}
         fill={strong ? "#fafafa" : "#0a0a0a"}
-        stroke={strong ? "#fafafa" : "#262626"}
+        stroke={strong ? "#fafafa" : dashed ? LINE_DIM : "#262626"}
         strokeWidth={1.5}
+        strokeDasharray={dashed ? "4 3" : undefined}
       />
-      <text
-        x={x + w / 2}
-        y={sub ? y + h / 2 - 4 : y + h / 2 + 4}
-        textAnchor="middle"
-        fontSize="12"
-        fontWeight={600}
-        fill={strong ? "#000000" : "#fafafa"}
-        fontFamily="var(--font-sans)"
-      >
-        {label}
-      </text>
+      {lines.map((line, i) => (
+        <text
+          key={line}
+          x={x + w / 2}
+          y={firstLineY + i * lineHeight}
+          textAnchor="middle"
+          fontSize={small ? 11.5 : 12.5}
+          fontWeight={600}
+          fill={strong ? "#000000" : dashed ? "#a1a1a1" : "#fafafa"}
+          fontFamily="var(--font-sans)"
+        >
+          {line}
+        </text>
+      ))}
       {sub && (
         <text
           x={x + w / 2}
-          y={y + h / 2 + 12}
+          y={centerY + blockHeight / 2 + (small ? 12 : 14)}
           textAnchor="middle"
-          fontSize="9.5"
-          fill={strong ? "#000000" : "#71717a"}
+          fontSize="9"
+          fill={strong ? "#4b4b4b" : LINE_DIM}
           fontFamily="var(--font-mono)"
         >
           {sub}

@@ -12,7 +12,10 @@ import { retrieveChunks, buildSystemPrompt } from "@/lib/rag";
 export const maxDuration = 30;
 
 function resolveModel() {
-  if (process.env.AI_GATEWAY_API_KEY) {
+  // AI Gateway auths via AI_GATEWAY_API_KEY, or falls back to the
+  // VERCEL_OIDC_TOKEN that `vercel link` / `vercel env pull` provisions —
+  // either is sufficient, no manual key required once the project is linked.
+  if (process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN) {
     return gateway("anthropic/claude-sonnet-5");
   }
   if (process.env.OPENAI_API_KEY) {
