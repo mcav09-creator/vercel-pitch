@@ -6,7 +6,7 @@ import { DefaultChatTransport } from "ai";
 
 const STARTER_PROMPTS = [
   "How would you approach REA Group?",
-  "Walk me through your MEDDPICC on the K-12 deal",
+  "Walk me through MEDDPICC on a transformation deal.",
   "Why Vercel over staying technical-adjacent at monō ai?",
   "What's your honest gap for this role?",
 ];

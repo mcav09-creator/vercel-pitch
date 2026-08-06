@@ -25,6 +25,10 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     text: "For Christian Education Ministries, Matt and the partner ecosystem built a Student Information System (SIS) on top of Education Cloud, unifying all 17 of their schools and 14 distance-education locations onto one enterprise platform, run day to day in collaboration with the ISV Posi-ed.",
   },
   {
+    id: "christian-ed-meddpicc",
+    text: "On MEDDPICC for the Christian Education Ministries transformation deal: the decision criteria centered on cost-effectiveness for the organization to transform and grow, including supporting at least one new school a year onto an enterprise solution, while reducing tech debt and increasing speed and velocity. The economic buyer was the co-CEO, a former commercial director of a number of companies, who evaluated the solution's value against their current systems and against the upside of their own ambitious growth goals. He saw that the solution reduced tech debt and increased the organization's flexibility to grow revenue and size without requiring an increase in internal resources to maintain the system.",
+  },
+  {
     id: "christian-ed-recognition",
     text: "Christian Education Ministries became a globally referenced K-12 account for Salesforce. Margo Martinez, the regional leader for Education Cloud, personally meets with Jeremy Kwok when in-region because of his leadership running K-12 organizations on Salesforce. Other Salesforce account executives now use Jeremy Kwok and Christian Education Ministries as a customer reference story at major pipeline-generation events, including with the largest school districts and the largest Catholic diocese in Australia, a reference relationship that has driven millions of dollars in pipeline.",
   },
