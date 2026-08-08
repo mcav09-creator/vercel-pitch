@@ -14,7 +14,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "christian-ed",
-    text: "Matt's flagship account was Christian Education Ministries, led by co-CEO Jeremy Kwok, a new customer in a new market. Matt landed it at $200k ACV and grew it to $400k ACV, over $1.3M in total contract value, across the entire Salesforce ecosystem, with their most recent purchase being Slack. Matt built and executed the adoption roadmap start to finish and has continued the relationship even after leaving Salesforce.",
+    text: "Matt's flagship account was Christian Education Ministries (CEM), led by co-CEO Jeremy Kwok, a new customer in a new market. Matt landed it at $200k ACV and grew it to $400k ACV, over $1.3M in total contract value, across the entire Salesforce ecosystem, with their most recent purchase being Slack. Matt built and executed the adoption roadmap start to finish and has continued the relationship even after leaving Salesforce.",
   },
   {
     id: "christian-ed-origin",
@@ -31,6 +31,10 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   {
     id: "christian-ed-recognition",
     text: "Christian Education Ministries became a globally referenced K-12 account for Salesforce. Margo Martinez, the regional leader for Education Cloud, personally meets with Jeremy Kwok when in-region because of his leadership running K-12 organizations on Salesforce. Other Salesforce account executives now use Jeremy Kwok and Christian Education Ministries as a customer reference story at major pipeline-generation events, including with the largest school districts and the largest Catholic diocese in Australia, a reference relationship that has driven millions of dollars in pipeline.",
+  },
+  {
+    id: "christian-ed-significance",
+    text: "What made the Christian Education Ministries (CEM) win significant wasn't just the $400k/yr run-rate, it was taking a fragmented footprint across 17 schools and 14 distance-education sites, starting from a $200k core footprint, and driving 100% ARR growth by navigating multi-entity stakeholder sign-offs across that many separate school and campus decision-makers. Matt maps that same land-and-expand motion directly to a Vercel Majors account: start with a single engineering team's deployment, then use that early win to expand adoption across an entire portfolio of teams and properties the same way he expanded from one school to a 17-school, 14-site footprint.",
   },
   {
     id: "territory-expansion",
