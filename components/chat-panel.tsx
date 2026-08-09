@@ -7,6 +7,7 @@ import { DefaultChatTransport } from "ai";
 const STARTER_PROMPTS = [
   "Why are you suited for this role?",
   "What parts of the Vercel stack are you using on this site?",
+  "How do you learn fast?",
   "How would you approach REA Group?",
   "Walk me through MEDDPICC on a transformation deal.",
   "Why Vercel over staying technical-adjacent at monō ai?",
