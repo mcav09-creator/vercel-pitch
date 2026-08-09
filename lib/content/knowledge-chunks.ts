@@ -216,4 +216,8 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     id: "team-player-vercel-excitement",
     text: "Matt describes himself as a team player who genuinely wants the people around him to win, the same instinct behind his answer about celebrating colleagues so everyone wins together. He's explicit that he's not just looking for a role: he wants to help Vercel grow exponentially in ANZ, and he sees this site, built with Vercel's own stack, live and checkable, as the clearest proof he can offer that he'll bring that same builder energy and grit to the territory from day one.",
   },
+  {
+    id: "forward-looking-vs-traditional-hiring",
+    text: "Matt makes a deliberate distinction when asked why he's suited for this role: traditional hiring is focused on a candidate's past, matching a resume line by line to a job description. Vercel isn't a traditional company, it's a company for builders who ship, forward looking, and looking for people who embrace the changing landscape of AI democratising who gets to build. Matt says his strength is stepping into a completely new environment and not just surviving in it, but thriving, bringing focus and rigor without rigidity. He points to leading his own GTM team at monō ai to embrace this new way of selling as proof he already does this in practice, not just in theory: he brings a builder's mindset to selling, not a seller's mindset bolted onto a builder's platform.",
+  },
 ];
