@@ -46,17 +46,9 @@ export function ChatPanel({ aiConfigured }: { aiConfigured: boolean }) {
     <div className="card flex min-h-[420px] flex-col overflow-hidden">
       <div className="chat-scroll flex-1 space-y-4 overflow-y-auto p-5">
         {messages.length === 0 && (
-          <div className="flex flex-wrap gap-2 pt-2">
-            {STARTER_PROMPTS.map((prompt) => (
-              <button
-                key={prompt}
-                onClick={() => submit(prompt)}
-                className="rounded-full border border-border px-3 py-1.5 text-xs text-muted transition hover:border-border-hover hover:text-foreground"
-              >
-                {prompt}
-              </button>
-            ))}
-          </div>
+          <p className="text-sm leading-relaxed text-muted">
+            Pick a question below, or ask your own.
+          </p>
         )}
 
         {messages.map((message) => (
@@ -87,6 +79,19 @@ export function ChatPanel({ aiConfigured }: { aiConfigured: boolean }) {
             Something went wrong. Try again in a moment.
           </div>
         )}
+      </div>
+
+      <div className="flex flex-wrap gap-2 border-t border-border p-3">
+        {STARTER_PROMPTS.map((prompt) => (
+          <button
+            key={prompt}
+            onClick={() => submit(prompt)}
+            disabled={status !== "ready"}
+            className="rounded-full border border-border px-3 py-1.5 text-xs text-muted transition hover:border-border-hover hover:text-foreground disabled:opacity-40"
+          >
+            {prompt}
+          </button>
+        ))}
       </div>
 
       <form
