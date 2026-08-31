@@ -25,9 +25,9 @@ export function PartnerMotion() {
                 {play.howItWorked}
               </p>
               <div className="mt-4 border-t border-border pt-4">
-                <p className="section-label mb-1.5">Maps to Vercel</p>
+                <p className="section-label mb-1.5">Maps to Datadog</p>
                 <p className="text-sm leading-relaxed text-foreground">
-                  {play.vercelMapping}
+                  {play.datadogMapping}
                 </p>
               </div>
             </div>
@@ -47,7 +47,7 @@ function PartnerDiagram() {
       viewBox="0 0 1340 300"
       className="w-full min-w-[1000px]"
       role="img"
-      aria-label="Diagram: starting from Vercel, a community engagement engine is built with marketing, mid-tier partners, and hyperscalers. That engine feeds a land motion that splits into two paths: Vercel direct with a mid-tier or small partner for speed to value, or Vercel large transformation with a hyperscaler and GSI in a joint staged engagement. Both paths converge on the enterprise account, which leads to the suggested next move: expand footprint."
+      aria-label="Diagram: starting from Datadog, a community engagement engine is built with marketing, mid-tier partners, and hyperscalers. That engine feeds a land motion that splits into two paths: Datadog direct with a mid-tier or small partner for speed to value, or Datadog large transformation with a hyperscaler and GSI in a joint staged engagement. Both paths converge on the enterprise account, which leads to the suggested next move: expand footprint."
     >
       <defs>
         <marker
@@ -68,8 +68,8 @@ function PartnerDiagram() {
       <StageLabel x={755} label="Land" />
       <StageLabel x={1140} label="Expand" />
 
-      {/* stage 1: Vercel */}
-      <NodeBox x={20} y={125} w={100} h={50} lines={["Vercel"]} strong />
+      {/* stage 1: Datadog */}
+      <NodeBox x={20} y={125} w={100} h={50} lines={["Datadog"]} strong />
 
       {/* stage 2: engagement engine inputs */}
       <NodeBox x={170} y={34} w={150} h={36} lines={["Marketing"]} small />
@@ -92,7 +92,7 @@ function PartnerDiagram() {
         y={42}
         w={250}
         h={76}
-        lines={["Vercel direct", "+ mid-tier / small partner"]}
+        lines={["Datadog direct", "+ mid-tier / small partner"]}
         sub="leverage relationship · speed to value"
       />
       <NodeBox
@@ -100,7 +100,7 @@ function PartnerDiagram() {
         y={182}
         w={250}
         h={76}
-        lines={["Vercel: large transformation", "+ hyperscaler & GSI"]}
+        lines={["Datadog: large transformation", "+ hyperscaler & GSI"]}
         sub="joint, staged engagement"
       />
 

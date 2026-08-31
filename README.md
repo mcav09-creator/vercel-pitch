@@ -1,9 +1,10 @@
-# Matt Cavallaro → Vercel pitch site
+# Matt Cavallaro → Datadog pitch site
 
-A single-page pitch built for Vercel's **Account Executive, Majors (APAC)** role.
-Every section is copy-mapped to a line in the JD — see `lib/content/` for the
-source-of-truth data behind each claim, pulled from the CV and the strategic
-brief this repo was built from.
+A single-page pitch built for Datadog's **Strategic Account Executive, Higher
+Education (ANZ)** role. Every section is copy-mapped to a line in the JD —
+see `lib/content/` for the source-of-truth data behind each claim, pulled
+from the CV. Originally built for a Vercel Account Executive application;
+reworked in place for Datadog (see git history for the earlier version).
 
 Built with Claude Code. Shipped on Vercel.
 
@@ -72,14 +73,15 @@ The chat endpoint has two layers:
 ## Automated target-account verification
 
 `app/api/cron/verify-target-accounts/route.ts` runs weekly (Monday 06:00
-UTC, `vercel.json`) via Vercel Cron. It fetches `vercel.com/customers`,
-checks whether any of the five Target Accounts sections' companies now
-appear on it, and writes the result to a private Vercel Blob store
-(`vercel-pitch-status`, pathname `status/target-accounts-verification.json`,
-overwritten each run). `components/target-accounts.tsx` reads that result
-and shows a "last verified" line under the section; the whole homepage
-revalidates hourly (`export const revalidate = 3600` in `app/page.tsx`) so
-that stays fresh without a per-request Blob read.
+UTC, `vercel.json`) via Vercel Cron. It fetches Datadog's public customer
+list (`datadoghq.com/customers`), checks whether any of the nine
+Territory & Relationship Map institutions now appear on it, and writes the
+result to a private Vercel Blob store (`vercel-pitch-status`, pathname
+`status/target-accounts-verification.json`, overwritten each run).
+`components/target-accounts.tsx` reads that result and shows a "last
+verified" line under the section; the whole homepage revalidates hourly
+(`export const revalidate = 3600` in `app/page.tsx`) so that stays fresh
+without a per-request Blob read.
 
 The route checks `Authorization: Bearer $CRON_SECRET` before doing
 anything, matching Vercel's documented cron-auth pattern, so it can't be

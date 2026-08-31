@@ -88,7 +88,7 @@ export const resumeCompetencies = [
   {
     title: "GTM & Commercial Execution",
     detail:
-      "Full Sales Cycle Management, MEDDPICC, Value-Based Selling, Executive Alignment, Multi-Threaded Deal Execution, Co-Selling & Channel Strategy.",
+      "Full Sales Cycle Management, MEDDIC & Command of the Message, Value-Based Selling, Executive Alignment, Multi-Threaded Deal Execution, Co-Selling & Channel Strategy.",
   },
   {
     title: "GenAI & Technical Acumen",

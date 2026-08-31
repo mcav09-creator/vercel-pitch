@@ -17,7 +17,7 @@ export function FitSection() {
                 {pillar.proof}
               </p>
               <div className="mt-4 border-t border-border pt-4">
-                <p className="section-label mb-1.5">In ANZ SaaS</p>
+                <p className="section-label mb-1.5">For Datadog</p>
                 <p className="text-sm leading-relaxed text-foreground">
                   {pillar.application}
                 </p>

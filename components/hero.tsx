@@ -37,7 +37,7 @@ export function Hero() {
             <span className="ml-2 text-xs text-muted">pitch.sh</span>
           </div>
           <div className="min-h-[96px] px-4 py-4 text-[13px] leading-relaxed text-foreground sm:text-sm">
-            <span className="text-accent-dim">$</span> whoami --for vercel
+            <span className="text-accent-dim">$</span> whoami --for datadog
             <br />
             <span className="text-muted">
               {typed}

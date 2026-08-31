@@ -6,31 +6,31 @@ export type FitPillar = {
 
 export const fitPillars: FitPillar[] = [
   {
-    title: "Commercial rigor",
+    title: "Enterprise closing & quota discipline",
     proof:
-      "MEDDPICC and forecast hygiene are explicit core competencies, not buzzwords: 100% median quota attainment over 5 years against a <50% team average is the receipt.",
+      "100% median quota attainment over 5 years at Salesforce (vs. <50% team average), with consecutive years above 200% on multi-year targets: well clear of the $800k+ direct sales goal and $50k+ average deal size this role asks for.",
     application:
-      "In ANZ SaaS: same discipline applied to a shorter, faster-moving sales cycle. The muscle transfers, the cadence just gets tighter.",
+      "Same forecasting discipline, run through MEDDIC and Command of the Message instead of MEDDPICC. The muscle transfers, the framework just gets Datadog's own name on it.",
   },
   {
-    title: "Executive alignment",
+    title: "Independent prospecting & pipeline build",
     proof:
-      "Led multi-threaded campaigns targeting CIOs, Chief Digital Officers, and Procurement Heads to align cloud infrastructure modernization with institutional outcomes.",
+      "Built the ANZ K-12 Public District market from scratch at Salesforce, no inherited book, no warm pipeline handed over, plus 140% New Logo Attainment in a newly expanded Tier-1 university and TAFE territory.",
     application:
-      "In ANZ SaaS: the counterpart shifts from a CDO to a VP Engineering or CTO. The skill is the same, threading a technical buyer and an economic buyer through one narrative.",
+      "This is the exact bar the JD sets for breaking into a newly formalized higher-ed segment. Matt has already prospected a segment into existence once; he's not guessing at how to do it again.",
   },
   {
-    title: "Account planning discipline",
+    title: "State, local, and education new-logo wins",
     proof:
-      "Built an entirely new market (K-12) from zero while running multi-year procurement cycles across Tier-1 universities and TAFE systems: regulated, multi-stakeholder procurement that's arguably a harder bar than most commercial verticals.",
+      "Not an adjacent vertical translated in: this is the vertical. The last two years at Salesforce were spent moving that K-12 foundation up into Tier-1 Universities, large TAFE systems, and State-wide K-12 districts, landing the first 3 Education Cloud enterprise implementations live across ANZ.",
     application:
-      "In ANZ SaaS: territory ownership from day one, public-signal research, hypothesis-driven account plans, validated live rather than assumed.",
+      "A Strategic AE for Higher Education who already has the relationship map, the procurement rhythm, and the stakeholder language for this exact buyer set across NSW, VIC, and QLD.",
   },
   {
-    title: "Technical credibility",
+    title: "Technical credibility, built not borrowed",
     proof:
-      "Builds Create AI prototypes that replace static architecture slides: real-time app behavior, API orchestration, workflow visibility, for technical decision-makers, hands-on with CLI/terminal prototyping, RAG architectures, and autonomous agents.",
+      "Builds Create AI prototypes that replace static architecture slides for technical decision-makers, and hand-builds real infrastructure discipline into his own tools: rate limiting, monitoring, and a custom retrieval layer, not just the sales narrative around them.",
     application:
-      "In ANZ SaaS: this site. A Next.js app on the Vercel AI SDK, built and shipped in the time it took to prep for this interview, the exact 'credible without leaning on an SE' bar the role sets.",
+      "This site. Live, watchable, with the same guardrails an SRE would expect, the credibility a Strategic AE needs to sit across the table from a VP Engineering evaluating an observability platform without leaning on an SE.",
   },
 ];

@@ -29,7 +29,7 @@ export function ClosePlan() {
 
         <div className="mt-16 flex flex-col items-center gap-6 border-t border-border pt-16 text-center">
           <p className="max-w-xl text-balance text-xl font-medium">
-            Let&apos;s talk about the ANZ Majors book.
+            Let&apos;s talk about the ANZ higher-ed book.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a

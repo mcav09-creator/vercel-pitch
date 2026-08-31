@@ -1,68 +1,94 @@
-export type TargetAccount = {
+export type TerritoryAccount = {
   name: string;
-  vertical: string;
-  why: string;
-  trigger: string;
+  state: string;
+  segment: string;
+  relationship: string;
   entry: string;
-  expand: string;
-  capability: string;
-  validate: string;
 };
 
-export const primaryTargetAccounts: TargetAccount[] = [
+export const territoryAccounts: TerritoryAccount[] = [
   {
-    name: "Airwallex",
-    vertical: "Financial services / digital-native",
-    why: "Melbourne-born fintech unicorn, API/developer-first product DNA, globally scaling: likely the most \"Vercel-native\" account on this list. Airwallex and Vercel send similar signals to the market, which makes this as much a brand-fit play as a technical one.",
-    trigger: "New market/product launch requiring rapid surface iteration, or a public engineering blog post about DX investment.",
-    entry: "Become a thought partner first: share a POV, customer reference stories, and examples of how Vercel helps similar API/developer-first companies win, before proposing a small, jointly-built use case. The monō ai network (former GTM peers who ran multiple go-to-market teams before joining) gives a genuine way in.",
-    expand: "Start with one high-visibility surface (docs, dashboard, or a new product line) and expand as engineering trust builds into deeper platform commitment: AI SDK, observability, Fluid Compute.",
-    capability: "AI SDK + AI Gateway for AI-native surfaces they're already building, plus observability for a team that already cares about DX.",
-    validate: "Whether they're already on Vercel or a competitor, and who owns platform decisions vs. individual product teams.",
+    name: "Monash University",
+    state: "VIC",
+    segment: "Group of Eight, multi-campus research-intensive",
+    relationship:
+      "Existing relationship built through the same East Coast higher-ed network Matt worked at Salesforce, spanning Monash's Clayton, Caulfield, and Peninsula campuses.",
+    entry:
+      "Observability across a genuinely distributed research-computing and student-systems estate: the kind of multi-campus complexity that makes a single pane of glass a real unlock, not a nice-to-have.",
   },
   {
-    name: "REA Group / realestate.com.au",
-    vertical: "Media / marketplace",
-    why: "An entrenched React shop with a heavy AWS footprint and a mature, self-built micro-frontend platform called Argonaut. They don't need convincing on React or SSR; they need to be shown how offloading front-end infrastructure overhead accelerates squad velocity while protecting SEO-driven search revenue.",
-    trigger: "A public performance complaint, a new personalization/search feature announcement, or infrastructure cost commentary in earnings calls.",
-    entry: "Lead with lower TCO on micro-frontend orchestration: Next.js Multi-Zones and edge routing replace the ongoing platform-engineering cost of a bespoke system like Argonaut, positioned to Platform Engineering and Core Web Architecture leaders.",
-    expand: "Prove it with a Core Web Vitals audit and a PoC scoped to one isolated property (e.g. Flatmates) before touching the core realestate.com.au engine; route procurement through AWS Marketplace against their existing AWS commit.",
-    capability: "Global Edge Network + ISR + Speed Insights for Core Web Vitals at scale, plus Secure Compute, OIDC, and the Terraform provider for frictionless AWS integration.",
-    validate: "Current infra cost-per-listing-view, and whether Argonaut's roadmap has real appetite for offloading routing/SSR to a managed platform.",
+    name: "The University of Sydney",
+    state: "NSW",
+    segment: "Group of Eight",
+    relationship:
+      "Relationship built during Matt's Tier-1 university territory work at Salesforce, covering the institution's cloud modernization and digital transformation stakeholders.",
+    entry:
+      "A CIO/CDO-level modernization story: aligning observability investment with an institution-wide cloud migration the same way Matt aligned Education Cloud adoption to it.",
   },
   {
-    name: "Judo Bank",
-    vertical: "Financial services, regulated challenger",
-    why: "An APRA-licensed challenger bank that just completed a serverless, event-driven core banking transformation: Thought Machine's Vault Core on AWS Lambda/Transit Gateway. They don't care about consumer SEO or traffic volume; they care about banker productivity tools, broker portals, and APRA CPS 234 compliance.",
-    trigger: "A new product launch, a rate/feature war with a major bank, or a public statement on engineering velocity as a differentiator.",
-    entry: "Meet their architecture, not fight it: Secure Compute routes front-end traffic into their private AWS VPC via Transit Gateway, positioned to the Head of Engineering & Architecture as a serverless front-end layer that mirrors their own stack.",
-    expand: "Focus on the non-core web footprint first (rate calculators, broker portals, loan intake) to win engineering trust, then use a pre-built APRA CPS 234 compliance mapping document to fast-track the CISO/risk conversation.",
-    capability: "Secure Compute + OIDC + SOC 2 Type II/ISO 27001 for compliance-first deployment, plus per-PR Preview Deployments for their 14+ decoupled domain squads.",
-    validate: "Current cloud/hosting vendor for front-end properties, and whether the real constraint is engineering velocity or regulatory sign-off time.",
+    name: "UNSW Sydney",
+    state: "NSW",
+    segment: "Group of Eight",
+    relationship:
+      "Existing relationship from the same NSW Tier-1 territory, including exposure to UNSW's procurement and IT governance process for enterprise platform decisions.",
+    entry:
+      "Security and compliance-forward entry: UNSW's research data governance requirements make Datadog's security and compliance monitoring a natural technical-buyer conversation.",
+  },
+  {
+    name: "University of Technology Sydney (UTS)",
+    state: "NSW",
+    segment: "Innovative Research Universities, tech-forward",
+    relationship:
+      "Relationship built through NSW higher-ed territory coverage; UTS's own reputation as a technology-forward institution made it a natural fit for modern platform conversations.",
+    entry:
+      "UTS actively invests in its own engineering and DX culture, which makes a developer-experience-led observability pitch land faster here than at a more traditional institution.",
+  },
+  {
+    name: "University of New England (UNE)",
+    state: "NSW",
+    segment: "Regional, largest distance-education cohort in Australia",
+    relationship:
+      "Relationship built covering NSW's regional and distance-education institutions, where digital delivery isn't a side channel, it's the core operating model.",
+    entry:
+      "Reliability of the distance-education platform itself is existential for UNE's operating model: an outage isn't an inconvenience, it's thousands of remote students locked out, which makes uptime observability a direct business-continuity conversation.",
+  },
+  {
+    name: "TAFE NSW",
+    state: "NSW",
+    segment: "Largest VET provider in Australia, state-wide multi-campus network",
+    relationship:
+      "Direct relationship from Matt's state-wide K-12/TAFE territory work at Salesforce, covering TAFE NSW's cloud and digital-delivery footprint across dozens of campuses.",
+    entry:
+      "A state-wide, multi-campus network is exactly the fragmented-footprint problem Matt has already solved once (Christian Education Ministries' 17 schools and 14 sites), just at public-VET scale: land on one platform team's footprint, expand campus by campus.",
+  },
+  {
+    name: "Western Sydney University",
+    state: "NSW",
+    segment: "Growth university, multi-campus across Sydney's western growth corridor",
+    relationship:
+      "Relationship built through NSW territory coverage of Western Sydney's rapidly growing student population and multi-campus expansion.",
+    entry:
+      "A growth institution expanding physical and digital footprint simultaneously needs observability that scales with it, a timing-driven entry point tied to its own expansion roadmap.",
+  },
+  {
+    name: "James Cook University (JCU)",
+    state: "QLD",
+    segment: "Regional, multi-campus (Townsville, Cairns, Singapore)",
+    relationship:
+      "Relationship built through Matt's Queensland regional territory coverage, including JCU's distinctive northern-Australia and international-campus footprint.",
+    entry:
+      "A genuinely distributed, cross-border campus footprint (regional Queensland plus an international Singapore campus) makes centralized visibility a concrete technical need, not an abstract pitch.",
+  },
+  {
+    name: "Queensland University of Technology (QUT)",
+    state: "QLD",
+    segment: "Australian Technology Network, applied/industry-focused",
+    relationship:
+      "Relationship built through Queensland territory coverage; QUT's applied, industry-partnership-driven culture made it a natural fit for enterprise platform conversations.",
+    entry:
+      "QUT's industry-partnership model and applied-research computing footprint make a platform-engineering-led pitch (reliability, developer velocity) resonate more than a pure IT-operations angle.",
   },
 ];
 
-export type WatchlistAccount = {
-  name: string;
-  vertical: string;
-  why: string;
-  nextStep: string;
-};
-
-export const watchlistAccounts: WatchlistAccount[] = [
-  {
-    name: "Woolworths Group",
-    vertical: "Retail",
-    why: "Australia's largest retailer, heavy owned investment in e-commerce/digital and loyalty (Everyday Rewards), under constant pressure to match Amazon-grade experience speed at national scale.",
-    nextStep: "Map current stack ownership between digital and core commerce teams before proposing an entry property, likely a lower-risk campaign microsite or loyalty experience rather than core commerce.",
-  },
-  {
-    name: "Cotton On Group",
-    vertical: "Retail / digital-native",
-    why: "Geelong-HQ'd global fast-fashion retailer running dozens of storefronts across regions; multi-region performance and speed-to-market are core to the brand's growth model.",
-    nextStep: "Benchmark which regions are fastest/slowest today and whether that's an infra or content/CDN problem before pitching global edge performance.",
-  },
-];
-
-export const targetAccountsFootnote =
-  "Built from public signals only: company scale, digital ambition, and vertical fit to Vercel's stated ANZ traction. None of these five currently appear on Vercel's public customer list (checked live, August 2026), which reads as whitespace rather than a diligence gap. Before presenting this in the interview, each should be sanity-checked with a tool like BuiltWith or a job-posting search for \"Next.js\"/\"React\" in their engineering listings, and ideally a quick check with the Vercel recruiter or SE on existing account ownership.";
+export const territoryFootnote =
+  "This territory map is built from Matt's own existing relationships across ANZ higher-ed, carried over from his Tier-1 University and TAFE coverage at Salesforce, not cold research. It's also backed by real partner and hyperscaler relationships across Australian higher-ed built the same way: mid-tier ed-tech integrators, AWS/Azure/GCP account teams, and the GSIs already running modernization work inside these institutions. None of these nine currently appear on Datadog's public customer list (checked live), which reads as genuine ANZ higher-ed whitespace rather than a diligence gap.";

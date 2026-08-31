@@ -3,11 +3,15 @@ import { get } from "@vercel/blob";
 export const TARGET_ACCOUNT_STATUS_PATHNAME = "status/target-accounts-verification.json";
 
 export const VERIFIED_ACCOUNT_NAMES = [
-  "Airwallex",
-  "REA Group",
-  "Judo Bank",
-  "Woolworths",
-  "Cotton On",
+  "Monash University",
+  "University of Sydney",
+  "UNSW",
+  "University of Technology Sydney",
+  "University of New England",
+  "TAFE NSW",
+  "Western Sydney University",
+  "James Cook University",
+  "Queensland University of Technology",
 ] as const;
 
 export type TargetAccountVerification = {

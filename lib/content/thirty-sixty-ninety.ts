@@ -9,9 +9,9 @@ export const thirtySixtyNinety: PlanPhase[] = [
     period: "Days 1-30",
     title: "Map the territory",
     items: [
-      "Map the named account book against public signals: tech stack, engineering job postings, digital investment announcements.",
-      "Map Vercel's partner surface in ANZ: SI/Solution Partner network, AWS relationship, and identify which named accounts already touch it.",
-      "Build the first 5 account plans using the same why/trigger/entry/expand structure as this site's Target Accounts section.",
+      "Formalize the relationship map from this site into active account plans: Monash, Sydney Uni, UNSW, UTS, UNE, TAFE NSW, Western Sydney Uni, JCU, and QUT.",
+      "Map Datadog's partner surface in ANZ higher-ed: AWS/Azure/GCP Marketplace relationships, GSIs, and ed-tech integrators already inside these institutions.",
+      "Build the first accounts plans using the same relationship/segment/entry structure as this site's Territory Map section.",
       "Shadow SE-led technical conversations to calibrate where I can run point vs. where I still need one.",
     ],
   },
@@ -19,9 +19,9 @@ export const thirtySixtyNinety: PlanPhase[] = [
     period: "Days 31-60",
     title: "Build pipeline",
     items: [
-      "Convert the top account plans into active outreach: multi-threaded, targeting both a technical buyer and an economic buyer per account.",
-      "Stand up the first co-sell motions with identified SI/hyperscaler partners on 2-3 accounts.",
-      "Get the first qualified opportunities into MEDDPICC-disciplined pipeline with real close dates.",
+      "Convert the top relationships into active outreach: multi-threaded, targeting both a technical buyer (Platform Engineering, SRE) and an economic buyer (CIO, CDO) per institution.",
+      "Stand up the first co-sell motions with identified hyperscaler and GSI partners on 2-3 accounts.",
+      "Get the first qualified opportunities into MEDDIC-disciplined pipeline with real close dates.",
     ],
   },
   {

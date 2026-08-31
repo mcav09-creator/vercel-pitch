@@ -15,7 +15,7 @@ export async function GET(req: Request) {
 
   let customerListText = "";
   try {
-    const res = await fetch("https://vercel.com/customers", {
+    const res = await fetch("https://www.datadoghq.com/customers/", {
       headers: { "User-Agent": "vercel-pitch-cron/1.0" },
     });
     if (res.ok) {
@@ -36,7 +36,7 @@ export async function GET(req: Request) {
   const result: TargetAccountVerification = {
     checkedAt: new Date().toISOString(),
     accounts,
-    source: "https://vercel.com/customers",
+    source: "https://www.datadoghq.com/customers/",
   };
 
   await put(TARGET_ACCOUNT_STATUS_PATHNAME, JSON.stringify(result), {

@@ -9,13 +9,15 @@ export function TechnicalFluency({ aiConfigured }: { aiConfigured: boolean }) {
           Ask me something. Really.
         </h2>
         <p className="mt-4 text-sm leading-relaxed text-muted">
-          This is a real, streamed chat built with the{" "}
-          <span className="text-foreground">Vercel AI SDK</span>, routed through{" "}
-          <span className="text-foreground">AI Gateway</span>, grounded on a small
-          retrieval layer over this résumé, this plan, and Vercel&apos;s product
-          surface, not a scripted demo. It answers as me, in first person, and
-          says &ldquo;I&apos;d want to validate that&rdquo; when it doesn&apos;t
-          have grounding, the same way I would.
+          This is a real, streamed chat, not a scripted demo, grounded on a
+          small retrieval layer over this résumé and this plan. I&apos;m not
+          pitching myself as an observability engineer: I&apos;m showing you
+          I understand why observability matters, because I hand-built the
+          same discipline into this site&apos;s own infrastructure. Rate
+          limiting to protect it from abuse, a &ldquo;last verified&rdquo;
+          check that actually runs on a schedule instead of a date I forgot
+          to update, and a retrieval layer that answers honestly when it
+          doesn&apos;t have grounding, the same way I would in a deal review.
         </p>
 
         <div className="mt-8">

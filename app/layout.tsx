@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mcavallaro.site"),
-  title: "Matt Cavallaro, built for Vercel's ANZ Majors book",
+  title: "Matt Cavallaro, built for Datadog's ANZ higher-ed book",
   description:
-    "Enterprise AE who built the ANZ K-12 market from $0, and builds the AI prototypes he sells with. Pitch site for Vercel's Account Executive, Majors (APAC) role.",
+    "Enterprise AE who built the ANZ K-12 market from $0, and spent his last two years at Salesforce moving that discipline into Tier-1 universities, TAFE, and public sector. Pitch site for Datadog's Strategic Account Executive, Higher Education role.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -25,8 +25,8 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     text: "For Christian Education Ministries, Matt and the partner ecosystem built a Student Information System (SIS) on top of Education Cloud, unifying all 17 of their schools and 14 distance-education locations onto one enterprise platform, run day to day in collaboration with the ISV Posi-ed.",
   },
   {
-    id: "christian-ed-meddpicc",
-    text: "On MEDDPICC for the Christian Education Ministries transformation deal: the decision criteria centered on cost-effectiveness for the organization to transform and grow, including supporting at least one new school a year onto an enterprise solution, while reducing tech debt and increasing speed and velocity. The economic buyer was the co-CEO, a former commercial director of a number of companies, who evaluated the solution's value against their current systems and against the upside of their own ambitious growth goals. He saw that the solution reduced tech debt and increased the organization's flexibility to grow revenue and size without requiring an increase in internal resources to maintain the system.",
+    id: "christian-ed-meddic",
+    text: "On MEDDIC for the Christian Education Ministries transformation deal: the decision criteria centered on cost-effectiveness for the organization to transform and grow, including supporting at least one new school a year onto an enterprise solution, while reducing tech debt and increasing speed and velocity. The economic buyer was the co-CEO, a former commercial director of a number of companies, who evaluated the solution's value against their current systems and against the upside of their own ambitious growth goals. He saw that the solution reduced tech debt and increased the organization's flexibility to grow revenue and size without requiring an increase in internal resources to maintain the system.",
   },
   {
     id: "christian-ed-recognition",
@@ -34,11 +34,11 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "christian-ed-significance",
-    text: "What made the Christian Education Ministries (CEM) win significant wasn't just the $400k/yr run-rate, it was taking a fragmented footprint across 17 schools and 14 distance-education sites, starting from a $200k core footprint, and driving 100% ARR growth by navigating multi-entity stakeholder sign-offs across that many separate school and campus decision-makers. Matt maps that same land-and-expand motion directly to a Vercel Majors account: start with a single engineering team's deployment, then use that early win to expand adoption across an entire portfolio of teams and properties the same way he expanded from one school to a 17-school, 14-site footprint.",
+    text: "What made the Christian Education Ministries (CEM) win significant wasn't just the $400k/yr run-rate, it was taking a fragmented footprint across 17 schools and 14 distance-education sites, starting from a $200k core footprint, and driving 100% ARR growth by navigating multi-entity stakeholder sign-offs across that many separate school and campus decision-makers. Matt maps that same land-and-expand motion directly to a Datadog higher-ed account: start with a single faculty, campus, or platform team's adoption, then use that early win to expand across an entire university's IT footprint the same way he expanded from one school to a 17-school, 14-site footprint.",
   },
   {
     id: "territory-expansion",
-    text: "In his most recent Salesforce role (Feb 2024 - Apr 2026), Matt managed complex multi-year cloud procurement cycles across Tier-1 Universities, large TAFE systems, and State-wide K-12 districts across the Australian East Coast. He achieved 94% quota attainment in a newly expanded territory, exceeded 200%+ on multi-year targets, and achieved 140% New Logo Attainment.",
+    text: "In his most recent Salesforce role (Feb 2024 - Apr 2026), Matt managed complex multi-year cloud procurement cycles across Tier-1 Universities, large TAFE systems, and State-wide K-12 districts across the Australian East Coast. He achieved 94% quota attainment in a newly expanded territory, exceeded 200%+ on multi-year targets, and achieved 140% New Logo Attainment. This is the exact period Matt points to when asked about his higher-ed and public-sector focus: it's when he deliberately moved his book up from mid-market K-12 into Tier-1 university and state-wide public-sector enterprise accounts.",
   },
   {
     id: "exec-alignment",
@@ -77,8 +77,8 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     text: "Matt's technical competencies include AI/ML workflows, autonomous AI agents, RAG architectures, hands-on CLI/terminal prototyping, developer experience (DX), and API integrations / PoC execution.",
   },
   {
-    id: "meddpicc",
-    text: "Matt's core GTM competencies include full sales cycle management, MEDDPICC, value-based selling, executive alignment, multi-threaded deal execution, and co-selling / channel strategy.",
+    id: "meddic",
+    text: "Matt's core GTM competencies include full sales cycle management, MEDDIC and Command of the Message (Datadog's own stated methodology), value-based selling, executive alignment, multi-threaded deal execution, and co-selling / channel strategy.",
   },
   {
     id: "referenceability",
@@ -93,92 +93,84 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     text: "Matt holds a MEd in Leadership and Admin from Deakin University, an MA in Secondary English from Boston University (with a Graduate Assistant Coaching Scholarship), and a BA in Psychology and English Literature from Northeastern University (Cum Laude, baseball scholarship, Americorps 'Athletes in Service to America' member).",
   },
   {
-    id: "vertical-gap",
-    text: "Matt's honest gap is that his vertical experience is education and public sector, not media, retail, financial services, or digital-native, the verticals this Vercel role calls out. His approach is to close that gap live by demonstrating rapid, well-researched vertical POV rather than hiding it, and by reframing regulated public-sector procurement as a harder bar than most commercial verticals.",
+    id: "honest-gap-observability",
+    text: "Matt's honest gap for this role is that he hasn't sold an observability or APM platform specifically before: Salesforce is a CRM and application platform, not a monitoring stack, so the product category itself is new ground. What isn't new ground is the buyer, the vertical, or the deal discipline: higher-ed and public-sector procurement, MEDDIC-style deal execution, and enterprise closing are all things he's already proven at a high level. His approach is to close the product-category gap live, the same way he always has: rapid, hands-on technical fluency (this site's own monitoring, rate limiting, and retrieval-grounded chat are the proof) rather than hiding the gap or pretending it isn't there.",
   },
   {
     id: "education-transition",
     text: "Matt's honest answer on his education-heavy background: the content knowledge helped him get in the door, since education is notoriously hard to break into without speaking the language, but the actual skill of winning deals translates directly. At monō ai, on the company's first major commercial account, Matt took over the deal from a colleague more experienced in commercial contexts but with no sales background, ran a proof of value, and won the account. The customer's executive team told him directly, 'You've proved it. No one else would do the work to prove it, and you guys actually did it,' and competitors who tried to re-engage were told it was too late. Matt's honest take is that education procurement is actually harder than commercial (slower, more bureaucratic, more political, more stakeholders), while commercial rewards showing and proving value directly to executive stakeholders, which he finds comes naturally and even prefers.",
   },
   {
-    id: "why-vercel",
-    text: "Matt's pitch for why Vercel: he doesn't just sell technical platforms, he builds on them. He's built multi-agent workflow prototypes and RAG-based demos to move enterprise deals forward at monō ai, and he's built this entire pitch site, a Next.js app on the Vercel AI SDK, deployed on Vercel, in the time it took to prepare for this interview.",
+    id: "why-datadog",
+    text: "Matt's pitch for why Datadog: this role isn't asking him to translate his background into a new vertical, it's asking him to bring a vertical he's already built once, education and public sector, into a company whose product he genuinely respects. He's built multi-agent workflow prototypes and RAG-based demos to move enterprise deals forward at monō ai, and he's built this entire pitch site, real infrastructure with real monitoring and guardrails, in the time it took to prepare for this interview.",
   },
   {
-    id: "why-vercel-personal",
-    text: "Beyond the strategic fit, Matt's personal reason for choosing Vercel is direct: as he builds AI prototypes and multi-agent UIs at monō ai, every path leads to Vercel as where to actually deploy them into production. He sees Vercel as built for the moment: AI has shortened development time and increased deployment frequency, and Vercel's explosive growth in AI-generated code and its AI SDK ecosystem reflect a company with strong product-market fit for how software gets built now.",
+    id: "why-datadog-personal",
+    text: "Beyond the strategic fit, Matt's personal reason for choosing Datadog is direct: building AI prototypes and shipping real infrastructure at monō ai has made him live the exact problem observability solves, teams shipping faster than ever thanks to AI-assisted tooling, and needing to actually see what's happening in what they just shipped. He sees Datadog as built for that moment: as more people build with AI, without necessarily being traditional engineers, the gap between shipping fast and understanding what you shipped only grows, and that gap is Datadog's whole business.",
   },
   {
     id: "what-sets-apart",
     text: "Asked what sets him apart, Matt points to intangibles: he's a hustler and a learner who draws macro understanding across many topics. Multiple people at Salesforce pulled him aside over the years to admit they'd doubted his background and ability to sell, and were impressed by how well he could learn products and concepts and work the craft of enterprise technology sales. He describes himself as competitive, joyful to work with, and someone who celebrates the people around him so the team wins together, the same instinct that led him to start building prototypes in the terminal at monō ai, which he sees as simply how he naturally operates.",
   },
   {
-    id: "target-accounts-summary",
-    text: "Matt's ANZ target-account shortlist for a Vercel Majors book spans the verticals the JD calls out: Woolworths Group and Cotton On Group (retail), Airwallex (financial services / digital-native, most Vercel-native of the five), REA Group / realestate.com.au (media/marketplace), and Judo Bank or Up (financial services, challenger/digital-native). None currently appear on Vercel's public customer list, which reads as ANZ whitespace.",
+    id: "territory-map-summary",
+    text: "Matt's ANZ territory and relationship map for Datadog's Higher Education segment spans nine institutions carried over from his Tier-1 University and TAFE coverage at Salesforce, not cold research: Monash University and the University of Sydney and UNSW Sydney (Group of Eight), the University of Technology Sydney (tech-forward, Innovative Research Universities), the University of New England (Australia's largest distance-education cohort), TAFE NSW (the largest VET provider in Australia, state-wide multi-campus), Western Sydney University (fast-growing, multi-campus), James Cook University (regional, plus an international Singapore campus), and Queensland University of Technology (applied, industry-partnership-driven). None currently appear on Datadog's public customer list, which reads as genuine ANZ higher-ed whitespace.",
   },
   {
-    id: "woolworths-plan",
-    text: "For Woolworths Group: entry angle is infrastructure consolidation and experience-velocity to a Chief Digital/Technology Officer, landing via a lower-risk property like a campaign microsite or loyalty experience before expanding into core commerce.",
+    id: "monash-plan",
+    text: "Monash University (VIC, Group of Eight, multi-campus research-intensive): existing relationship from Matt's East Coast higher-ed territory at Salesforce, spanning Monash's Clayton, Caulfield, and Peninsula campuses. Datadog entry angle: observability across a genuinely distributed research-computing and student-systems estate, the kind of multi-campus complexity that makes a single pane of glass a real unlock rather than a nice-to-have.",
   },
   {
-    id: "cotton-on-plan",
-    text: "For Cotton On Group: entry angle is global edge performance and faster release cycles across the dozens of regional storefronts the fast-fashion retailer runs, since multi-region performance and speed-to-market are core to its growth model.",
+    id: "sydney-uni-plan",
+    text: "The University of Sydney (NSW, Group of Eight): relationship built during Matt's Tier-1 university territory work at Salesforce, covering the institution's cloud modernization and digital transformation stakeholders. Datadog entry angle: a CIO/CDO-level modernization story, aligning observability investment with an institution-wide cloud migration the same way Matt aligned Education Cloud adoption to it.",
   },
   {
-    id: "airwallex-plan",
-    text: "For Airwallex, Matt's approach is to become a thought partner first: sharing a point of view, customer reference stories, and examples of how Vercel helps similar API/developer-first companies win, before proposing a small, jointly-built use case to get hands-on-keyboard together. He sees Airwallex and Vercel as brands that send the same signal to the market, and starts by mapping his own network: his peers at monō ai ran multiple go-to-market teams before joining, giving him a genuinely useful shared network for exactly this kind of account. He looks for accounts pushing hard on AI-enabled products that want speed to value without owning their own forward infrastructure, which is where Vercel is strongest.",
+    id: "unsw-plan",
+    text: "UNSW Sydney (NSW, Group of Eight): existing relationship from the same NSW Tier-1 territory, including exposure to UNSW's procurement and IT governance process for enterprise platform decisions. Datadog entry angle: security and compliance-forward, since UNSW's research data governance requirements make Datadog's security and compliance monitoring a natural technical-buyer conversation.",
   },
   {
-    id: "rea-group-plan",
-    text: "REA Group (realestate.com.au, Flatmates.com.au, Realcommercial) runs an entrenched React shop with a heavy AWS footprint and a mature, self-built micro-frontend platform called Argonaut. Matt's approach: don't sell React or SSR, they already have it. Show how offloading front-end infrastructure overhead from a custom-built platform like Argonaut to Vercel accelerates squad velocity while protecting the SEO-driven search revenue that real estate listings depend on.",
+    id: "uts-plan",
+    text: "University of Technology Sydney, UTS (NSW, Innovative Research Universities, tech-forward): relationship built through NSW higher-ed territory coverage; UTS's own reputation as a technology-forward institution made it a natural fit for modern platform conversations. Datadog entry angle: UTS invests heavily in its own engineering and DX culture, which makes a developer-experience-led observability pitch land faster here than at a more traditional institution.",
   },
   {
-    id: "rea-group-value-drivers",
-    text: "For REA Group, Matt's value drivers are: (1) lower total cost of ownership on micro-frontend orchestration, since Vercel's native support for Next.js Multi-Zones and edge routing replaces the ongoing platform-engineering cost of a bespoke system like Argonaut; (2) Core Web Vitals and SEO revenue protection via the Global Edge Network, ISR, and Speed Insights, since milliseconds in LCP/INP directly affect listing rankings and conversion; (3) frictionless AWS integration, since Vercel acts as a frontend cloud on top of AWS via Secure Compute, OIDC auth, the Terraform provider, and AWS Marketplace procurement, so REA's AWS backend stays untouched; (4) squad velocity via automatic production-grade Preview Deployments for every pull request, addressing the staging bottlenecks of REA's decentralized Tribe/Squad model.",
+    id: "une-plan",
+    text: "University of New England, UNE (NSW, regional, Australia's largest distance-education cohort): relationship built covering NSW's regional and distance-education institutions, where digital delivery isn't a side channel, it's the core operating model. Datadog entry angle: platform reliability is existential for UNE's operating model, an outage isn't an inconvenience, it's thousands of remote students locked out, which makes uptime observability a direct business-continuity conversation.",
   },
   {
-    id: "rea-group-execution",
-    text: "Matt's REA Group unlock plan targets three personas: Platform Engineering leaders (developer experience, maintenance cost), Web/Core Architecture leaders (rendering performance, SSR resilience, micro-frontend standardization), and SEO/Product leaders (page speed, Core Web Vitals, conversion). It follows a 3-step execution plan: run a Core Web Vitals audit on key routes, propose a proof-of-concept scoped to one isolated property (like Flatmates) rather than the core realestate.com.au engine on day one, and route procurement through the AWS Marketplace against REA's existing AWS cloud commitment to minimize commercial friction.",
+    id: "tafe-nsw-plan",
+    text: "TAFE NSW (NSW, the largest VET provider in Australia, state-wide multi-campus network): direct relationship from Matt's state-wide K-12/TAFE territory work at Salesforce, covering TAFE NSW's cloud and digital-delivery footprint across dozens of campuses. Datadog entry angle: a state-wide, multi-campus network is exactly the fragmented-footprint problem Matt has already solved once with Christian Education Ministries' 17 schools and 14 sites, just at public-VET scale, land on one platform team's footprint and expand campus by campus.",
   },
   {
-    id: "judo-up-plan",
-    text: "For Judo Bank or Up: entry angle is developer velocity as a competitive moat against the majors (CBA/NAB/Westpac/ANZ), positioned to a CTO/Head of Engineering, with regulated-industry procurement rigor as the unlock for a follow-on CFO/Head of Risk conversation. Judo specifically is further along a serverless, cloud-native transformation, which sharpens this angle considerably.",
+    id: "western-sydney-plan",
+    text: "Western Sydney University (NSW, growth university, multi-campus across Sydney's western growth corridor): relationship built through NSW territory coverage of Western Sydney's rapidly growing student population and multi-campus expansion. Datadog entry angle: a growth institution expanding physical and digital footprint simultaneously needs observability that scales with it, a timing-driven entry point tied to its own expansion roadmap.",
   },
   {
-    id: "judo-bank-plan",
-    text: "Judo Bank is a regulated, APRA-licensed challenger bank focused on SME lending that recently completed a major cloud-native core banking transformation, migrating to Thought Machine's Vault Core on a serverless, event-driven AWS architecture (Lambda, Transit Gateway), alongside Snowflake for data and Microsoft E5 for security. Matt's approach: they don't care about consumer SEO or public traffic volume, they care about banker productivity tools, broker/partner portals, strict APRA CPS 234 / SOC2 compliance, and micro-frontend architecture, a completely different entry motion than a consumer tech account like REA Group.",
+    id: "jcu-plan",
+    text: "James Cook University, JCU (QLD, regional, multi-campus across Townsville, Cairns, and Singapore): relationship built through Matt's Queensland regional territory coverage, including JCU's distinctive northern-Australia and international-campus footprint. Datadog entry angle: a genuinely distributed, cross-border campus footprint makes centralized visibility a concrete technical need, not an abstract pitch.",
   },
   {
-    id: "judo-bank-value-drivers",
-    text: "For Judo Bank, Matt's value drivers are: (1) secure, serverless broker and customer portals that natively mirror Judo's AWS Lambda/event-driven backend, with loan calculators and broker dashboards deployed at the edge with no cold-start latency; (2) APRA CPS 234 and enterprise compliance alignment, via Vercel Enterprise's SOC 2 Type II, ISO 27001, audit logging, SAML SSO, and RBAC, with Secure Compute routing front-end traffic into Judo's private AWS VPC via Transit Gateway without exposing internal APIs; (3) faster internal developer velocity for banker tools via per-PR Preview Deployments, addressing Judo's own focus on cutting feature cycle times; (4) decoupled micro-frontend architecture for Judo's 14+ domain services, so squads like SME Lending, Term Deposits, and Risk/Analytics can deploy independently without cross-service risk.",
-  },
-  {
-    id: "judo-bank-execution",
-    text: "Matt's Judo Bank unlock plan targets the Head of Engineering & Architecture (serverless patterns, developer velocity, AWS architecture), Digital Experience/Product leads (time-to-market for broker tools, SME drop-off), and the CISO/security architects (APRA CPS 234, SAML/Okta, secure edge routing). It follows a 3-step plan: focus on the non-core web footprint first (rate calculators, broker portals, loan intake, not the core banking engine on day one), lead with security and AWS-compatibility architecture diagrams showing OIDC and VPC peering into their existing Lambda/API Gateway setup, and offer a pre-built APRA CPS 234 compliance mapping document to fast-track vendor risk review.",
+    id: "qut-plan",
+    text: "Queensland University of Technology, QUT (QLD, Australian Technology Network, applied/industry-focused): relationship built through Queensland territory coverage; QUT's applied, industry-partnership-driven culture made it a natural fit for enterprise platform conversations. Datadog entry angle: QUT's industry-partnership model and applied-research computing footprint make a platform-engineering-led pitch, reliability and developer velocity, resonate more than a pure IT-operations angle.",
   },
   {
     id: "vercel-ai-sdk",
-    text: "The Vercel AI SDK is a TypeScript toolkit for building AI-powered applications. It provides a unified API across model providers, streaming chat UIs via hooks like useChat, tool calling, and agent orchestration. This site's own chat panel is built with it.",
+    text: "The Vercel AI SDK is a TypeScript toolkit for building AI-powered applications. It provides a unified API across model providers, streaming chat UIs via hooks like useChat, tool calling, and agent orchestration. This site's own chat panel is built with it: a technology choice, not a company endorsement, Matt picked it because it was the fastest credible way to ship a real, grounded chat feature.",
   },
   {
     id: "vercel-ai-gateway",
-    text: "Vercel AI Gateway lets a single API key route requests to hundreds of models across providers (Anthropic, OpenAI, Google, and more), with built-in observability, failover, and cost tracking. This site's chat feature is routed through it rather than a single hardcoded provider key.",
+    text: "Vercel AI Gateway lets a single API key route requests to hundreds of models across providers (Anthropic, OpenAI, Google, and more), with built-in observability, failover, and cost tracking. This site's chat feature is routed through it rather than a single hardcoded provider key, itself a small case study in why observability into a system (routing, failover, cost) matters, the same principle Datadog sells at much larger scale.",
   },
   {
     id: "vercel-fluid-compute",
-    text: "Fluid Compute is Vercel's serverless execution model that keeps functions warm and reuses compute across concurrent invocations, cutting cold starts and cost for bursty, high-concurrency workloads: relevant to fintech and marketplace accounts with unpredictable traffic.",
+    text: "Fluid Compute is Vercel's serverless execution model that keeps functions warm and reuses compute across concurrent invocations, cutting cold starts and cost for bursty, high-concurrency workloads.",
   },
   {
-    id: "vercel-edge-network",
-    text: "Vercel's global Edge Network serves content and runs Edge Middleware close to users worldwide, which is the core pitch for any multi-region retailer or high-traffic marketplace optimizing for both latency and conversion.",
-  },
-  {
-    id: "vercel-partner-ecosystem",
-    text: "Vercel maintains a real Solution Partner / SI ecosystem (Partner Finder) and an infrastructure partnership with AWS, the natural surfaces for a Majors AE to activate a co-sell motion in ANZ, the same pattern Matt ran with mid-tier partners and AWS at Salesforce.",
+    id: "datadog-partner-ecosystem",
+    text: "Datadog maintains real AWS, Azure, and GCP Marketplace partnerships plus active GSI relationships already running ANZ higher-ed IT modernization work, the natural surfaces for a Strategic AE to activate a co-sell motion in this vertical, the same pattern Matt ran with mid-tier partners, AWS, and GSIs at Salesforce.",
   },
   {
     id: "site-build-overview",
-    text: "This entire pitch site is proof, not a portfolio piece with AI branding bolted on. It's a Next.js 16 (App Router) app written in TypeScript with Tailwind CSS, deployed on Vercel with a custom domain. Every product Matt mentions below is genuinely wired up and live on the site right now, not name-dropped for effect.",
+    text: "This entire pitch site is proof, not a portfolio piece with AI branding bolted on. It's a Next.js 16 (App Router) app written in TypeScript with Tailwind CSS, deployed on Vercel with a custom domain, a hosting choice made because it's the fastest credible way to ship this, not because Matt is applying to Vercel. Every product Matt mentions below is genuinely wired up and live on the site right now, not name-dropped for effect.",
   },
   {
     id: "site-build-ai-sdk-chat",
@@ -190,15 +182,15 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "site-build-cron-blob",
-    text: "A Vercel Cron Job runs weekly, fetches Vercel's real public customer list, and checks whether any of Matt's five target accounts show up on it yet. The result is written to a private Vercel Blob store, and the Target Accounts section of the site displays a real 'last verified' timestamp pulled from that check, not a hardcoded date someone forgot to update.",
+    text: "A Cron Job runs weekly, fetches Datadog's real public customer list, and checks whether any of Matt's nine target institutions show up on it yet. The result is written to a private Vercel Blob store, and the Territory & Relationship Map section of the site displays a real 'last verified' timestamp pulled from that check, not a hardcoded date someone forgot to update, the same discipline as an automated monitor that actually pages you instead of a dashboard nobody looks at.",
   },
   {
     id: "site-build-rate-limiting",
-    text: "The chat endpoint has two layers of rate limiting: an in-process token-bucket check that's live right now protecting against abuse and runaway AI Gateway cost, plus a Vercel Firewall custom rule (20 requests per 60 seconds per IP) that's staged as a reviewed draft rather than auto-published. Matt treats publishing a firewall rule that can block real traffic as a deliberate, reviewed production change, not something to script blindly, the same discipline he'd bring to any change on a live account.",
+    text: "The chat endpoint has two layers of rate limiting: an in-process token-bucket check that's live right now protecting against abuse and runaway AI Gateway cost, plus a Vercel Firewall custom rule (20 requests per 60 seconds per IP) that's staged as a reviewed draft rather than auto-published. Matt treats publishing a firewall rule that can block real traffic as a deliberate, reviewed production change, not something to script blindly, the same discipline he'd bring to any change on a live account, and the same instinct that makes observability tooling matter in the first place: know what's happening before it breaks something real.",
   },
   {
     id: "site-build-analytics-og",
-    text: "Vercel Speed Insights and Web Analytics are wired into every page of the site. The Open Graph share image is generated dynamically via next/og (ImageResponse), pulling the same live headline and proof stats as the page itself, rather than a static screenshot made once and left to go stale.",
+    text: "Speed Insights and Web Analytics are wired into every page of the site, real usage visibility, not a guess. The Open Graph share image is generated dynamically via next/og (ImageResponse), pulling the same live headline and proof stats as the page itself, rather than a static screenshot made once and left to go stale.",
   },
   {
     id: "site-build-fluid-compute-choice",
@@ -213,12 +205,12 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     text: "Matt believes this AI era has unlocked a whole category of builders who don't know how to code in the traditional sense, and he's one of them. He doesn't write production software for a living, but he builds: prototypes, demos, and now an entire AI-grounded pitch site with a live chat and real infrastructure behind it. He calls himself a builder and a doer before he calls himself a salesperson, and sees that as exactly the kind of technical credibility this role asks for without leaning on a solutions engineer as a crutch.",
   },
   {
-    id: "team-player-vercel-excitement",
-    text: "Matt describes himself as a team player who genuinely wants the people around him to win, the same instinct behind his answer about celebrating colleagues so everyone wins together. He's explicit that he's not just looking for a role: he wants to help Vercel grow exponentially in ANZ, and he sees this site, built with Vercel's own stack, live and checkable, as the clearest proof he can offer that he'll bring that same builder energy and grit to the territory from day one.",
+    id: "team-player-datadog-excitement",
+    text: "Matt describes himself as a team player who genuinely wants the people around him to win, the same instinct behind his answer about celebrating colleagues so everyone wins together. He's explicit that he's not just looking for a role: he wants to help Datadog build out its newly formalized ANZ higher-ed segment, and he sees this site, live and checkable, with real monitoring and guardrails built into it, as the clearest proof he can offer that he'll bring that same builder energy and grit to the territory from day one.",
   },
   {
     id: "forward-looking-vs-traditional-hiring",
-    text: "Matt makes a deliberate distinction when asked why he's suited for this role: traditional hiring is focused on a candidate's past, matching a resume line by line to a job description. Vercel isn't a traditional company, it's a company for builders who ship, forward looking, and looking for people who embrace the changing landscape of AI democratising who gets to build. Matt says his strength is stepping into a completely new environment and not just surviving in it, but thriving, bringing focus and rigor without rigidity. He points to leading his own GTM team at monō ai to embrace this new way of selling as proof he already does this in practice, not just in theory: he brings a builder's mindset to selling, not a seller's mindset bolted onto a builder's platform.",
+    text: "Matt makes a deliberate distinction when asked why he's suited for this role: traditional hiring is focused on a candidate's past, matching a resume line by line to a job description. Datadog is a company built for a forward-looking moment: AI has let more people ship faster than ever, including people like Matt who don't write production code for a living, and that same shift makes observability more important, not less, because someone still has to see what's actually happening in what just got shipped. Matt says his strength is stepping into a completely new environment and not just surviving in it, but thriving, bringing focus and rigor without rigidity. He points to leading his own GTM team at monō ai to embrace this new way of selling as proof he already does this in practice, not just in theory: he brings a builder's mindset to selling, not a seller's mindset bolted onto a builder's platform.",
   },
   {
     id: "how-i-learn-fast",
