@@ -41,6 +41,10 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     text: "What made the Christian Education Ministries (CEM) win significant wasn't just the $400k/yr run-rate, it was taking a fragmented footprint across 17 schools and 14 distance-education sites, starting from a $200k core footprint, and driving 100% ARR growth by navigating multi-entity stakeholder sign-offs across that many separate school and campus decision-makers. Matt maps that same land-and-expand motion directly to a Datadog higher-ed account: start with a single faculty, campus, or platform team's adoption, then use that early win to expand across an entire university's IT footprint the same way he expanded from one school to a 17-school, 14-site footprint.",
   },
   {
+    id: "flagship-account-strategy",
+    text: "Matt's proof-band highlight of a flagship account is deliberately anonymized on this site rather than naming the customer or its vertical (that's Christian Education Ministries, the education deal covered elsewhere on this site in full detail). The headline is the account-planning discipline itself: Matt built a 3-year account strategy directly tied to the customer's own key strategic goals, not a generic renewal plan, and used it to grow the account's average order value for 4 consecutive years. That's the same land-and-expand discipline he'd apply to any Datadog account: start from the customer's actual strategic goals, not Datadog's product list, and let the multi-year expansion follow from real, demonstrated value.",
+  },
+  {
     id: "territory-expansion",
     text: "In his most recent Salesforce role (Feb 2024 - Apr 2026), Matt managed complex multi-year cloud procurement cycles across Tier-1 Universities, large TAFE systems, and State-wide K-12 districts across the Australian East Coast. He achieved 94% quota attainment in a newly expanded territory, exceeded 200%+ on multi-year targets, and achieved 140% New Logo Attainment. This is the exact period Matt points to when asked about his higher-ed and public-sector focus: it's when he deliberately moved his book up from mid-market K-12 into Tier-1 university and state-wide public-sector enterprise accounts.",
   },
@@ -70,7 +74,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "mono-ai-role",
-    text: "Matt is currently GTM Lead - Education & Social Enterprises at monō ai (April 2026 - present). He engineered and executed a territory plan targeting complex ANZ Higher Education, TAFE, and public-benefit enterprise accounts, closed early enterprise accounts, and is building a channelled pipeline projected to scale to $2M ARR within 12 months.",
+    text: "Matt is currently GTM Lead - Education & Social Enterprises at monō ai (April 2026 - present). He engineered and executed a territory plan targeting complex ANZ Higher Education, TAFE, and public-benefit enterprise accounts, closed early enterprise accounts, and built $5M in ANZ higher-ed pipeline in his first 4 months, including pipeline with the largest university in the United States. That pipeline is projected to convert into $2M in closed ARR within 12 months.",
   },
   {
     id: "technical-value-proof",
