@@ -13,11 +13,11 @@ export const fitPillars: FitPillar[] = [
       "Same forecasting discipline, run through MEDDIC and Command of the Message instead of MEDDPICC. The muscle transfers, the framework just gets Datadog's own name on it.",
   },
   {
-    title: "Independent prospecting & pipeline build",
+    title: "Market creation & pipeline build",
     proof:
-      "Built the ANZ K-12 Public District market from scratch at Salesforce, no inherited book, no warm pipeline handed over, plus 140% New Logo Attainment in a newly expanded Tier-1 university and TAFE territory.",
+      "Created a brand-new market for Salesforce in education from zero, not by prospecting harder into an existing list: hosted regular community events to convene an entire untapped sector, then partnered with an SI to build the exact capability missing from the Salesforce product stack to actually capture it. That work opened up an estimated $25M+ untouched market across the Australian East Coast that had never been meaningfully worked, plus 140% New Logo Attainment in a newly expanded Tier-1 university and TAFE territory.",
     application:
-      "This is the exact bar the JD sets for breaking into a newly formalized higher-ed segment. Matt has already prospected a segment into existence once; he's not guessing at how to do it again.",
+      "This is the exact bar the JD sets for breaking into a newly formalized higher-ed segment: not filling a quota against an existing patch, but building the go-to-market motion, events, and partner capability for a market that doesn't exist yet.",
   },
   {
     title: "State, local, and education new-logo wins",

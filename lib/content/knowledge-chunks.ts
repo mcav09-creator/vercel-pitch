@@ -13,6 +13,10 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     text: "Matt built and launched the ANZ K-12 Public District market from scratch at Salesforce, generating $700k ACV, $3M pipeline, and $2M TCV: a new market that hadn't existed for Salesforce in that region before.",
   },
   {
+    id: "market-creation-tam",
+    text: "Beyond the K-12 Public District market, Matt created an entirely separate new market for Salesforce in education from zero: he hosted regular community events to convene an untapped sector, then partnered with an SI to build the specific capability missing from the Salesforce product stack that let the market actually be captured (the Student Information System later built for Christian Education Ministries came out of this same motion). That work opened up an estimated $25M+ untouched market across the Australian East Coast, sized from the independent schools and Catholic diocesan systems across NSW, VIC, and QLD that had never been meaningfully worked before, using a conservative average deal size in line with what Matt actually landed and grew at Christian Education Ministries. Matt frames this deliberately as market creation, not just prospecting: the skill was building the events, the partner capability, and the category itself, not working harder against an existing list.",
+  },
+  {
     id: "christian-ed",
     text: "Matt's flagship account was Christian Education Ministries (CEM), led by co-CEO Jeremy Kwok, a new customer in a new market. Matt landed it at $200k ACV and grew it to $400k ACV, over $1.3M in total contract value, across the entire Salesforce ecosystem, with their most recent purchase being Slack. Matt built and executed the adoption roadmap start to finish and has continued the relationship even after leaving Salesforce.",
   },
