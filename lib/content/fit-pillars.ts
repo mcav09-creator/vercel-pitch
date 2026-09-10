@@ -22,15 +22,15 @@ export const fitPillars: FitPillar[] = [
   {
     title: "State, local, and education new-logo wins",
     proof:
-      "Not an adjacent vertical translated in: this is the vertical. The last two years at Salesforce were spent moving that K-12 foundation up into Tier-1 Universities, large TAFE systems, and State-wide K-12 districts, landing the first 3 Education Cloud enterprise implementations live across ANZ.",
+      "Not an adjacent vertical translated in: this is the vertical. The last two years at Salesforce were spent moving that education foundation up into Tier-1 Universities, large TAFE systems, and state-wide public-sector districts, landing the first 3 Education Cloud enterprise implementations live across ANZ.",
     application:
       "A Strategic AE for Higher Education who already has the relationship map, the procurement rhythm, and the stakeholder language for this exact buyer set across NSW, VIC, and QLD.",
   },
   {
-    title: "Technical credibility, built not borrowed",
+    title: "Technical fluency, built not borrowed",
     proof:
       "Builds Create AI prototypes that replace static architecture slides for technical decision-makers, and hand-builds real infrastructure discipline into his own tools: rate limiting, monitoring, and a custom retrieval layer, not just the sales narrative around them.",
     application:
-      "This site. Live, watchable, with the same guardrails an SRE would expect, the credibility a Strategic AE needs to sit across the table from a VP Engineering evaluating an observability platform without leaning on an SE.",
+      "Not observability-specific expertise, that's honestly still new ground, but proof of the same builder instinct and speed of ramp he'd bring to closing that gap fast: comfortable with real infrastructure, not just repeating a deck.",
   },
 ];

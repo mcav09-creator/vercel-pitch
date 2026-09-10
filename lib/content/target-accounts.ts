@@ -57,9 +57,9 @@ export const territoryAccounts: TerritoryAccount[] = [
     state: "NSW",
     segment: "Largest VET provider in Australia, state-wide multi-campus network",
     relationship:
-      "Direct relationship from Matt's state-wide K-12/TAFE territory work at Salesforce, covering TAFE NSW's cloud and digital-delivery footprint across dozens of campuses.",
+      "Direct relationship from Matt's state-wide public-sector and TAFE territory work at Salesforce, covering TAFE NSW's cloud and digital-delivery footprint across dozens of campuses.",
     entry:
-      "A state-wide, multi-campus network is exactly the fragmented-footprint problem Matt has already solved once (Christian Education Ministries' 17 schools and 14 sites), just at public-VET scale: land on one platform team's footprint, expand campus by campus.",
+      "A state-wide, multi-campus network is exactly the fragmented-footprint problem Matt has already solved once for a flagship account spanning dozens of sites, just at public-VET scale: land on one platform team's footprint, expand campus by campus.",
   },
   {
     name: "Western Sydney University",
