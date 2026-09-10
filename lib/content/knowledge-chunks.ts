@@ -74,7 +74,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "mono-ai-role",
-    text: "Matt is currently GTM Lead - Education & Social Enterprises at monō ai (April 2026 - present). He engineered and executed a territory plan targeting complex ANZ Higher Education, TAFE, and public-benefit enterprise accounts, closed early enterprise accounts, and built $5M in ANZ higher-ed pipeline in his first 4 months, including pipeline with the largest university in the United States. That pipeline is projected to convert into $2M in closed ARR within 12 months.",
+    text: "Matt is currently GTM Lead, Education & Social Enterprises at monō ai (April 2026 - present). He built and executed a national territory plan across ANZ higher education and public-benefit accounts with no existing installed base, closing early enterprise deals on a path to $1M USD ARR within twelve months. He reached the president of Western Governors University (300,000+ students, one of the largest universities in the United States) directly, progressing to CIO and CTO on a student retention deployment now in negotiation. He's also working with a partner to solve shared use cases at UTS and with an external architecture consultant shaping UNSW's future state.",
   },
   {
     id: "technical-value-proof",

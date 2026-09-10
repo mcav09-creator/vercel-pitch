@@ -11,10 +11,10 @@ export const proofStats: ProofStat[] = [
     detail: "vs. <50% team average at Salesforce",
   },
   {
-    value: "$25M → $5M",
+    value: "$25M → $1M",
     label: "Market creation, Salesforce to monō ai",
     detail:
-      "At Salesforce, unlocked a $25M TAM through creative market engagement. At monō ai, built $5M in ANZ higher-ed pipeline in 4 months, plus pipeline with the largest university in the US.",
+      "At Salesforce, unlocked a $25M TAM through creative market engagement. At monō ai, built a national ANZ higher-ed territory from zero, on a path to $1M USD ARR within 12 months, including direct executive access at the largest university in the US.",
   },
   {
     value: "200%+",
