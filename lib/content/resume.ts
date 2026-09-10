@@ -13,27 +13,26 @@ export type ResumeSection = {
 export const resumeHeader = {
   name: "Matt Cavallaro",
   tagline:
-    "A driven sales executive passionate about educating clients and co-constructing the best solutions for their desired outcomes.",
+    "Enterprise AE selling cloud and AI platforms into Australian education, preceded by fifteen years as an education leader.",
   email: "mcav09@gmail.com",
   phone: "0401441949",
 };
 
 export const resumeSummary =
-  "Enterprise sales leader with a 5-year track record at Salesforce averaging 100% median quota attainment (vs. <50% team average), exceeding multi-year targets 3x with consecutive 200%+ performance years, and building the ANZ K-12 market from $0 to $2M TCV. Combines 15 years of hands-on experience as a school and university executive with technical execution, building custom multi-agent workflow prototypes to validate complex enterprise deals and establish a path to $2M ARR.";
+  "Enterprise AE selling cloud and AI platforms into Australian education, preceded by fifteen years as an education leader. Five years' field closing experience across mid-market and enterprise, with 100% median quota attainment against a team median below 50% and 140% new logo attainment. Builds pipeline independently: created an entire ANZ K-12 market for Salesforce from a standing start, convening the buying community, shaping the tenders that followed, and generating $3M+ in pipeline where no territory previously existed. Works the hybrid-to-cloud transition directly. Extensive experience working with a range of SI partners and consultants. Hands-on technical fluency across cloud architecture, APIs and AI workflows.";
 
 export const resumeCurrentRole: ResumeSection = {
   heading: "Current role",
   entries: [
     {
-      role: "GTM Lead - Education & Social Enterprises",
+      role: "GTM Lead, Education & Social Enterprises",
       org: "monō ai",
       dates: "April 2026 - present",
       bullets: [
-        "Territory Strategy & Execution: Engineered and executed a high-growth territory plan targeting complex ANZ Higher Education, TAFE, and public-benefit enterprise accounts.",
-        "Technical Value Proof: Engineered Create AI prototypes to replace static architecture slides, demonstrating real-time application behavior, API orchestration, and workflow visibility directly to technical decision-makers.",
-        "Pipeline Acceleration: Closed early enterprise accounts while building a channelled pipeline projected to scale to $2M ARR within 12 months.",
-        "Product-Market Alignment: Partnering directly with engineering and product teams to translate public sector compliance, governance, and operational requirements into actionable product roadmap features.",
-        "Consultative Selling: Helping enterprise tech/product/business leaders evaluate modern AI infrastructure and modern web architectures to deliver business-critical internal and external experiences.",
+        "Pipeline from zero: Built and executed a national territory plan across ANZ higher education and public-benefit accounts with no existing installed base, closing early enterprise deals on a path to $1M USD ARR within twelve months.",
+        "Executive access: Reached the president of Western Governors University (300,000+ students) directly, progressing to CIO and CTO on a student retention deployment now in negotiation.",
+        "Partner-led coverage: Working with a partner to solve use cases at UTS shared across the sector and with an external architecture consultant shaping UNSW's future state.",
+        "Technical value proof: Engineered CLI-based, clickable prototypes in place of static architecture slides, demonstrating live application behaviour, API orchestration and workflow visibility to technical decision-makers.",
       ],
     },
   ],
@@ -43,42 +42,57 @@ export const resumePreviousExperience: ResumeSection = {
   heading: "Previous experience",
   entries: [
     {
-      role: "Account Executive - Enterprise Education",
+      role: "Account Executive, Enterprise Education",
       org: "Salesforce",
-      dates: "Feb 2024 – April 2026",
+      dates: "Feb 2024 - April 2026",
       bullets: [
-        "Strategic Territory Expansion: Managed complex, multi-year cloud procurement cycles across Tier-1 Universities, large TAFE systems, and State-wide K-12 districts across the Australian East Coast.",
-        "Quota Performance: Achieved 94% quota attainment in a newly expanded territory, exceeding 200%+ on multi-year targets and achieving 140% New Logo Attainment.",
-        "C-Level Executive Alignment: Led multi-threaded sales campaigns targeting CIOs, Chief Digital Officers, and Procurement Heads to align cloud infrastructure modernization with institutional outcomes.",
+        "Higher education portfolio: UNSW, UTS and University of New England alongside TAFE NSW, the largest ANZ Catholic diocese and state-wide K-12 systems across the east coast.",
+        "New logo performance: 94% attainment in a newly expanded territory, 200%+ against multi-year targets, 140% new logo attainment.",
+        "Winning against an incumbent: Won an early tender at University of New England for their AI lab against an entrenched Microsoft footprint; built and sustained the Vice-Chancellor relationship, the only AE on the ANZ team to do so.",
+        "Hybrid-to-cloud pursuit: Partnered with the AWS field team on TAFE NSW's exit from on-premise infrastructure at Villawood, aligning platform value to the migration business case under NSW Government cloud-first direction.",
+        "National coverage under pressure: Covered the entire Australian education territory when the team turned over, identifying and closing a $200K expansion at QUT inside a compressed window by trading capability the customer needed against seats and licences we wanted.",
+        "Market building: Established a Salesforce partnership with the HEDx higher education platform, described internally as the strongest education partnership the team had held; selected to represent the ANZ education team at Salesforce's Education Summit in Chicago.",
       ],
     },
     {
-      role: "Account Executive - Education",
+      role: "Account Executive, Mid-Market Education",
       org: "Salesforce",
-      dates: "June 2021 - 2024",
+      dates: "June 2021 - February 2024",
       bullets: [
-        "Consistently Top-Tier Performer: Maintained a 100% median quota achievement over 5 years (compared to <50% team average), exceeding multi-year targets 3x with consecutive years above 200%.",
-        "New Market Creation: Built and launched the ANZ K-12 Public District market from scratch, generating $700k ACV, $3M pipeline, and $2M TCV.",
-        "Partner Ecosystem Expansion: Established and co-sold alongside strategic System Integrators (SIs) and cloud partners to scale deployment and drive platform consumption.",
-        "Referenceability: Secured the first 3 Education Cloud enterprise customer implementations live across ANZ.",
+        "Built a market with no installed base: K-12 buying in ANZ was organised around student information systems, which Salesforce did not offer. Convened independent and Catholic school groups with the Association of Independent Schools NSW into a recurring forum, brought in a partner who built the missing layer, and the resulting tenders were written around that architecture, generating $3M+ pipeline, $700K ACV and $2M TCV, with deals still closing four and five years on.",
+        "Deal range: Transactional through transformational deals, including land use cases from $50k to above $250K ACV and $750K-$1mil TCV.",
+        "Reference customer: Closed Christian Education Ministries, which expanded across Education Cloud, Slack, Data Cloud, Agentforce and Marketing Cloud over 17 schools to become Salesforce's leading K-12 education reference customer, and a direct influence on subsequent Catholic and Anglican school system tenders.",
+        "Sustained attainment: 100% median quota attainment across five years against a team median below 50%, exceeding multi-year targets three times with consecutive years above 200%, in a territory where no AE had previously cleared 50%.",
       ],
-    },
-    {
-      role: "Account Executive (Academic Advisor)",
-      org: "Crimson Education",
-      dates: "Aug 2020 - March 2021",
-      bullets: [],
     },
   ],
 };
 
 export const resumeLeadership: ResumeSection = {
-  heading: "Previous leadership & institutional experience",
+  heading: "Earlier leadership & institutional experience",
   entries: [
     {
-      role: "Head of Positive Education, Head of Year",
+      role: "Lead Australia Account Executive (Academic Advisor)",
+      org: "Crimson Education",
+      dates: "Aug 2020 - Mar 2021",
+      bullets: [],
+    },
+    {
+      role: "Director of Student Development & Wellbeing",
+      org: "Knox Grammar School, Wahroonga Preparatory Campus",
+      dates: "Jan 2020 - Jan 2021",
+      bullets: [],
+    },
+    {
+      role: "Head of Positive Education",
       org: "Knox Grammar School",
-      dates: "Jan 2006 - Dec 2019",
+      dates: "Jan 2016 - Dec 2019",
+      bullets: [],
+    },
+    {
+      role: "Head of Year, Geography & English Teacher",
+      org: "Knox Grammar School",
+      dates: "Jan 2006 - Dec 2016",
       bullets: [],
     },
   ],
@@ -86,37 +100,50 @@ export const resumeLeadership: ResumeSection = {
 
 export const resumeCompetencies = [
   {
-    title: "GTM & Commercial Execution",
-    detail:
-      "Full Sales Cycle Management, MEDDIC & Command of the Message, Value-Based Selling, Executive Alignment, Multi-Threaded Deal Execution, Co-Selling & Channel Strategy.",
+    title: "Higher education",
+    detail: "National coverage experience across universities, TAFE and K-12 systems.",
   },
   {
-    title: "GenAI & Technical Acumen",
+    title: "Self-generated pipeline",
     detail:
-      "AI/ML Workflows, Autonomous AI Agents, RAG Architectures, Hands-On CLI/Terminal Prototyping, Developer Experience (DX), API Integrations, PoC Execution.",
+      "Repeatable methodology for opening markets with no installed base: relationship mapping, convening buying communities, pre-tender requirement shaping, partner-led coverage.",
   },
   {
-    title: "Enterprise & Public Sector",
+    title: "Hybrid-to-cloud transition",
     detail:
-      "Higher Education, Public Sector, Enterprise Digital Transformation, SI & Ecosystem Partnerships (GSI, consultants, Hyperscalers).",
+      "On-premise legacy estates and migration drivers in the sector; joint pursuit with hyperscaler field teams; security, sovereignty and IRAP accreditation as evaluation criteria.",
+  },
+  {
+    title: "Enterprise deal craft",
+    detail:
+      "Multi-threaded engagement across Vice-Chancellors, CIOs, Chief Digital Officers and procurement; negotiating pricing and commercial terms on value and ROI; forecast accuracy across long, multi-stage cycles.",
+  },
+  {
+    title: "University procurement",
+    detail:
+      "RFP and RFT response and pre-tender influence, probity, panel arrangements, ICT and Master ICT Agreements, security and privacy assessment.",
+  },
+  {
+    title: "Technical fluency",
+    detail:
+      "Cloud architecture, API orchestration, CLI prototyping, AI workflow governance; translating technical architecture into business value for technical and executive audiences.",
   },
 ];
 
 export const resumeEducation = [
   {
     school: "Deakin University",
-    credential: "MEd Leadership and Admin",
-    detail: "",
+    credential: "MEd, Leadership and Administration",
+    detail: "2016",
   },
   {
     school: "Boston University",
-    credential: "MA Secondary English",
-    detail: "Graduate Assistant Coaching Scholarship",
+    credential: "MA, Secondary English",
+    detail: "2003",
   },
   {
     school: "Northeastern University",
-    credential: "BA Psych & English Lit",
-    detail:
-      "Cum Laude & Baseball Scholarship, Athletes in Service to America Member (Americorps)",
+    credential: "BA, Psychology & English Literature, cum laude",
+    detail: "2002 — Baseball scholarship; Athletes in Service to America (AmeriCorps).",
   },
 ];
