@@ -14,8 +14,11 @@ export async function TargetAccounts() {
         </h2>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
           Not cold research: these are existing relationships from Matt&apos;s
-          Tier-1 University and TAFE territory work at Salesforce, carried
-          into the exact vertical this role formalizes for Datadog.
+          Tier-1 University and TAFE territory work at Salesforce, the same
+          mix of existing relationships and aspirational contacts this
+          role&apos;s own relationship-map requirement calls for. Several are
+          hybrid institutions actively transitioning workloads to the cloud,
+          exactly where this role is built to unlock territory.
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
