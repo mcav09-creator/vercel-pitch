@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { profile } from "@/lib/content/profile";
 import { sections } from "@/lib/content/sections";
@@ -72,6 +73,12 @@ export function Hero() {
           </nav>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <Link
+              href="/gtm"
+              className="rounded-full bg-[#8b5cf6] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-[#8b5cf6]/40 transition hover:bg-[#9d74f7]"
+            >
+              AI-native GTM →
+            </Link>
             <a
               href={profile.resumeHref}
               target="_blank"

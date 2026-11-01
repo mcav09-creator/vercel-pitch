@@ -25,10 +25,10 @@ const monitors: Monitor[] = [
     href: "#fit",
   },
   {
-    name: "Ramp plan",
-    value: "30-60-90 ready",
+    name: "AI-native GTM",
+    value: "Morning brief live · run a deep dive",
     status: "ok",
-    href: "#plan",
+    href: "/gtm",
   },
   {
     name: "Observability selling",
@@ -38,7 +38,7 @@ const monitors: Monitor[] = [
   },
   {
     name: "Availability",
-    value: "Ready to start quickly",
+    value: "Ready to start quickly · 30-60-90 ready",
     status: "ok",
     href: "#plan",
   },
