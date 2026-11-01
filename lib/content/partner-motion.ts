@@ -50,6 +50,6 @@ export const hedxFeature = {
      * Paste the Spotify episode ID here (the part after /episode/ in the
      * episode's share link) to show an embedded player instead of buttons.
      */
-    spotifyEpisodeId: "",
+    spotifyEpisodeId: "02bPv6UF7qK5YnxWlDO50l",
   },
 };
