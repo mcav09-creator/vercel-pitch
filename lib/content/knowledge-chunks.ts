@@ -264,4 +264,8 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     id: "objections",
     text: "The objections Matt expects in higher ed, and how he'd handle them. 'It's too expensive and unpredictable': consumption pricing is hard to fit into fixed university budgets, so land on core systems, prove value, use governance controls, and let tool consolidation fund growth. 'Microsoft already covers this': Defender is endpoint and identity security, not observability, and Azure Monitor is weaker outside Azure. 'It's a nice-to-have': tie it to the moments leadership already fears, enrolment, results day and exams, and to AI governance over student data.",
   },
+  {
+    id: "partners-multiply-reach",
+    text: "Matt's partner philosophy, learned early at Salesforce: one AE can only cover so much ground, so building a partner network is how you build your own sales team and multiply your reach. He's done all four parts of it: built partner networks where there weren't any (the K-12 market), co-sold on real deals (AWS on TAFE NSW, GSIs on enterprise accounts, the HEDx partnership), matched partners with each other to open accounts neither could reach alone, and built relationships deep enough that a Salesforce partner now has him helping grow its ANZ footprint.",
+  },
 ];

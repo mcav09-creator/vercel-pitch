@@ -1,33 +1,33 @@
-export type PartnerPlay = {
+export type PartnerStep = {
   title: string;
-  summary: string;
-  howItWorked: string;
-  datadogMapping: string;
+  detail: string;
 };
 
-export const partnerPlays: PartnerPlay[] = [
+export const partnerIntro =
+  "I learned early at Salesforce that one AE can only cover so much ground. Build a partner network and you've built your own sales team: more reach, more credibility, and more ways into an account.";
+
+export const partnerSteps: PartnerStep[] = [
   {
-    title: "The innovation engine",
-    summary: "A mid-tier partner ecosystem that became the land-and-expand lever.",
-    howItWorked:
-      "Built out an entire mid-tier partner co-sell motion in education that became an innovation engine for the wider edu market: enterprise accounts landed and expanded by leveraging the tech solutions those partners built, not by Salesforce selling direct.",
-    datadogMapping:
-      "Maps directly to activating Datadog's Solution and Technology Partner ecosystem in ANZ higher-ed: recruit a bench of ed-tech and campus-IT integrators already modernising legacy university infrastructure, and let the observability retrofits they build create the wedge into a Strategic account.",
+    title: "Built networks where there weren't any",
+    detail:
+      "Opened a K-12 market at Salesforce with no installed base by recruiting hungry SI partners, convening schools into a recurring forum, and bringing in a partner who built the missing student-system layer. Result: $3M+ pipeline and $700K ACV.",
   },
   {
-    title: "Hyperscaler co-sell",
-    summary: "Direct collaboration with AWS on enterprise accounts.",
-    howItWorked:
-      "Worked directly with AWS on enterprise accounts, aligning cloud infrastructure modernisation with institutional procurement and deployment timelines.",
-    datadogMapping:
-      "Maps to Datadog's real AWS, Azure, and GCP Marketplace partnerships, the natural co-sell thread for any university already committed to a hyperscaler for research compute or student-system infrastructure, where Datadog sits on top as the observability and security layer rather than competing with cloud-native tooling.",
+    title: "Co-sold on real deals",
+    detail:
+      "Partnered with the AWS field team on TAFE NSW's move off on-premise infrastructure, worked alongside GSIs on enterprise accounts, and established Salesforce's partnership with the HEDx higher-ed community.",
   },
   {
-    title: "GSI collaboration & partner-to-partner matchmaking",
-    summary: "Filling capability gaps by pairing partners together, not just with the vendor.",
-    howItWorked:
-      "Worked with GSIs on enterprise accounts, and proactively forged partnerships between partners, pairing one partner's gap with another's strength, so the ecosystem could keep pace with growing AI demand instead of every gap routing back to Salesforce.",
-    datadogMapping:
-      "Maps to Datadog's active GSI relationships already running ANZ higher-ed IT modernisation work: a differentiated, ecosystem-orchestration skill most AEs don't claim, not just co-selling with one partner at a time, but building the partner network's own capability graph so it can serve a university better than any single partner could alone.",
+    title: "Matched partners with each other",
+    detail:
+      "Paired a small partner's innovative product with a larger SI's account access to open a conversation with one of the largest Catholic dioceses in ANZ. Neither could have got there alone.",
+  },
+  {
+    title: "Trusted enough to be brought inside",
+    detail:
+      "Those relationships went deep enough that a Salesforce partner now has me helping grow its ANZ footprint. I've seen partnering from both sides of the table.",
   },
 ];
+
+export const partnerDatadog =
+  "For Datadog higher ed, it's the same play: co-sell with AWS on the Sydney region, work the HEDx community and the ed-tech integrators already inside universities, and bring in the GSIs running modernisation work across the sector.";
