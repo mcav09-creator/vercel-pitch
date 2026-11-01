@@ -22,10 +22,10 @@ export const proofStats: ProofStat[] = [
     detail: "At Salesforce, plus 94% in a newly expanded Tier-1 university and TAFE territory",
   },
   {
-    value: "$25M → $1M",
-    label: "Market creation, Salesforce to monō ai",
+    value: "$25M",
+    label: "Market created from zero at Salesforce",
     detail:
-      "At Salesforce, unlocked a $25M TAM through creative market engagement. At monō ai, built a national ANZ higher-ed territory from zero, on a path to $1M USD ARR within 12 months, including direct executive access at the largest university in the US.",
+      "Unlocked a $25M TAM in a sector Salesforce had never meaningfully worked, through community events and a partner who built the missing capability. At monō ai, opened executive access at the largest university in the US.",
   },
   {
     value: "$1.3M+",

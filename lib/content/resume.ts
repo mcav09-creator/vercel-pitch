@@ -28,7 +28,7 @@ export const resumeCurrentRole: ResumeSection = {
       org: "monō ai",
       dates: "2026",
       bullets: [
-        "Pipeline from zero: Built and executed a national territory plan across ANZ higher education and public-benefit accounts with no existing installed base, closing early enterprise deals on a path to $1M USD ARR within twelve months.",
+        "Pipeline from zero: Built and executed a national territory plan across ANZ higher education and public-benefit accounts with no existing installed base, building executive relationships and pipeline across the sector.",
         "Executive access: Reached the president of Western Governors University (300,000+ students) directly, progressing to CIO and CTO on a student retention deployment that reached negotiation.",
         "Partner-led coverage: Worked with a partner to solve use cases at UTS shared across the sector and with an external architecture consultant shaping UNSW's future state.",
         "Technical value proof: Engineered CLI-based, clickable prototypes in place of static architecture slides, demonstrating live application behaviour, API orchestration and workflow visibility to technical decision-makers.",

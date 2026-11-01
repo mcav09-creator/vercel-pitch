@@ -74,7 +74,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "mono-ai-role",
-    text: "Matt was most recently GTM Lead, Education & Social Enterprises at monō ai (2026). He built and executed a national territory plan across ANZ higher education and public-benefit accounts with no existing installed base, closing early enterprise deals on a path to $1M USD ARR within twelve months. He reached the president of Western Governors University (300,000+ students, one of the largest universities in the United States) directly, progressing to CIO and CTO on a student retention deployment that reached negotiation. He also worked with a partner to solve shared use cases at UTS and with an external architecture consultant shaping UNSW's future state.",
+    text: "Matt was most recently GTM Lead, Education & Social Enterprises at monō ai (2026). He built and executed a national territory plan across ANZ higher education and public-benefit accounts with no existing installed base, building strong executive relationships and pipeline across the sector. He reached the president of Western Governors University (300,000+ students, one of the largest universities in the United States) directly, progressing to CIO and CTO on a student retention deployment that reached negotiation. He also worked with a partner to solve shared use cases at UTS and with an external architecture consultant shaping UNSW's future state.",
   },
   {
     id: "technical-value-proof",
@@ -267,5 +267,9 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   {
     id: "partners-multiply-reach",
     text: "Matt's partner philosophy, learned early at Salesforce: one AE can only cover so much ground, so building a partner network is how you build your own sales team and multiply your reach. He's done all four parts of it: built partner networks where there weren't any (the K-12 market), co-sold on real deals (AWS on TAFE NSW, GSIs on enterprise accounts, the HEDx partnership), matched partners with each other to open accounts neither could reach alone, and built relationships deep enough that a Salesforce partner now has him helping grow its ANZ footprint.",
+  },
+  {
+    id: "why-left-mono",
+    text: "Matt spent about six months at monō ai. He built strong relationships and real pipeline across ANZ higher ed and in the US, but organisational and product challenges at an early-stage company were too great to overcome, so he moved on. He speaks about it positively and without blame: it sharpened how he evaluates companies, and confirmed he does his best work in a structured go-to-market team with a number and a territory, which is what this Datadog role offers.",
   },
 ];
