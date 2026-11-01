@@ -23,9 +23,9 @@ export const territoryAccounts: TerritoryAccount[] = [
     state: "NSW",
     segment: "Group of Eight",
     relationship:
-      "Relationship built during Matt's Tier-1 university territory work at Salesforce, covering the institution's cloud modernization and digital transformation stakeholders.",
+      "Relationship built during Matt's Tier-1 university territory work at Salesforce, covering the institution's cloud modernisation and digital transformation stakeholders.",
     entry:
-      "A CIO/CDO-level modernization story: aligning observability investment with an institution-wide cloud migration the same way Matt aligned Education Cloud adoption to it.",
+      "A CIO/CDO-level modernisation story: aligning observability investment with an institution-wide cloud migration the same way Matt aligned Education Cloud adoption to it.",
   },
   {
     name: "UNSW Sydney",
@@ -80,7 +80,7 @@ export const territoryAccounts: TerritoryAccount[] = [
     relationship:
       "Relationship built through Matt's national higher-ed coverage at Salesforce and monō ai, including JCU's distinctive northern-Australia and international-campus footprint.",
     entry:
-      "A genuinely distributed, cross-border campus footprint (regional Queensland plus an international Singapore campus) makes centralized visibility a concrete technical need, not an abstract pitch.",
+      "A genuinely distributed, cross-border campus footprint (regional Queensland plus an international Singapore campus) makes centralised visibility a concrete technical need, not an abstract pitch.",
   },
   {
     name: "Queensland University of Technology (QUT)",
@@ -94,4 +94,4 @@ export const territoryAccounts: TerritoryAccount[] = [
 ];
 
 export const territoryFootnote =
-  "This territory map is built from Matt's own relationships across ANZ higher-ed, carried over from his Tier-1 University and TAFE coverage at Salesforce and his higher-ed work at monō ai, not cold research. It's also backed by real partner and hyperscaler relationships built the same way: AWS solutions architects, the HEDx higher-ed community, and the ed-tech integrators and GSIs already running modernization work inside these institutions. UNSW is the anchor: an existing, public Datadog customer and the natural reference for the rest of the sector.";
+  "This territory map is built from Matt's own relationships across ANZ higher-ed, carried over from his Tier-1 University and TAFE coverage at Salesforce and his higher-ed work at monō ai, not cold research. It's also backed by real partner and hyperscaler relationships built the same way: AWS solutions architects, the HEDx higher-ed community, and the ed-tech integrators and GSIs already running modernisation work inside these institutions. UNSW is the anchor: an existing, public Datadog customer and the natural reference for the rest of the sector.";

@@ -55,7 +55,7 @@ export function ChatPanel({ aiConfigured }: { aiConfigured: boolean }) {
           <div key={message.id} className="text-sm leading-relaxed">
             <span
               className={`font-mono text-xs ${
-                message.role === "user" ? "text-accent-dim" : "text-foreground"
+                message.role === "user" ? "text-accent-dim" : "text-purple-text"
               }`}
             >
               {message.role === "user" ? "you" : "matt"}
@@ -111,7 +111,7 @@ export function ChatPanel({ aiConfigured }: { aiConfigured: boolean }) {
         <button
           type="submit"
           disabled={status !== "ready" || !input.trim()}
-          className="rounded-full bg-foreground px-4 py-2 text-xs font-medium text-background transition disabled:opacity-40"
+          className="rounded-full bg-purple px-4 py-2 text-xs font-medium text-white transition disabled:opacity-40"
         >
           Send
         </button>

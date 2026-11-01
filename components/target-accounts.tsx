@@ -40,7 +40,7 @@ export async function TargetAccounts() {
                 </span>
               </div>
               {account.existingCustomer && (
-                <p className="mt-2 inline-block rounded-full border border-border px-2.5 py-0.5 font-mono text-[11px] text-foreground">
+                <p className="mt-2 inline-block rounded-full border border-purple px-2.5 py-0.5 font-mono text-[11px] text-purple-text">
                   Datadog customer · anchor account
                 </p>
               )}

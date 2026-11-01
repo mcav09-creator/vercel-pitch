@@ -9,7 +9,7 @@ export const thirtySixtyNinety: PlanPhase[] = [
     period: "Days 1-30",
     title: "Map the territory",
     items: [
-      "Formalize the relationship map from this site into active account plans: an expansion and reference plan for UNSW, and new-logo plans for Monash, Sydney Uni, UTS, UNE, TAFE NSW, Western Sydney Uni, JCU, and QUT.",
+      "Formalise the relationship map from this site into active account plans: an expansion and reference plan for UNSW, and new-logo plans for Monash, Sydney Uni, UTS, UNE, TAFE NSW, Western Sydney Uni, JCU, and QUT.",
       "Map Datadog's partner surface in ANZ higher-ed: AWS/Azure/GCP Marketplace relationships, GSIs, and ed-tech integrators already inside these institutions.",
       "Build the first account plans using the same relationship/segment/entry structure as this site's Territory Map section.",
       "Shadow SE-led technical conversations to calibrate where I can run point vs. where I still need one.",

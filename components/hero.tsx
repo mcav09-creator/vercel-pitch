@@ -37,7 +37,7 @@ export function Hero() {
             <span className="ml-2 text-xs text-muted">pitch.sh</span>
           </div>
           <div className="min-h-[96px] px-4 py-4 text-[13px] leading-relaxed text-foreground sm:text-sm">
-            <span className="text-accent-dim">$</span> whoami --for datadog
+            <span className="text-purple-text">$</span> whoami --for datadog
             <br />
             <span className="text-muted">
               {typed}
@@ -52,7 +52,7 @@ export function Hero() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h1 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
-            {profile.headline}
+            <HighlightedHeadline text={profile.headline} word="Datadog's" />
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-balance text-lg text-muted">
             {profile.subhead}
@@ -61,7 +61,7 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <a
               href="#proof"
-              className="rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition hover:opacity-90"
+              className="rounded-full bg-purple px-5 py-2.5 text-sm font-medium text-white transition hover:opacity-90"
             >
               See the proof ↓
             </a>
@@ -85,5 +85,17 @@ export function Hero() {
         </motion.div>
       </div>
     </section>
+  );
+}
+
+function HighlightedHeadline({ text, word }: { text: string; word: string }) {
+  const i = text.indexOf(word);
+  if (i === -1) return <>{text}</>;
+  return (
+    <>
+      {text.slice(0, i)}
+      <span className="text-purple-text">{word}</span>
+      {text.slice(i + word.length)}
+    </>
   );
 }

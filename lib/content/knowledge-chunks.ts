@@ -22,7 +22,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "christian-ed-origin",
-    text: "The Christian Education Ministries deal grew out of a greenfield territory Matt acquired covering most of the Australian East Coast, including Catholic and independent K-12 accounts. Matt found a partner already working in K-12 and a group of willing prospective customers, and convened an open group called The Coalition of Trailblazers, bringing in industry leaders to legitimize the conversation about what an enterprise K-12 solution could look like on Salesforce. Jeremy Kwok was part of that group and became one of its most engaged champions.",
+    text: "The Christian Education Ministries deal grew out of a greenfield territory Matt acquired covering most of the Australian East Coast, including Catholic and independent K-12 accounts. Matt found a partner already working in K-12 and a group of willing prospective customers, and convened an open group called The Coalition of Trailblazers, bringing in industry leaders to legitimise the conversation about what an enterprise K-12 solution could look like on Salesforce. Jeremy Kwok was part of that group and became one of its most engaged champions.",
   },
   {
     id: "christian-ed-solution",
@@ -30,11 +30,11 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "christian-ed-meddic",
-    text: "On MEDDIC for the Christian Education Ministries transformation deal: the decision criteria centered on cost-effectiveness for the organization to transform and grow, including supporting at least one new school a year onto an enterprise solution, while reducing tech debt and increasing speed and velocity. The economic buyer was the co-CEO, a former commercial director of a number of companies, who evaluated the solution's value against their current systems and against the upside of their own ambitious growth goals. He saw that the solution reduced tech debt and increased the organization's flexibility to grow revenue and size without requiring an increase in internal resources to maintain the system.",
+    text: "On MEDDIC for the Christian Education Ministries transformation deal: the decision criteria centred on cost-effectiveness for the organisation to transform and grow, including supporting at least one new school a year onto an enterprise solution, while reducing tech debt and increasing speed and velocity. The economic buyer was the co-CEO, a former commercial director of a number of companies, who evaluated the solution's value against their current systems and against the upside of their own ambitious growth goals. He saw that the solution reduced tech debt and increased the organisation's flexibility to grow revenue and size without requiring an increase in internal resources to maintain the system.",
   },
   {
     id: "christian-ed-recognition",
-    text: "Christian Education Ministries became a globally referenced K-12 account for Salesforce. Margo Martinez, the regional leader for Education Cloud, personally meets with Jeremy Kwok when in-region because of his leadership running K-12 organizations on Salesforce. Other Salesforce account executives now use Jeremy Kwok and Christian Education Ministries as a customer reference story at major pipeline-generation events, including with the largest school districts and the largest Catholic diocese in Australia, a reference relationship that has driven millions of dollars in pipeline.",
+    text: "Christian Education Ministries became a globally referenced K-12 account for Salesforce. Margo Martinez, the regional leader for Education Cloud, personally meets with Jeremy Kwok when in-region because of his leadership running K-12 organisations on Salesforce. Other Salesforce account executives now use Jeremy Kwok and Christian Education Ministries as a customer reference story at major pipeline-generation events, including with the largest school districts and the largest Catholic diocese in Australia, a reference relationship that has driven millions of dollars in pipeline.",
   },
   {
     id: "christian-ed-significance",
@@ -42,7 +42,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "flagship-account-strategy",
-    text: "Matt's proof-band highlight of a flagship account is deliberately anonymized on this site rather than naming the customer or its vertical (that's Christian Education Ministries, the education deal covered elsewhere on this site in full detail). The headline is the account-planning discipline itself: Matt built a 3-year account strategy directly tied to the customer's own key strategic goals, not a generic renewal plan, and used it to grow the account's average order value for 4 consecutive years. That's the same land-and-expand discipline he'd apply to any Datadog account: start from the customer's actual strategic goals, not Datadog's product list, and let the multi-year expansion follow from real, demonstrated value.",
+    text: "Matt's proof-band highlight of a flagship account is deliberately anonymised on this site rather than naming the customer or its vertical (that's Christian Education Ministries, the education deal covered elsewhere on this site in full detail). The headline is the account-planning discipline itself: Matt built a 3-year account strategy directly tied to the customer's own key strategic goals, not a generic renewal plan, and used it to grow the account's average order value for 4 consecutive years. That's the same land-and-expand discipline he'd apply to any Datadog account: start from the customer's actual strategic goals, not Datadog's product list, and let the multi-year expansion follow from real, demonstrated value.",
   },
   {
     id: "territory-expansion",
@@ -50,7 +50,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "exec-alignment",
-    text: "Matt led multi-threaded sales campaigns targeting CIOs, Chief Digital Officers, and Procurement Heads to align cloud infrastructure modernization with institutional outcomes.",
+    text: "Matt led multi-threaded sales campaigns targeting CIOs, Chief Digital Officers, and Procurement Heads to align cloud infrastructure modernisation with institutional outcomes.",
   },
   {
     id: "partner-force-multiplier",
@@ -58,7 +58,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "partner-hyperscaler",
-    text: "Matt worked directly with AWS on enterprise accounts, aligning cloud infrastructure modernization with institutional procurement and deployment timelines.",
+    text: "Matt worked directly with AWS on enterprise accounts, aligning cloud infrastructure modernisation with institutional procurement and deployment timelines.",
   },
   {
     id: "partner-gsi-matchmaking",
@@ -78,7 +78,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "technical-value-proof",
-    text: "At monō ai, Matt engineered AI prototypes to replace static architecture slides, demonstrating real-time application behavior, API orchestration, and workflow visibility directly to technical decision-makers, without leaning on a solutions engineer as a crutch.",
+    text: "At monō ai, Matt engineered AI prototypes to replace static architecture slides, demonstrating real-time application behaviour, API orchestration, and workflow visibility directly to technical decision-makers, without leaning on a solutions engineer as a crutch.",
   },
   {
     id: "technical-fluency",
@@ -130,7 +130,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "sydney-uni-plan",
-    text: "The University of Sydney (NSW, Group of Eight): relationship built during Matt's Tier-1 university territory work at Salesforce, covering the institution's cloud modernization and digital transformation stakeholders. Datadog entry angle: a CIO/CDO-level modernization story, aligning observability investment with an institution-wide cloud migration the same way Matt aligned Education Cloud adoption to it.",
+    text: "The University of Sydney (NSW, Group of Eight): relationship built during Matt's Tier-1 university territory work at Salesforce, covering the institution's cloud modernisation and digital transformation stakeholders. Datadog entry angle: a CIO/CDO-level modernisation story, aligning observability investment with an institution-wide cloud migration the same way Matt aligned Education Cloud adoption to it.",
   },
   {
     id: "unsw-plan",
@@ -154,7 +154,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "jcu-plan",
-    text: "James Cook University, JCU (QLD, regional, multi-campus across Townsville, Cairns, and Singapore): relationship built through Matt's national higher-ed coverage at Salesforce and monō ai, including JCU's distinctive northern-Australia and international-campus footprint. Datadog entry angle: a genuinely distributed, cross-border campus footprint makes centralized visibility a concrete technical need, not an abstract pitch.",
+    text: "James Cook University, JCU (QLD, regional, multi-campus across Townsville, Cairns, and Singapore): relationship built through Matt's national higher-ed coverage at Salesforce and monō ai, including JCU's distinctive northern-Australia and international-campus footprint. Datadog entry angle: a genuinely distributed, cross-border campus footprint makes centralised visibility a concrete technical need, not an abstract pitch.",
   },
   {
     id: "qut-plan",
@@ -174,7 +174,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "datadog-partner-ecosystem",
-    text: "Datadog maintains real AWS, Azure, and GCP Marketplace partnerships plus active GSI relationships already running ANZ higher-ed IT modernization work, the natural surfaces for a Strategic AE to activate a co-sell motion in this vertical, the same pattern Matt ran with mid-tier partners, AWS, and GSIs at Salesforce.",
+    text: "Datadog maintains real AWS, Azure, and GCP Marketplace partnerships plus active GSI relationships already running ANZ higher-ed IT modernisation work, the natural surfaces for a Strategic AE to activate a co-sell motion in this vertical, the same pattern Matt ran with mid-tier partners, AWS, and GSIs at Salesforce.",
   },
   {
     id: "site-build-overview",
@@ -218,7 +218,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "team-player-datadog-excitement",
-    text: "Matt describes himself as a team player who genuinely wants the people around him to win, the same instinct behind his answer about celebrating colleagues so everyone wins together. He's explicit that he's not just looking for a role: he wants to help Datadog build out its newly formalized ANZ higher-ed segment, and he sees this site, live and checkable, with real monitoring and guardrails built into it, as the clearest proof he can offer that he'll bring that same builder energy and grit to the territory from day one.",
+    text: "Matt describes himself as a team player who genuinely wants the people around him to win, the same instinct behind his answer about celebrating colleagues so everyone wins together. He's explicit that he's not just looking for a role: he wants to help Datadog build out its newly formalised ANZ higher-ed segment, and he sees this site, live and checkable, with real monitoring and guardrails built into it, as the clearest proof he can offer that he'll bring that same builder energy and grit to the territory from day one.",
   },
   {
     id: "forward-looking-vs-traditional-hiring",
@@ -242,7 +242,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "voice-of-region",
-    text: "At Salesforce, Matt became the regular go-to contact between the ANZ education team and the product team in San Francisco, relaying what local institutions needed and helping shape how the product fit the region. He'd play the same role for Datadog's newly formalized higher-ed segment: not just selling the platform, but being the region's voice back into product.",
+    text: "At Salesforce, Matt became the regular go-to contact between the ANZ education team and the product team in San Francisco, relaying what local institutions needed and helping shape how the product fit the region. He'd play the same role for Datadog's newly formalised higher-ed segment: not just selling the platform, but being the region's voice back into product.",
   },
   {
     id: "land-core-roadmap-ai",
