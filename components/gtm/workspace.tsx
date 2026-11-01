@@ -379,7 +379,7 @@ function DiveSection({ slug, setSlug, dive, state, error, onRun, onAdd, added, r
   ]);
 
   return (
-    <section ref={ref} id="deep-dive" className="scroll-mt-6 border-t border-border px-6 py-16 sm:py-20">
+    <section ref={ref} id="deep-dive" className="scroll-mt-20 border-t border-border px-6 py-16 sm:py-20">
       <div className="mx-auto max-w-5xl">
         <SectionHeader
           n="02"
@@ -639,7 +639,7 @@ function SyncSection({
   };
 
   return (
-    <section id="sync" className="scroll-mt-6 border-t border-border px-6 py-16 sm:py-20">
+    <section id="sync" className="scroll-mt-20 border-t border-border px-6 py-16 sm:py-20">
       <div className="mx-auto max-w-5xl">
         <SectionHeader
           n="03"

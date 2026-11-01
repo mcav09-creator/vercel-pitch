@@ -32,10 +32,10 @@ export default async function GtmPage({ searchParams }: PageProps<"/gtm">) {
         <div className="bg-grid pointer-events-none absolute inset-0" />
         <div className="relative z-10 mx-auto max-w-5xl">
           <Link
-            href="/"
+            href={initialAccount ? "/#accounts" : "/"}
             className="font-mono text-xs text-accent-dim transition hover:text-foreground"
           >
-            ← back to the pitch
+            {initialAccount ? "← back to the territory map" : "← back to the pitch"}
           </Link>
 
           <p className="mt-10 font-mono text-xs uppercase tracking-[0.08em] text-purple-text">

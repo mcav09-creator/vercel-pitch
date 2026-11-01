@@ -23,7 +23,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6">
+    <section className="relative flex min-h-[calc(100svh-3.5rem)] flex-col items-center justify-center overflow-hidden px-6">
       <div className="bg-grid pointer-events-none absolute inset-0" />
 
       <div className="relative z-10 mx-auto flex w-full max-w-3xl flex-col items-center text-center">
