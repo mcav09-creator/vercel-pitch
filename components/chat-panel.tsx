@@ -100,19 +100,20 @@ export function ChatPanel({ aiConfigured }: { aiConfigured: boolean }) {
           e.preventDefault();
           submit(input);
         }}
-        className="flex items-center gap-2 border-t border-border p-3"
+        className="flex items-center gap-2 border-t border-purple/50 bg-purple/10 p-3"
       >
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
           disabled={status !== "ready"}
-          placeholder="Ask about a deal, an account, or the gap..."
-          className="flex-1 bg-transparent px-2 py-2 text-sm text-foreground placeholder:text-accent-dim focus:outline-none"
+          placeholder="Type your own question here..."
+          aria-label="Ask Matt a question"
+          className="min-w-0 flex-1 rounded-full border border-purple/60 bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted transition focus:border-purple-text focus:outline-none focus:ring-2 focus:ring-purple/40"
         />
         <button
           type="submit"
           disabled={status !== "ready" || !input.trim()}
-          className="rounded-full bg-purple px-4 py-2 text-xs font-medium text-white transition disabled:opacity-40"
+          className="shrink-0 rounded-full bg-purple px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-purple/30 transition hover:brightness-125 disabled:opacity-70"
         >
           Send
         </button>
