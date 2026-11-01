@@ -33,6 +33,11 @@
 
 html {
   color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 1.5rem;
 }
 
 body {
@@ -60,6 +65,23 @@ body {
 .card:hover {
   border-color: rgba(164, 123, 235, 0.45);
   background: var(--surface-2);
+}
+
+.section-nav a {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--purple-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.section-nav a:hover,
+.section-nav a:focus-visible {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .section-label {

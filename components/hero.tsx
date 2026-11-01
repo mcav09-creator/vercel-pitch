@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { profile } from "@/lib/content/profile";
+import { sections } from "@/lib/content/sections";
 
 const TYPE_SPEED = 22;
 
@@ -58,13 +59,19 @@ export function Hero() {
             {profile.subhead}
           </p>
 
+          <nav aria-label="Sections" className="section-nav mt-8">
+            <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+              {sections.map((section) => (
+                <li key={section.id}>
+                  <a href={`#${section.id}`}>
+                    {section.number} · {section.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a
-              href="#proof"
-              className="rounded-full bg-purple px-5 py-2.5 text-sm font-medium text-white transition hover:opacity-90"
-            >
-              See the proof ↓
-            </a>
             <a
               href={profile.resumeHref}
               target="_blank"
