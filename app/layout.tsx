@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://mcavallaro.site"),
   title: "Matt Cavallaro, built for Datadog's ANZ higher-ed book",
   description:
-    "Enterprise AE who unlocked a $25M untouched market from zero, and spent his last two years at Salesforce moving that discipline into Tier-1 universities, TAFE, and public sector. Pitch site for Datadog's Strategic Account Executive, Higher Education role.",
+    "Twenty years in education, five selling into it. Enterprise AEs now need to be AI-native to keep up with their customers, so this site shows how I work: my track record, my territory, and the tools I use to run it.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
