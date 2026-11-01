@@ -3,6 +3,21 @@ import { gateway } from "@ai-sdk/gateway";
 
 export const GTM_MODEL = "anthropic/claude-sonnet-5";
 
+/** Low-quality, partisan or social sources the brief should never cite. */
+const EXCLUDED_DOMAINS = [
+  "-wsws.org",
+  "-reddit.com",
+  "-facebook.com",
+  "-x.com",
+  "-twitter.com",
+  "-tiktok.com",
+  "-youtube.com",
+  "-instagram.com",
+  "-quora.com",
+  "-pinterest.com",
+  "-medium.com",
+];
+
 export type Source = {
   id: number;
   title: string;
@@ -40,6 +55,7 @@ export async function runSearches(
       perplexity_search: gateway.tools.perplexitySearch({
         country: "AU",
         searchLanguageFilter: ["en"],
+        searchDomainFilter: EXCLUDED_DOMAINS,
         maxResults: options.maxResults ?? 8,
         maxTokensPerPage: 512,
         ...(options.recency ? { searchRecencyFilter: options.recency } : {}),
@@ -132,6 +148,12 @@ export function sydneyDate(d = new Date()): string {
     day: "2-digit",
   }).format(d);
 }
+
+export const TONE_RULES = `Judgement and tone (this is published on a public page a hiring manager will read):
+- Never frame strikes, industrial action, job losses, redundancies, First Nations matters, student welfare, safety incidents or anyone's misfortune as a sales opportunity. Report them plainly as context.
+- Only draw a sales angle where there is a genuine link to technology, digital services, AI, data, reliability, security or institutional strategy. If there's no honest angle, say what it means for the institution instead.
+- Prefer reputable sources: government, universities, peak bodies, and established news and trade press.
+- Be understated and specific. No hype, no forced connections.`;
 
 export const DATADOG_CONTEXT = `Context for a Datadog Strategic Account Executive covering Australian higher education:
 - Datadog is an observability and security platform: infrastructure and application monitoring, logs, digital experience and synthetic monitoring, cloud security, and LLM and AI agent observability (what an agent did, what data it touched, what it cost).

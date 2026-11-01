@@ -5,6 +5,7 @@ import { z } from "zod";
 import type { GtmAccount } from "./accounts";
 import {
   DATADOG_CONTEXT,
+  TONE_RULES,
   GTM_MODEL,
   citedSources,
   formatSourcesForPrompt,
@@ -134,7 +135,9 @@ Rules:
 - Prefer recent signals. If the sources are thin, say less rather than guessing.
 - The angle, objections and sequence are your recommendations; keep them grounded in the signals you found.
 - The sequence is 4 or 5 touches over about two weeks, mixing email, LinkedIn and a call, written in Matt's voice: warm, specific, peer-to-peer, no hype, no jargon. Reference a real signal in the first touch.
-- Australian English spelling. Never use em dashes.`,
+- Australian English spelling. Never use em dashes.
+
+${TONE_RULES}`,
     prompt: `Account: ${n} (${account.state}). ${customerNote}\nToday is ${sydneyDate()} (Sydney).\n\nSOURCES:\n${formatSourcesForPrompt(sources)}`,
   });
 

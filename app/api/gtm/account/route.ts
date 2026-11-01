@@ -32,7 +32,15 @@ export async function POST(req: Request) {
   } catch {
     return new Response("Bad request", { status: 400 });
   }
+  return handle(req, slug);
+}
 
+/** Same plan via GET (?slug=monash): idempotent, since each account is built once a day. */
+export async function GET(req: Request) {
+  return handle(req, new URL(req.url).searchParams.get("slug") ?? "");
+}
+
+async function handle(req: Request, slug: string) {
   const account = findAccount(slug);
   if (!account) return new Response("Unknown account", { status: 404 });
 

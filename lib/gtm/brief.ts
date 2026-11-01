@@ -5,6 +5,7 @@ import { z } from "zod";
 import { territoryAccounts } from "./accounts";
 import {
   GTM_MODEL,
+  TONE_RULES,
   citedSources,
   formatSourcesForPrompt,
   runSearches,
@@ -13,7 +14,7 @@ import {
   type Source,
 } from "./search";
 
-export const BRIEF_PATHNAME = "gtm/morning-brief-latest.json";
+export const BRIEF_PATHNAME = "gtm/morning-brief-v2.json";
 
 export type BriefItem = {
   headline: string;
@@ -50,7 +51,9 @@ const itemSchema = z.object({
   summary: z.string().describe("One or two sentences on what happened, only from the sources"),
   soWhat: z
     .string()
-    .describe("One sentence on why it matters to a seller of observability and AI governance into universities"),
+    .describe(
+      "One sentence on why it matters. Draw a sales angle only if there is a genuine technology link; otherwise explain what it means for the institution or sector.",
+    ),
   sourceIds: z.array(z.number()).describe("Ids of the sources this item is based on"),
   accounts: z
     .array(z.string())
@@ -58,7 +61,9 @@ const itemSchema = z.object({
 });
 
 const briefSchema = z.object({
-  topLine: z.string().describe("One sentence: the single most important thing in Australian higher ed today"),
+  topLine: z
+    .string()
+    .describe("One sentence of no more than 30 words: the single most important thing in Australian higher ed today"),
   conversationStarter: z
     .string()
     .describe("One natural line an AE could open a customer call with today, grounded in the news"),
@@ -114,7 +119,9 @@ Rules:
 - Prefer news from the past 7 days. Skip anything clearly older, anything not about Australian tertiary education, and duplicates.
 - Australian English spelling. No em dashes. Plain, specific, no hype.
 - Put each story in the best-fitting section; leave a section short or empty rather than padding it.
-- Tag territory accounts only when the story is directly about that institution. Territory accounts: ${accountList}.`,
+- Tag territory accounts only when the story is directly about that institution. Territory accounts: ${accountList}.
+
+${TONE_RULES}`,
     prompt: `Today is ${sydneyDate()} (Sydney).\n\nSOURCES:\n${formatSourcesForPrompt(sources)}`,
   });
 
