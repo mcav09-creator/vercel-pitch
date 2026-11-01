@@ -186,7 +186,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "site-build-rag-edge-config",
-    text: "The chat is grounded by a lightweight, custom-built retrieval layer that Matt built himself: no vector database, no embedding API calls, just term-overlap scoring over a set of knowledge chunks. Those grounding facts live in Vercel Edge Config, so Matt can correct or expand what the chat knows in seconds without a redeploy, with a static file checked into the repo as a fallback if Edge Config is ever unset.",
+    text: "The chat is grounded by a lightweight, custom-built retrieval layer that Matt built himself: no vector database, no embedding API calls, just term-overlap scoring over a set of knowledge chunks. Those grounding facts live in a file checked into the repo, so every change is reviewed and versioned, and Vercel Edge Config is wired in as an optional override for correcting what the chat knows in seconds without a redeploy.",
   },
   {
     id: "site-build-cron-blob",
