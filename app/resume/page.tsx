@@ -25,14 +25,6 @@ export default function ResumePage() {
           <Link href="/" className="transition hover:text-foreground">
             ← back to the pitch
           </Link>
-          <a
-            href={profile.resumePdfHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition hover:text-foreground"
-          >
-            Download PDF ↓
-          </a>
         </div>
 
         <header>
@@ -43,7 +35,7 @@ export default function ResumePage() {
             {resumeHeader.tagline}
           </p>
           <p className="mt-4 font-mono text-xs text-accent-dim">
-            {resumeHeader.email} · {resumeHeader.phone}
+            {resumeHeader.email}
           </p>
         </header>
 

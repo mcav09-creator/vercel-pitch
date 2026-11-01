@@ -6,7 +6,6 @@ export const profile = {
   email: "mcav09@gmail.com",
   linkedin: "https://www.linkedin.com/in/matt-cavallaro-51435732/",
   resumeHref: "/resume",
-  resumePdfHref: "/matt-cavallaro-cv.pdf",
   terminalLine:
     "I don't just sell platforms, I build and monitor what I ship. Give me the ANZ higher-ed book and I'll show you the relationship map before you ask for it.",
   headline: "Matt Cavallaro, built for Datadog's ANZ higher-ed book.",

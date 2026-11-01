@@ -15,7 +15,6 @@ export const resumeHeader = {
   tagline:
     "Enterprise AE selling cloud and AI platforms into Australian education, preceded by fifteen years as an education leader.",
   email: "mcav09@gmail.com",
-  phone: "0401441949",
 };
 
 export const resumeSummary =
