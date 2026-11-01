@@ -6,18 +6,20 @@ export type GtmAccount = {
   territory?: boolean;
   /** Already a Datadog customer, so the play is expansion. */
   existingCustomer?: boolean;
+  /** Matt's own history with the account, used to suggest a warm path in. */
+  relationship?: string;
 };
 
 export const gtmAccounts: GtmAccount[] = [
-  { slug: "monash", name: "Monash University", state: "VIC", territory: true },
-  { slug: "usyd", name: "The University of Sydney", state: "NSW", territory: true },
-  { slug: "unsw", name: "UNSW Sydney", state: "NSW", territory: true, existingCustomer: true },
-  { slug: "uts", name: "University of Technology Sydney", state: "NSW", territory: true },
-  { slug: "une", name: "University of New England", state: "NSW", territory: true },
-  { slug: "tafe-nsw", name: "TAFE NSW", state: "NSW", territory: true },
-  { slug: "wsu", name: "Western Sydney University", state: "NSW", territory: true },
-  { slug: "jcu", name: "James Cook University", state: "QLD", territory: true },
-  { slug: "qut", name: "Queensland University of Technology", state: "QLD", territory: true },
+  { slug: "monash", name: "Monash University", state: "VIC", territory: true, relationship: "Matt covered Monash at Salesforce, where it was Salesforce's largest higher-ed account in Australia by annual order value; he worked with procurement, the CIO and the development team on new licences and contracts." },
+  { slug: "usyd", name: "The University of Sydney", state: "NSW", territory: true, relationship: "Matt met the Chief Information and Digital Officer while at monō ai and worked alongside the Deloitte team consulting across the executive team." },
+  { slug: "unsw", name: "UNSW Sydney", state: "NSW", territory: true, existingCustomer: true, relationship: "Matt managed UNSW directly at Salesforce, including procurement and IT governance, and at monō ai discussed UNSW's digital transformation with a key adviser on its governing council." },
+  { slug: "uts", name: "University of Technology Sydney", state: "NSW", territory: true, relationship: "Matt covered UTS at Salesforce and worked with a partner on UTS use cases at monō ai; UTS hosts the HEDx conference where Matt has strong relationships." },
+  { slug: "une", name: "University of New England", state: "NSW", territory: true, relationship: "Matt won an early tender at UNE for Salesforce against an entrenched Microsoft footprint and built the Vice-Chancellor relationship." },
+  { slug: "tafe-nsw", name: "TAFE NSW", state: "NSW", territory: true, relationship: "Matt worked TAFE NSW directly at Salesforce, partnering with the AWS field team on its move off on-premise infrastructure at Villawood." },
+  { slug: "wsu", name: "Western Sydney University", state: "NSW", territory: true, relationship: "Matt covered Western Sydney University in his NSW higher-ed territory at Salesforce." },
+  { slug: "jcu", name: "James Cook University", state: "QLD", territory: true, relationship: "Matt facilitated discussions directly with JCU's Vice-Chancellor at HEDx, alongside Salesforce's Head of Education Cloud." },
+  { slug: "qut", name: "Queensland University of Technology", state: "QLD", territory: true, relationship: "Matt closed a $200K expansion at QUT for Salesforce while covering the national education territory." },
 
   { slug: "anu", name: "Australian National University", state: "ACT" },
   { slug: "canberra", name: "University of Canberra", state: "ACT" },

@@ -443,7 +443,14 @@ function DiveResult({ dive, onAdd, added }: { dive: AccountDive; onAdd: (d: Acco
           {dive.stakeholders.map((s) => (
             <li key={s.role + (s.name ?? "")} className="rounded-lg border border-border bg-surface-2 p-4">
               <p className="text-sm font-semibold">{s.role}</p>
-              <p className="mt-0.5 text-xs text-muted">{s.name ?? "Name to confirm"}</p>
+              <p className="mt-0.5 text-xs text-muted">
+                {s.name ?? "Name to confirm"}
+                {s.name && s.confirmInRole && (
+                  <span className="ml-1.5 rounded-full border border-[#f59e0b]/60 px-1.5 py-0.5 text-[10px] text-[#f59e0b]">
+                    {s.asOf ? `source ${s.asOf.slice(0, 4)}, ` : ""}confirm still in role
+                  </span>
+                )}
+              </p>
               <p className="mt-2 text-sm leading-relaxed text-muted">
                 {s.why}
                 <Cites ids={s.sourceIds} sources={dive.sources} />
@@ -468,6 +475,12 @@ function DiveResult({ dive, onAdd, added }: { dive: AccountDive; onAdd: (d: Acco
             <dt className="text-foreground">Proof point</dt>
             <dd className="text-muted">{dive.angle.proofPoint}</dd>
           </div>
+          {dive.angle.warmPath && (
+            <div>
+              <dt className="text-foreground">Warm path in</dt>
+              <dd className="text-muted">{dive.angle.warmPath}</dd>
+            </div>
+          )}
         </dl>
       </div>
 

@@ -22,6 +22,10 @@ export type Stakeholder = {
   name: string | null;
   why: string;
   sourceIds: number[];
+  /** Date of the newest source naming this person, if known. */
+  asOf?: string;
+  /** True when that source is more than a year old: confirm they're still in role. */
+  confirmInRole?: boolean;
 };
 
 export type SequenceStep = {
@@ -43,7 +47,7 @@ export type AccountDive = {
   whyNow: Cited[];
   priorities: Cited[];
   stakeholders: Stakeholder[];
-  angle: { hypothesis: string; entryPoint: string; proofPoint: string };
+  angle: { hypothesis: string; entryPoint: string; proofPoint: string; warmPath: string };
   objections: { objection: string; response: string }[];
   sequence: SequenceStep[];
   sources: Source[];
@@ -75,6 +79,9 @@ const diveSchema = z.object({
     hypothesis: z.string().describe("The specific problem Datadog could solve here, tied to the signals"),
     entryPoint: z.string().describe("Where to land first: which system, team or use case"),
     proofPoint: z.string().describe("The most relevant proof point or reference from the context"),
+    warmPath: z
+      .string()
+      .describe("The best warm way in, using Matt's own history with the account and his partners (AWS, HEDx, MortarCaps) before cold outreach"),
   }),
   objections: z
     .array(z.object({ objection: z.string(), response: z.string() }))
@@ -118,6 +125,10 @@ export async function generateAccountDive(account: GtmAccount): Promise<AccountD
 
   if (sources.length === 0) throw new Error("Search returned no sources");
 
+  const relationshipNote = account.relationship
+    ? `Matt's own history with this account: ${account.relationship}`
+    : "Matt has no direct history with this account; look for a warm path through his partners.";
+
   const customerNote = account.existingCustomer
     ? `${n} is ALREADY a Datadog customer. Frame everything as expansion and reference, not a new logo.`
     : `${n} is not a known Datadog customer. Frame this as a new-logo pursuit.`;
@@ -138,7 +149,7 @@ Rules:
 - Australian English spelling. Never use em dashes.
 
 ${TONE_RULES}`,
-    prompt: `Account: ${n} (${account.state}). ${customerNote}\nToday is ${sydneyDate()} (Sydney).\n\nSOURCES:\n${formatSourcesForPrompt(sources)}`,
+    prompt: `Account: ${n} (${account.state}). ${customerNote}\n${relationshipNote}\nToday is ${sydneyDate()} (Sydney).\n\nSOURCES:\n${formatSourcesForPrompt(sources)}`,
   });
 
   if (!output) throw new Error("No account plan generated");
@@ -162,7 +173,15 @@ ${TONE_RULES}`,
       .join(" ")
       .toLowerCase();
     const name = s.name && haystack.includes(s.name.toLowerCase()) ? s.name : null;
-    return { role: s.role, name, why: s.why, sourceIds: ids };
+    const dates = citedSources(sources, ids)
+      .map((src) => src.date)
+      .filter((d): d is string => Boolean(d) && !Number.isNaN(Date.parse(d!)))
+      .sort();
+    const asOf = dates.at(-1);
+    const confirmInRole = Boolean(
+      name && (!asOf || Date.now() - Date.parse(asOf) > 365 * 24 * 3_600_000),
+    );
+    return { role: s.role, name, why: s.why, sourceIds: ids, asOf, confirmInRole };
   });
 
   return {
@@ -183,7 +202,7 @@ ${TONE_RULES}`,
 }
 
 function cachePath(slug: string, date: string) {
-  return `gtm/accounts/${slug}-${date}.json`;
+  return `gtm/accounts/v2/${slug}-${date}.json`;
 }
 
 export async function getCachedDive(slug: string): Promise<AccountDive | null> {

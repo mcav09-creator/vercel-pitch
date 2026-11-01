@@ -64,9 +64,13 @@ export function buildSyncNotes(opts: {
     lines.push(`- **Our angle:** ${d.angle.hypothesis}`);
     lines.push(`- **Land with:** ${d.angle.entryPoint}`);
     lines.push(`- **Proof point:** ${d.angle.proofPoint}`);
+    if (d.angle.warmPath) lines.push(`- **Warm path in:** ${d.angle.warmPath}`);
     lines.push(`- **Who to reach:**`);
     for (const s of d.stakeholders) {
-      lines.push(`  - ${s.role}${s.name ? ` (${s.name})` : " (name to confirm)"}: ${s.why}`);
+      const who = s.name
+        ? ` (${s.name}${s.confirmInRole ? ", confirm still in role" : ""})`
+        : " (name to confirm)";
+      lines.push(`  - ${s.role}${who}: ${s.why}`);
     }
     lines.push("");
   });
@@ -91,9 +95,11 @@ export function buildSyncNotes(opts: {
 
   lines.push(`## 4. Actions`);
   for (const d of dives) {
-    const unnamed = d.stakeholders.filter((s) => !s.name).map((s) => s.role);
+    const unnamed = d.stakeholders
+      .filter((s) => !s.name || s.confirmInRole)
+      .map((s) => (s.name ? `${s.role} (${s.name})` : s.role));
     if (unnamed.length > 0) {
-      lines.push(`- [ ] ${bdr}: confirm names and contact details for ${unnamed.join(", ")} at ${d.account}`);
+      lines.push(`- [ ] ${bdr}: confirm current names and contact details for ${unnamed.join(", ")} at ${d.account}`);
     }
     lines.push(`- [ ] ${bdr}: load the ${d.account} sequence and send touch 1`);
     lines.push(`- [ ] Matt: check for a warm path into ${d.account} (AWS, HEDx, MortarCaps, past Salesforce contacts)`);
