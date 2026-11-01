@@ -14,7 +14,7 @@ export const territoryAccounts: TerritoryAccount[] = [
     state: "VIC",
     segment: "Group of Eight, multi-campus research-intensive",
     relationship:
-      "Existing relationship built across Matt's East Coast higher-ed work at Salesforce and monō ai, spanning Monash's Clayton, Caulfield, and Peninsula campuses.",
+      "Covered Monash at Salesforce, its largest higher-ed account in Australia by annual order value, working with procurement, the CIO and the development team on new licences and contracts.",
     entry:
       "Observability across a genuinely distributed research-computing and student-systems estate: the kind of multi-campus complexity that makes a single pane of glass a real unlock, not a nice-to-have.",
   },
@@ -23,7 +23,7 @@ export const territoryAccounts: TerritoryAccount[] = [
     state: "NSW",
     segment: "Group of Eight",
     relationship:
-      "Relationship built during Matt's Tier-1 university territory work at Salesforce, covering the institution's cloud modernisation and digital transformation stakeholders.",
+      "Met with the Chief Information and Digital Officer while at monō ai, and worked alongside the Deloitte team consulting extensively across the university's executive team.",
     entry:
       "A CIO/CDO-level modernisation story: aligning observability investment with an institution-wide cloud migration the same way Matt aligned Education Cloud adoption to it.",
   },
@@ -32,7 +32,7 @@ export const territoryAccounts: TerritoryAccount[] = [
     state: "NSW",
     segment: "Group of Eight",
     relationship:
-      "Account Matt managed directly at Salesforce, including UNSW's procurement and IT governance process for enterprise platform decisions, then worked again at monō ai alongside the architecture consultant shaping UNSW's future state.",
+      "Account Matt managed directly at Salesforce, including UNSW's procurement and IT governance process, then at monō ai held discussions on UNSW's digital transformation with a key adviser and member of the university's governing council, alongside the architecture consultant shaping its future state.",
     entry:
       "Already a Datadog customer and a public one: UNSW's platform team has presented at Datadog Summit and Datadog Live Sydney on making reliability a shared priority for engineering and leadership. The play is expansion and reference: grow the footprint across a hybrid cloud and on-prem estate, and let UNSW's story open the rest of the sector.",
     existingCustomer: true,
@@ -78,7 +78,7 @@ export const territoryAccounts: TerritoryAccount[] = [
     state: "QLD",
     segment: "Regional, multi-campus (Townsville, Cairns, Singapore)",
     relationship:
-      "Relationship built through Matt's national higher-ed coverage at Salesforce and monō ai, including JCU's distinctive northern-Australia and international-campus footprint.",
+      "Facilitated discussions directly with JCU's Vice-Chancellor at HEDx, alongside Salesforce's Head of Education Cloud.",
     entry:
       "A genuinely distributed, cross-border campus footprint (regional Queensland plus an international Singapore campus) makes centralised visibility a concrete technical need, not an abstract pitch.",
   },

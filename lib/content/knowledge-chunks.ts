@@ -126,15 +126,15 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "monash-plan",
-    text: "Monash University (VIC, Group of Eight, multi-campus research-intensive): existing relationship from Matt's East Coast higher-ed work at Salesforce and monō ai, spanning Monash's Clayton, Caulfield, and Peninsula campuses. Datadog entry angle: observability across a genuinely distributed research-computing and student-systems estate, the kind of multi-campus complexity that makes a single pane of glass a real unlock rather than a nice-to-have.",
+    text: "Monash University (VIC, Group of Eight, multi-campus research-intensive): Matt covered Monash at Salesforce, where it was Salesforce's largest higher-ed account in Australia by annual order value, working with procurement, the CIO and the development team on new licences and contracts. Datadog entry angle: observability across a genuinely distributed research-computing and student-systems estate, the kind of multi-campus complexity that makes a single pane of glass a real unlock rather than a nice-to-have.",
   },
   {
     id: "sydney-uni-plan",
-    text: "The University of Sydney (NSW, Group of Eight): relationship built during Matt's Tier-1 university territory work at Salesforce, covering the institution's cloud modernisation and digital transformation stakeholders. Datadog entry angle: a CIO/CDO-level modernisation story, aligning observability investment with an institution-wide cloud migration the same way Matt aligned Education Cloud adoption to it.",
+    text: "The University of Sydney (NSW, Group of Eight): Matt met with the university's Chief Information and Digital Officer while at monō ai, and worked alongside the Deloitte team consulting extensively across its executive team. Datadog entry angle: a CIO/CDO-level modernisation story, aligning observability investment with an institution-wide cloud migration the same way Matt aligned Education Cloud adoption to it.",
   },
   {
     id: "unsw-plan",
-    text: "UNSW Sydney (NSW, Group of Eight): an account Matt managed directly at Salesforce, including its procurement and IT governance process, then worked again at monō ai. UNSW is already a Datadog customer and a public one: its platform team (Pramod Nathan, Senior Manager of Platforms and Services, and Julie Pritchard, Platform Operations Team Leader) has presented at Datadog Live Sydney and Datadog Summit Sydney on building resilient systems and making reliability a shared priority for engineering and leadership, across a hybrid cloud and on-prem estate. Matt's play: expand the footprint, and use UNSW as the reference that opens the rest of the sector.",
+    text: "UNSW Sydney (NSW, Group of Eight): an account Matt managed directly at Salesforce, including its procurement and IT governance process. At monō ai he held discussions on UNSW's digital transformation with a key adviser and member of the university's governing council. UNSW is already a Datadog customer and a public one: its platform team (Pramod Nathan, Senior Manager of Platforms and Services, and Julie Pritchard, Platform Operations Team Leader) has presented at Datadog Live Sydney and Datadog Summit Sydney on building resilient systems and making reliability a shared priority for engineering and leadership, across a hybrid cloud and on-prem estate. Matt's play: expand the footprint, and use UNSW as the reference that opens the rest of the sector.",
   },
   {
     id: "uts-plan",
@@ -154,7 +154,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "jcu-plan",
-    text: "James Cook University, JCU (QLD, regional, multi-campus across Townsville, Cairns, and Singapore): relationship built through Matt's national higher-ed coverage at Salesforce and monō ai, including JCU's distinctive northern-Australia and international-campus footprint. Datadog entry angle: a genuinely distributed, cross-border campus footprint makes centralised visibility a concrete technical need, not an abstract pitch.",
+    text: "James Cook University, JCU (QLD, regional, multi-campus across Townsville, Cairns, and Singapore): Matt facilitated discussions directly with JCU's Vice-Chancellor at HEDx, alongside Salesforce's Head of Education Cloud. JCU has a distinctive northern-Australia and international-campus footprint. Datadog entry angle: a genuinely distributed, cross-border campus footprint makes centralised visibility a concrete technical need, not an abstract pitch.",
   },
   {
     id: "qut-plan",
