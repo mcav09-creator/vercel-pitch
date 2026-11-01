@@ -12,6 +12,7 @@ const STARTER_PROMPTS = [
   "Walk me through qualifying a transformation deal.",
   "Why Datadog, and why now?",
   "What's your honest gap for this role?",
+  "Tell me a bit about you outside of work.",
 ];
 
 export function ChatPanel({ aiConfigured }: { aiConfigured: boolean }) {

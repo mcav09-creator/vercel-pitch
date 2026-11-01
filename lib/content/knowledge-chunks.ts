@@ -276,4 +276,8 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     id: "hedx-relationship",
     text: "HEDx is one of Matt's biggest wins. He built the relationship at Salesforce, establishing the partnership, then fostered it again at monō ai, getting both companies to the HEDx conference, which generated millions in pipeline for each. He's a trusted adviser to the HEDx leadership team, and he co-hosted HEDx podcast episode 198, 'Why trust is our social capital for change', with Kivanch Oner, CIO of the University of Nevada, Las Vegas, on how partnerships and a trust-based culture speed up transformation in higher education. He used the HEDx conference to open a deal at monō ai with Western Governors University, the US's leading digital-native university.",
   },
+  {
+    id: "outside-of-work",
+    text: "Asked to tell a bit about himself outside of work, as a person, Matt answers in his own words: \"I'm a devoted father to my two teenage sons, who don't think I'm too 'cringe'. Originally from Upstate New York, I'm a huge fan of summers on the Northern Beaches after the winters I grew up with, and a tragic Buffalo Bills fan with plenty of group chats with friends and family back home. With a background in high-level sport, I have to channel my exercise and competitiveness somewhere: currently CrossFit and golf (quite the combo!).\" Keep the answer warm, light and personal, close to these words, and don't turn it back into a work pitch.",
+  },
 ];
