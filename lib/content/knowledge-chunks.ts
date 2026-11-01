@@ -230,7 +230,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "current-work",
-    text: "Since leaving monō ai, Matt has been consulting on go-to-market for an AI education venture and for a Salesforce and Slack consultancy. That keeps him inside the higher-ed AI conversation and on the partner side of the ecosystem, while he looks for the right full-time quota-carrying role. He's clear that he does his best work with a number and a territory.",
+    text: "Matt is currently Commercial Director, APAC (fractional) at Bryd, a Slack-first Salesforce and AI consultancy, since October 2026. He leads APAC revenue growth with key customers and closes strategic deals, manages relationships with Salesforce and Slack account teams across the region, and owns Bryd's relationship and joint go-to-market motion with Anthropic. He also consults on go-to-market for an AI education venture. That keeps him inside the higher-ed AI conversation and on the partner side of the ecosystem, while he looks for the right full-time quota-carrying role. He's clear that he does his best work with a number and a territory.",
   },
   {
     id: "wgu-hedx-story",

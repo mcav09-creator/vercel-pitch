@@ -21,8 +21,18 @@ export const resumeSummary =
   "Enterprise AE selling cloud and AI platforms into Australian education, preceded by fifteen years as an education leader. Five years' field closing experience across mid-market and enterprise, with 200%+ against multi-year targets in consecutive years, 140% new logo attainment, and 107% in the best full year. Builds pipeline independently: created an entire ANZ K-12 market for Salesforce from a standing start, convening the buying community, shaping the tenders that followed, and generating $3M+ in pipeline where no territory previously existed. Works the hybrid-to-cloud transition directly. Extensive experience working with a range of SI partners and consultants. Hands-on technical fluency across cloud architecture, APIs and AI workflows.";
 
 export const resumeCurrentRole: ResumeSection = {
-  heading: "Most recent role",
+  heading: "Current role",
   entries: [
+    {
+      role: "Commercial Director, APAC (fractional)",
+      org: "Bryd",
+      dates: "October 2026 - present",
+      bullets: [
+        "APAC revenue: Lead growth for Bryd, a Slack-first Salesforce and AI consultancy, across expansion with key customers and new strategic deals, which I run through to close.",
+        "Salesforce ecosystem: Manage relationships with Salesforce and Slack account teams across the region, turning them into a shared source of pipeline.",
+        "Anthropic partnership: Own the relationship with Anthropic and the joint go-to-market motion for AI in APAC.",
+      ],
+    },
     {
       role: "GTM Lead, Education & Social Enterprises",
       org: "monō ai",
