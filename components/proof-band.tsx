@@ -6,7 +6,7 @@ export function ProofBand() {
       <div className="mx-auto max-w-5xl">
         <p className="section-label mb-3">01 · Proof</p>
         <h2 className="max-w-2xl text-2xl font-semibold tracking-tight sm:text-3xl">
-          Numbers pulled straight from the CV. No rounding up.
+          Numbers pulled straight from the CV.
         </h2>
 
         <div className="mt-10 grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-5">

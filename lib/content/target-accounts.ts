@@ -4,6 +4,8 @@ export type TerritoryAccount = {
   segment: string;
   relationship: string;
   entry: string;
+  /** Already a Datadog customer: an anchor / expansion account, not whitespace. */
+  existingCustomer?: boolean;
 };
 
 export const territoryAccounts: TerritoryAccount[] = [
@@ -12,7 +14,7 @@ export const territoryAccounts: TerritoryAccount[] = [
     state: "VIC",
     segment: "Group of Eight, multi-campus research-intensive",
     relationship:
-      "Existing relationship built through the same East Coast higher-ed network Matt worked at Salesforce, spanning Monash's Clayton, Caulfield, and Peninsula campuses.",
+      "Existing relationship built across Matt's East Coast higher-ed work at Salesforce and monō ai, spanning Monash's Clayton, Caulfield, and Peninsula campuses.",
     entry:
       "Observability across a genuinely distributed research-computing and student-systems estate: the kind of multi-campus complexity that makes a single pane of glass a real unlock, not a nice-to-have.",
   },
@@ -30,9 +32,10 @@ export const territoryAccounts: TerritoryAccount[] = [
     state: "NSW",
     segment: "Group of Eight",
     relationship:
-      "Existing relationship from the same NSW Tier-1 territory, including exposure to UNSW's procurement and IT governance process for enterprise platform decisions.",
+      "Account Matt managed directly at Salesforce, including UNSW's procurement and IT governance process for enterprise platform decisions, then worked again at monō ai alongside the architecture consultant shaping UNSW's future state.",
     entry:
-      "Security and compliance-forward entry: UNSW's research data governance requirements make Datadog's security and compliance monitoring a natural technical-buyer conversation.",
+      "Already a Datadog customer and a public one: UNSW's platform team has presented at Datadog Summit and Datadog Live Sydney on making reliability a shared priority for engineering and leadership. The play is expansion and reference: grow the footprint across a hybrid cloud and on-prem estate, and let UNSW's story open the rest of the sector.",
+    existingCustomer: true,
   },
   {
     name: "University of Technology Sydney (UTS)",
@@ -75,7 +78,7 @@ export const territoryAccounts: TerritoryAccount[] = [
     state: "QLD",
     segment: "Regional, multi-campus (Townsville, Cairns, Singapore)",
     relationship:
-      "Relationship built through Matt's Queensland regional territory coverage, including JCU's distinctive northern-Australia and international-campus footprint.",
+      "Relationship built through Matt's national higher-ed coverage at Salesforce and monō ai, including JCU's distinctive northern-Australia and international-campus footprint.",
     entry:
       "A genuinely distributed, cross-border campus footprint (regional Queensland plus an international Singapore campus) makes centralized visibility a concrete technical need, not an abstract pitch.",
   },
@@ -84,11 +87,11 @@ export const territoryAccounts: TerritoryAccount[] = [
     state: "QLD",
     segment: "Australian Technology Network, applied/industry-focused",
     relationship:
-      "Relationship built through Queensland territory coverage; QUT's applied, industry-partnership-driven culture made it a natural fit for enterprise platform conversations.",
+      "Worked directly at Salesforce, including closing a $200K expansion inside a compressed window while covering the national education territory; QUT's applied, industry-partnership-driven culture makes it a natural fit for enterprise platform conversations.",
     entry:
       "QUT's industry-partnership model and applied-research computing footprint make a platform-engineering-led pitch (reliability, developer velocity) resonate more than a pure IT-operations angle.",
   },
 ];
 
 export const territoryFootnote =
-  "This territory map is built from Matt's own existing relationships across ANZ higher-ed, carried over from his Tier-1 University and TAFE coverage at Salesforce, not cold research. It's also backed by real partner and hyperscaler relationships across Australian higher-ed built the same way: mid-tier ed-tech integrators, AWS/Azure/GCP account teams, and the GSIs already running modernization work inside these institutions. None of these nine currently appear on Datadog's public customer list (checked live), which reads as genuine ANZ higher-ed whitespace rather than a diligence gap.";
+  "This territory map is built from Matt's own relationships across ANZ higher-ed, carried over from his Tier-1 University and TAFE coverage at Salesforce and his higher-ed work at monō ai, not cold research. It's also backed by real partner and hyperscaler relationships built the same way: AWS solutions architects, the HEDx higher-ed community, and the ed-tech integrators and GSIs already running modernization work inside these institutions. UNSW is the anchor: an existing, public Datadog customer and the natural reference for the rest of the sector.";

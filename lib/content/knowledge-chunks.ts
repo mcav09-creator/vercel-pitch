@@ -6,7 +6,7 @@ export type KnowledgeChunk = {
 export const knowledgeChunks: KnowledgeChunk[] = [
   {
     id: "quota",
-    text: "Matt maintained 100% median quota attainment over 5 years at Salesforce, compared to a <50% team average, and exceeded multi-year targets 3x with consecutive years above 200%.",
+    text: "Matt's Salesforce attainment: across four full financial years he hit or came close to quota in most years, with 107% in his best full year. Separately he exceeded multi-year (TCV) targets at 200%+ in consecutive years, hit 140% new logo attainment, and 94% in a newly expanded Tier-1 university and TAFE territory. He states these numbers plainly rather than rounding up.",
   },
   {
     id: "k12-market",
@@ -74,11 +74,11 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "mono-ai-role",
-    text: "Matt is currently GTM Lead, Education & Social Enterprises at monō ai (April 2026 - present). He built and executed a national territory plan across ANZ higher education and public-benefit accounts with no existing installed base, closing early enterprise deals on a path to $1M USD ARR within twelve months. He reached the president of Western Governors University (300,000+ students, one of the largest universities in the United States) directly, progressing to CIO and CTO on a student retention deployment now in negotiation. He's also working with a partner to solve shared use cases at UTS and with an external architecture consultant shaping UNSW's future state.",
+    text: "Matt was most recently GTM Lead, Education & Social Enterprises at monō ai (2026). He built and executed a national territory plan across ANZ higher education and public-benefit accounts with no existing installed base, closing early enterprise deals on a path to $1M USD ARR within twelve months. He reached the president of Western Governors University (300,000+ students, one of the largest universities in the United States) directly, progressing to CIO and CTO on a student retention deployment that reached negotiation. He also worked with a partner to solve shared use cases at UTS and with an external architecture consultant shaping UNSW's future state.",
   },
   {
     id: "technical-value-proof",
-    text: "At monō ai, Matt engineers Create AI prototypes to replace static architecture slides, demonstrating real-time application behavior, API orchestration, and workflow visibility directly to technical decision-makers, without leaning on a solutions engineer as a crutch.",
+    text: "At monō ai, Matt engineered AI prototypes to replace static architecture slides, demonstrating real-time application behavior, API orchestration, and workflow visibility directly to technical decision-makers, without leaning on a solutions engineer as a crutch.",
   },
   {
     id: "technical-fluency",
@@ -86,7 +86,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "meddic",
-    text: "Matt's core GTM competencies include full sales cycle management, MEDDIC and Command of the Message (Datadog's own stated methodology), value-based selling, executive alignment, multi-threaded deal execution, and co-selling / channel strategy.",
+    text: "Matt's core GTM competencies include full sales cycle management, formal training in Sandler, day-to-day deal qualification in MEDDPICC (and ready to run whatever framework Datadog uses), value-based selling, executive alignment, multi-threaded deal execution, and co-selling / channel strategy.",
   },
   {
     id: "referenceability",
@@ -122,11 +122,11 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "territory-map-summary",
-    text: "Matt's ANZ territory and relationship map for Datadog's Higher Education segment spans nine institutions carried over from his Tier-1 University and TAFE coverage at Salesforce, not cold research: Monash University and the University of Sydney and UNSW Sydney (Group of Eight), the University of Technology Sydney (tech-forward, Innovative Research Universities), the University of New England (Australia's largest distance-education cohort), TAFE NSW (the largest VET provider in Australia, state-wide multi-campus), Western Sydney University (fast-growing, multi-campus), James Cook University (regional, plus an international Singapore campus), and Queensland University of Technology (applied, industry-partnership-driven). None currently appear on Datadog's public customer list, which reads as genuine ANZ higher-ed whitespace.",
+    text: "Matt's ANZ territory and relationship map for Datadog's Higher Education segment spans nine institutions carried over from his Tier-1 University and TAFE coverage at Salesforce, not cold research: Monash University and the University of Sydney and UNSW Sydney (Group of Eight), the University of Technology Sydney (tech-forward, Innovative Research Universities), the University of New England (Australia's largest distance-education cohort), TAFE NSW (the largest VET provider in Australia, state-wide multi-campus), Western Sydney University (fast-growing, multi-campus), James Cook University (regional, plus an international Singapore campus), and Queensland University of Technology (applied, industry-partnership-driven). UNSW is the anchor: it's already a public Datadog customer, so the play there is expansion and reference. The other eight are whitespace on Datadog's public customer page.",
   },
   {
     id: "monash-plan",
-    text: "Monash University (VIC, Group of Eight, multi-campus research-intensive): existing relationship from Matt's East Coast higher-ed territory at Salesforce, spanning Monash's Clayton, Caulfield, and Peninsula campuses. Datadog entry angle: observability across a genuinely distributed research-computing and student-systems estate, the kind of multi-campus complexity that makes a single pane of glass a real unlock rather than a nice-to-have.",
+    text: "Monash University (VIC, Group of Eight, multi-campus research-intensive): existing relationship from Matt's East Coast higher-ed work at Salesforce and monō ai, spanning Monash's Clayton, Caulfield, and Peninsula campuses. Datadog entry angle: observability across a genuinely distributed research-computing and student-systems estate, the kind of multi-campus complexity that makes a single pane of glass a real unlock rather than a nice-to-have.",
   },
   {
     id: "sydney-uni-plan",
@@ -134,7 +134,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "unsw-plan",
-    text: "UNSW Sydney (NSW, Group of Eight): existing relationship from the same NSW Tier-1 territory, including exposure to UNSW's procurement and IT governance process for enterprise platform decisions. Datadog entry angle: security and compliance-forward, since UNSW's research data governance requirements make Datadog's security and compliance monitoring a natural technical-buyer conversation.",
+    text: "UNSW Sydney (NSW, Group of Eight): an account Matt managed directly at Salesforce, including its procurement and IT governance process, then worked again at monō ai. UNSW is already a Datadog customer and a public one: its platform team (Pramod Nathan, Senior Manager of Platforms and Services, and Julie Pritchard, Platform Operations Team Leader) has presented at Datadog Live Sydney and Datadog Summit Sydney on building resilient systems and making reliability a shared priority for engineering and leadership, across a hybrid cloud and on-prem estate. Matt's play: expand the footprint, and use UNSW as the reference that opens the rest of the sector.",
   },
   {
     id: "uts-plan",
@@ -154,11 +154,11 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "jcu-plan",
-    text: "James Cook University, JCU (QLD, regional, multi-campus across Townsville, Cairns, and Singapore): relationship built through Matt's Queensland regional territory coverage, including JCU's distinctive northern-Australia and international-campus footprint. Datadog entry angle: a genuinely distributed, cross-border campus footprint makes centralized visibility a concrete technical need, not an abstract pitch.",
+    text: "James Cook University, JCU (QLD, regional, multi-campus across Townsville, Cairns, and Singapore): relationship built through Matt's national higher-ed coverage at Salesforce and monō ai, including JCU's distinctive northern-Australia and international-campus footprint. Datadog entry angle: a genuinely distributed, cross-border campus footprint makes centralized visibility a concrete technical need, not an abstract pitch.",
   },
   {
     id: "qut-plan",
-    text: "Queensland University of Technology, QUT (QLD, Australian Technology Network, applied/industry-focused): relationship built through Queensland territory coverage; QUT's applied, industry-partnership-driven culture made it a natural fit for enterprise platform conversations. Datadog entry angle: QUT's industry-partnership model and applied-research computing footprint make a platform-engineering-led pitch, reliability and developer velocity, resonate more than a pure IT-operations angle.",
+    text: "Queensland University of Technology, QUT (QLD, Australian Technology Network, applied/industry-focused): worked directly at Salesforce, including closing a $200K expansion in a compressed window while covering the national education territory; QUT's applied, industry-partnership-driven culture made it a natural fit for enterprise platform conversations. Datadog entry angle: QUT's industry-partnership model and applied-research computing footprint make a platform-engineering-led pitch, reliability and developer velocity, resonate more than a pure IT-operations angle.",
   },
   {
     id: "vercel-ai-sdk",
@@ -190,7 +190,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "site-build-cron-blob",
-    text: "A Cron Job runs weekly, fetches Datadog's real public customer list, and checks whether any of Matt's nine target institutions show up on it yet. The result is written to a private Vercel Blob store, and the Territory & Relationship Map section of the site displays a real 'last verified' timestamp pulled from that check, not a hardcoded date someone forgot to update, the same discipline as an automated monitor that actually pages you instead of a dashboard nobody looks at.",
+    text: "A Cron Job runs weekly, fetches Datadog's real public customer list, and checks whether any of Matt's eight whitespace institutions show up on it yet (UNSW is excluded because it's already a known Datadog customer, shown on the site as the anchor account). The result is written to a private Vercel Blob store, and the Territory & Relationship Map section of the site displays a real 'last verified' timestamp pulled from that check, not a hardcoded date someone forgot to update, the same discipline as an automated monitor that actually pages you instead of a dashboard nobody looks at.",
   },
   {
     id: "site-build-rate-limiting",
@@ -210,7 +210,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "twenty-years-in-education-credibility",
-    text: "Matt has spent roughly 20 years connected to the education sector: 15 years as an educator himself in school leadership, then selling into education at Salesforce and now monō ai. He treats that firsthand experience as a genuine differentiator, not just a résumé line. Education has a very unique view of its own business, with its own specific talking points that an outside vendor doesn't naturally speak, even though at its core education is essentially a service business like any other. Knowing how to talk from firsthand experience, having actually sat inside the institution rather than only sold to it, is a key way to open more doors, bring down walls, and gain the trust required to build transformational deals in this sector.",
+    text: "Matt has spent roughly 20 years connected to the education sector: 15 years as an educator himself in school leadership, then selling into education at Salesforce and monō ai. He treats that firsthand experience as a genuine differentiator, not just a résumé line. Education has a very unique view of its own business, with its own specific talking points that an outside vendor doesn't naturally speak, even though at its core education is essentially a service business like any other. Knowing how to talk from firsthand experience, having actually sat inside the institution rather than only sold to it, is a key way to open more doors, bring down walls, and gain the trust required to build transformational deals in this sector.",
   },
   {
     id: "ai-era-builder-thesis",
@@ -222,10 +222,46 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "forward-looking-vs-traditional-hiring",
-    text: "Matt makes a deliberate distinction when asked why he's suited for this role: traditional hiring is focused on a candidate's past, matching a resume line by line to a job description. Datadog is a company built for a forward-looking moment: AI has let more people ship faster than ever, including people like Matt who don't write production code for a living, and that same shift makes observability more important, not less, because someone still has to see what's actually happening in what just got shipped. Matt says his strength is stepping into a completely new environment and not just surviving in it, but thriving, bringing focus and rigor without rigidity. He points to leading his own GTM team at monō ai to embrace this new way of selling as proof he already does this in practice, not just in theory: he brings a builder's mindset to selling, not a seller's mindset bolted onto a builder's platform.",
+    text: "Matt makes a deliberate distinction when asked why he's suited for this role: traditional hiring is focused on a candidate's past, matching a resume line by line to a job description. Datadog is a company built for a forward-looking moment: AI has let more people ship faster than ever, including people like Matt who don't write production code for a living, and that same shift makes observability more important, not less, because someone still has to see what's actually happening in what just got shipped. Matt says his strength is stepping into a completely new environment and not just surviving in it, but thriving, bringing focus and rigor without rigidity. He points to leading GTM at monō ai and embracing this new way of selling as proof he already does this in practice, not just in theory: he brings a builder's mindset to selling, not a seller's mindset bolted onto a builder's platform.",
   },
   {
     id: "how-i-learn-fast",
     text: "Asked how he learns fast, Matt points back to his start in tech sales: he had zero knowledge or experience in the industry to draw on. What he did have was the ability to learn fast, and the even more important skill underneath that, the ability to teach. Teaching forces you to both learn all the important information yourself and deeply consider how to present it in the most engaging, memorable way to a group of people who mostly don't want to be there. The result was that he consumed everything there was to know about Salesforce and its products, to the point where he became the go-to person on his team whenever anyone needed to learn the ever-expanding product line that core account executives had to sell. He genuinely enjoyed the challenge of mastering and selling each new product, and there were many of them, every single financial year.",
+  },
+  {
+    id: "current-work",
+    text: "Since leaving monō ai, Matt has been consulting on go-to-market for an AI education venture and for a Salesforce and Slack consultancy. That keeps him inside the higher-ed AI conversation and on the partner side of the ecosystem, while he looks for the right full-time quota-carrying role. He's clear that he does his best work with a number and a territory.",
+  },
+  {
+    id: "wgu-hedx-story",
+    text: "Matt's favourite pipeline story: at the HEDx higher-ed conference at UTS, he knew Western Governors University would be there, a very digitally savvy institution and the largest university in the US by enrolment. He researched its president, Scott Pulsipher, in advance, went to every session the president spoke at, and by the end had introductions to WGU's whole technology team. That turned into a deal he sourced at monō ai. It's how he'd open doors across ANZ higher ed for Datadog: research, pick innovative targets rather than famous ones, keep showing up, and convert access into a real opportunity.",
+  },
+  {
+    id: "partner-triangle",
+    text: "Matt brings a ready-made partner ecosystem in ANZ higher ed: close working relationships with AWS solutions architects he's collaborated with on university accounts, the HEDx higher-ed community (he established Salesforce's partnership with HEDx), and MortarCaps, whose CEO he knows well. He's also seen partnering from both sides: as a vendor co-selling with SIs at Salesforce, and from inside a consultancy partner since. He knows what makes a partner lean in: early deal registration, shared pipeline, clear rules of engagement, and making the partner look good to the customer. Datadog runs its Australian region on AWS Sydney and holds the AWS Education Competency, so co-selling with AWS is a natural motion.",
+  },
+  {
+    id: "voice-of-region",
+    text: "At Salesforce, Matt became the regular go-to contact between the ANZ education team and the product team in San Francisco, relaying what local institutions needed and helping shape how the product fit the region. He'd play the same role for Datadog's newly formalized higher-ed segment: not just selling the platform, but being the region's voice back into product.",
+  },
+  {
+    id: "land-core-roadmap-ai",
+    text: "Matt's lesson from Salesforce: universities buy and use the core platform first, and the advanced products become the roadmap. His Datadog version: land infrastructure and application monitoring on the systems a university can't afford to lose, like the student system and the LMS, then grow into LLM and agent observability as the 'where next' conversation. Gartner's 2026 observability research makes the same point: AI observability has high interest but still low adoption, and cost is the main brake.",
+  },
+  {
+    id: "ai-governance-student-data",
+    text: "Matt's core thesis for higher ed: universities hold huge amounts of student PII, and they're rolling out AI everywhere, from student chatbots to AI in the LMS to agents in admissions. That needs real governance. Datadog's agent and LLM observability shows what each agent did, what tools and data it touched, what it cost, and whether it's behaving safely, on the same platform already watching the student system. 'Know what your AI is doing, what it costs, and whether it's safe.'",
+  },
+  {
+    id: "sector-moments",
+    text: "Why observability becomes a need, not a nice-to-have, in higher ed: the sector has had a rough 18 months. In May 2026 a breach at Canvas's vendor took the LMS offline globally right before exams, hitting the University of Sydney, UTS, Melbourne, QUT, Griffith, RMIT and others; an October 2025 AWS outage took Canvas, Zoom and Panopto down for hours; and in May 2025 an internal infrastructure failure at ANU left students without cards, transcripts or enrolment letters. Matt is careful not to claim Datadog would have prevented these. The honest pitch is faster detection, knowing exactly what's affected, and getting back up sooner, especially for critical third-party SaaS a university can't see inside.",
+  },
+  {
+    id: "datadog-anz-credentials",
+    text: "Datadog is well set up for Australian universities: it runs a local site in the AWS Sydney Region so telemetry stays in Australia, it holds IRAP PROTECTED assessment under the Australian Government ISM (covering infrastructure monitoring, APM, logs, LLM observability, Bits AI, Cloud SIEM and synthetics), and it supports more than 1,000 ANZ customers. Combined with getting onto CAUDIT's collaborative procurement panels, Matt sees that as the way to take most of the procurement and data-sovereignty friction out of selling to the sector. Datadog is also named a Leader in Gartner's 2026 Magic Quadrant for Observability Platforms.",
+  },
+  {
+    id: "objections",
+    text: "The objections Matt expects in higher ed, and how he'd handle them. 'It's too expensive and unpredictable': consumption pricing is hard to fit into fixed university budgets, so land on core systems, prove value, use governance controls, and let tool consolidation fund growth. 'Microsoft already covers this': Defender is endpoint and identity security, not observability, and Azure Monitor is weaker outside Azure. 'It's a nice-to-have': tie it to the moments leadership already fears, enrolment, results day and exams, and to AI governance over student data.",
   },
 ];

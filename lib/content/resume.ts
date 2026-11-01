@@ -19,19 +19,19 @@ export const resumeHeader = {
 };
 
 export const resumeSummary =
-  "Enterprise AE selling cloud and AI platforms into Australian education, preceded by fifteen years as an education leader. Five years' field closing experience across mid-market and enterprise, with 100% median quota attainment against a team median below 50% and 140% new logo attainment. Builds pipeline independently: created an entire ANZ K-12 market for Salesforce from a standing start, convening the buying community, shaping the tenders that followed, and generating $3M+ in pipeline where no territory previously existed. Works the hybrid-to-cloud transition directly. Extensive experience working with a range of SI partners and consultants. Hands-on technical fluency across cloud architecture, APIs and AI workflows.";
+  "Enterprise AE selling cloud and AI platforms into Australian education, preceded by fifteen years as an education leader. Five years' field closing experience across mid-market and enterprise, with 200%+ against multi-year targets in consecutive years, 140% new logo attainment, and 107% in the best full year. Builds pipeline independently: created an entire ANZ K-12 market for Salesforce from a standing start, convening the buying community, shaping the tenders that followed, and generating $3M+ in pipeline where no territory previously existed. Works the hybrid-to-cloud transition directly. Extensive experience working with a range of SI partners and consultants. Hands-on technical fluency across cloud architecture, APIs and AI workflows.";
 
 export const resumeCurrentRole: ResumeSection = {
-  heading: "Current role",
+  heading: "Most recent role",
   entries: [
     {
       role: "GTM Lead, Education & Social Enterprises",
       org: "monō ai",
-      dates: "April 2026 - present",
+      dates: "2026",
       bullets: [
         "Pipeline from zero: Built and executed a national territory plan across ANZ higher education and public-benefit accounts with no existing installed base, closing early enterprise deals on a path to $1M USD ARR within twelve months.",
-        "Executive access: Reached the president of Western Governors University (300,000+ students) directly, progressing to CIO and CTO on a student retention deployment now in negotiation.",
-        "Partner-led coverage: Working with a partner to solve use cases at UTS shared across the sector and with an external architecture consultant shaping UNSW's future state.",
+        "Executive access: Reached the president of Western Governors University (300,000+ students) directly, progressing to CIO and CTO on a student retention deployment that reached negotiation.",
+        "Partner-led coverage: Worked with a partner to solve use cases at UTS shared across the sector and with an external architecture consultant shaping UNSW's future state.",
         "Technical value proof: Engineered CLI-based, clickable prototypes in place of static architecture slides, demonstrating live application behaviour, API orchestration and workflow visibility to technical decision-makers.",
       ],
     },
@@ -62,7 +62,7 @@ export const resumePreviousExperience: ResumeSection = {
         "Built a market with no installed base: K-12 buying in ANZ was organised around student information systems, which Salesforce did not offer. Convened independent and Catholic school groups with the Association of Independent Schools NSW into a recurring forum, brought in a partner who built the missing layer, and the resulting tenders were written around that architecture, generating $3M+ pipeline, $700K ACV and $2M TCV, with deals still closing four and five years on.",
         "Deal range: Transactional through transformational deals, including land use cases from $50k to above $250K ACV and $750K-$1mil TCV.",
         "Reference customer: Closed Christian Education Ministries, which expanded across Education Cloud, Slack, Data Cloud, Agentforce and Marketing Cloud over 17 schools to become Salesforce's leading K-12 education reference customer, and a direct influence on subsequent Catholic and Anglican school system tenders.",
-        "Sustained attainment: 100% median quota attainment across five years against a team median below 50%, exceeding multi-year targets three times with consecutive years above 200%, in a territory where no AE had previously cleared 50%.",
+        "Sustained attainment: exceeded multi-year (TCV) targets in consecutive years at 200%+, with 107% in the best full financial year.",
       ],
     },
   ],

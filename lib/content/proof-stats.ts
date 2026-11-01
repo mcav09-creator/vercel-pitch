@@ -6,26 +6,26 @@ export type ProofStat = {
 
 export const proofStats: ProofStat[] = [
   {
-    value: "100%",
-    label: "Median quota attainment, 5-yr avg",
-    detail: "vs. <50% team average at Salesforce",
+    value: "200%+",
+    label: "Multi-year target attainment",
+    detail: "Consecutive years above 200% against multi-year targets at Salesforce",
+  },
+  {
+    value: "140%",
+    label: "New logo attainment",
+    detail:
+      "A hunter who works tirelessly to break down new opportunities: find value, land, and expand.",
+  },
+  {
+    value: "107%",
+    label: "Best full-year quota attainment",
+    detail: "At Salesforce, plus 94% in a newly expanded Tier-1 university and TAFE territory",
   },
   {
     value: "$25M → $1M",
     label: "Market creation, Salesforce to monō ai",
     detail:
       "At Salesforce, unlocked a $25M TAM through creative market engagement. At monō ai, built a national ANZ higher-ed territory from zero, on a path to $1M USD ARR within 12 months, including direct executive access at the largest university in the US.",
-  },
-  {
-    value: "200%+",
-    label: "Multi-year target attainment",
-    detail: "Consecutive years above 200%, 3x over multi-year targets",
-  },
-  {
-    value: "140%+",
-    label: "New logo attainment",
-    detail:
-      "A hunter who works tirelessly to break down new opportunities: find value, land, and expand.",
   },
   {
     value: "$1.3M+",

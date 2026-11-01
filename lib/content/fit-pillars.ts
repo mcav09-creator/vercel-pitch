@@ -8,9 +8,9 @@ export const fitPillars: FitPillar[] = [
   {
     title: "Enterprise closing & quota discipline",
     proof:
-      "100% median quota attainment over 5 years at Salesforce (vs. <50% team average), with consecutive years above 200% on multi-year targets: well clear of the $800k+ direct sales goal and $50k+ average deal size this role asks for.",
+      "Consecutive years above 200% on multi-year targets at Salesforce, 140% new logo attainment, and 107% in my best full year, with deal sizes from $50K to above $250K ACV and $750K-$1M TCV.",
     application:
-      "Same forecasting discipline, run through MEDDIC and Command of the Message instead of MEDDPICC. The muscle transfers, the framework just gets Datadog's own name on it.",
+      "Trained in Sandler and running deals in MEDDPICC, so the forecasting discipline is already there. The muscle transfers to whatever qualification framework Datadog runs.",
   },
   {
     title: "Market creation & pipeline build",
@@ -29,7 +29,7 @@ export const fitPillars: FitPillar[] = [
   {
     title: "Technical fluency, built not borrowed",
     proof:
-      "Builds Create AI prototypes that replace static architecture slides for technical decision-makers, and hand-builds real infrastructure discipline into his own tools: rate limiting, monitoring, and a custom retrieval layer, not just the sales narrative around them.",
+      "Builds AI prototypes that replace static architecture slides for technical decision-makers, and hand-builds real infrastructure discipline into his own tools: rate limiting, monitoring, and a custom retrieval layer, not just the sales narrative around them.",
     application:
       "Not observability-specific expertise, that's honestly still new ground, but proof of the same builder instinct and speed of ramp he'd bring to closing that gap fast: comfortable with real infrastructure, not just repeating a deck.",
   },

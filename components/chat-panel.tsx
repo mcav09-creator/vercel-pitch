@@ -9,8 +9,8 @@ const STARTER_PROMPTS = [
   "What did you actually build into this site, and why does it matter for observability?",
   "How do you learn fast?",
   "Walk me through your ANZ higher-ed relationship map.",
-  "Walk me through MEDDIC on a transformation deal.",
-  "Why Datadog over staying technical-adjacent at monō ai?",
+  "Walk me through qualifying a transformation deal.",
+  "Why Datadog, and why now?",
   "What's your honest gap for this role?",
 ];
 

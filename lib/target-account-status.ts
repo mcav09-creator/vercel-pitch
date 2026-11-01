@@ -2,10 +2,12 @@ import { get } from "@vercel/blob";
 
 export const TARGET_ACCOUNT_STATUS_PATHNAME = "status/target-accounts-verification.json";
 
+// Accounts checked for whitespace. UNSW is deliberately excluded: it's already
+// a known Datadog customer (presented at Datadog Summit / Datadog Live Sydney),
+// so it's shown on the site as the anchor account rather than as whitespace.
 export const VERIFIED_ACCOUNT_NAMES = [
   "Monash University",
   "University of Sydney",
-  "UNSW",
   "University of Technology Sydney",
   "University of New England",
   "TAFE NSW",

@@ -1,8 +1,17 @@
 import { territoryAccounts, territoryFootnote } from "@/lib/content/target-accounts";
-import { getTargetAccountVerification } from "@/lib/target-account-status";
+import {
+  getTargetAccountVerification,
+  VERIFIED_ACCOUNT_NAMES,
+} from "@/lib/target-account-status";
 
 export async function TargetAccounts() {
   const verification = await getTargetAccountVerification();
+  // Only count accounts still on the whitespace list, so an older stored
+  // result (which may include the anchor account) can't skew the summary.
+  const checked = new Set<string>(VERIFIED_ACCOUNT_NAMES);
+  const whitespaceResults =
+    verification?.accounts.filter((a) => checked.has(a.name)) ?? [];
+  const nowListed = whitespaceResults.filter((a) => a.foundOnCustomerList);
 
   return (
     <section id="accounts" className="border-t border-border px-6 py-24">
@@ -14,11 +23,11 @@ export async function TargetAccounts() {
         </h2>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
           Not cold research: these are existing relationships from Matt&apos;s
-          Tier-1 University and TAFE territory work at Salesforce, the same
-          mix of existing relationships and aspirational contacts this
-          role&apos;s own relationship-map requirement calls for. Several are
-          hybrid institutions actively transitioning workloads to the cloud,
-          exactly where this role is built to unlock territory.
+          Tier-1 University and TAFE work at Salesforce and his higher-ed work
+          at monō ai. One is already a Datadog customer to expand and
+          reference; the rest are whitespace. Several are hybrid institutions
+          actively transitioning workloads to the cloud, exactly where this
+          role is built to unlock territory.
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -30,6 +39,11 @@ export async function TargetAccounts() {
                   {account.state}
                 </span>
               </div>
+              {account.existingCustomer && (
+                <p className="mt-2 inline-block rounded-full border border-border px-2.5 py-0.5 font-mono text-[11px] text-foreground">
+                  Datadog customer · anchor account
+                </p>
+              )}
               <p className="mt-1.5 text-xs font-medium text-accent-dim">
                 {account.segment}
               </p>
@@ -46,19 +60,20 @@ export async function TargetAccounts() {
           {territoryFootnote}
         </p>
 
-        {verification && (
+        {verification && whitespaceResults.length > 0 && (
           <p className="mt-2 max-w-3xl font-mono text-xs text-accent-dim">
-            Last verified against Datadog&apos;s public customer list:{" "}
+            The other {whitespaceResults.length}, last checked against
+            Datadog&apos;s public customer page:{" "}
             {new Date(verification.checkedAt).toLocaleDateString("en-AU", {
               day: "numeric",
               month: "short",
               year: "numeric",
             })}
             {" · "}
-            {verification.accounts.some((a) => a.foundOnCustomerList)
-              ? "one or more now appear on it"
-              : "still none appear on it"}
-            {" (automated weekly check)"}
+            {nowListed.length > 0
+              ? `now listed: ${nowListed.map((a) => a.name).join(", ")}`
+              : "none listed there"}
+            {" (automated weekly check; public pages don't show every customer)"}
           </p>
         )}
       </div>
