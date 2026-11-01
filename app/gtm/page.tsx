@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getLatestBrief } from "@/lib/gtm/brief";
+import { findAccount } from "@/lib/gtm/accounts";
 import { GtmWorkspace } from "@/components/gtm/workspace";
 import { BackToTop } from "@/components/back-to-top";
 
@@ -19,7 +20,10 @@ const steps = [
   { id: "sync", number: "03", label: "BDR sync" },
 ];
 
-export default async function GtmPage() {
+export default async function GtmPage({ searchParams }: PageProps<"/gtm">) {
+  const params = await searchParams;
+  const requested = typeof params.account === "string" ? params.account : undefined;
+  const initialAccount = requested && findAccount(requested) ? requested : undefined;
   const brief = await getLatestBrief();
 
   return (
@@ -62,7 +66,7 @@ export default async function GtmPage() {
         </div>
       </header>
 
-      <GtmWorkspace initialBrief={brief} />
+      <GtmWorkspace initialBrief={brief} initialAccount={initialAccount} />
 
       <section className="border-t border-border px-6 py-16">
         <div className="mx-auto max-w-5xl">

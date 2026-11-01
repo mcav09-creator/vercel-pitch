@@ -1,4 +1,6 @@
 export type TerritoryAccount = {
+  /** Matches the account slug on the AI-native GTM page. */
+  slug: string;
   name: string;
   state: string;
   segment: string;
@@ -10,6 +12,7 @@ export type TerritoryAccount = {
 
 export const territoryAccounts: TerritoryAccount[] = [
   {
+    slug: "monash",
     name: "Monash University",
     state: "VIC",
     segment: "Group of Eight, multi-campus research-intensive",
@@ -19,6 +22,7 @@ export const territoryAccounts: TerritoryAccount[] = [
       "Observability across a genuinely distributed research-computing and student-systems estate: the kind of multi-campus complexity that makes a single pane of glass a real unlock, not a nice-to-have.",
   },
   {
+    slug: "usyd",
     name: "The University of Sydney",
     state: "NSW",
     segment: "Group of Eight",
@@ -28,6 +32,7 @@ export const territoryAccounts: TerritoryAccount[] = [
       "A CIO/CDO-level modernisation story: aligning observability investment with an institution-wide cloud migration the same way Matt aligned Education Cloud adoption to it.",
   },
   {
+    slug: "unsw",
     name: "UNSW Sydney",
     state: "NSW",
     segment: "Group of Eight",
@@ -38,6 +43,7 @@ export const territoryAccounts: TerritoryAccount[] = [
     existingCustomer: true,
   },
   {
+    slug: "uts",
     name: "University of Technology Sydney (UTS)",
     state: "NSW",
     segment: "Innovative Research Universities, tech-forward",
@@ -47,6 +53,7 @@ export const territoryAccounts: TerritoryAccount[] = [
       "UTS actively invests in its own engineering and DX culture, which makes a developer-experience-led observability pitch land faster here than at a more traditional institution.",
   },
   {
+    slug: "une",
     name: "University of New England (UNE)",
     state: "NSW",
     segment: "Regional, largest distance-education cohort in Australia",
@@ -56,6 +63,7 @@ export const territoryAccounts: TerritoryAccount[] = [
       "Reliability of the distance-education platform itself is existential for UNE's operating model: an outage isn't an inconvenience, it's thousands of remote students locked out, which makes uptime observability a direct business-continuity conversation.",
   },
   {
+    slug: "tafe-nsw",
     name: "TAFE NSW",
     state: "NSW",
     segment: "Largest VET provider in Australia, state-wide multi-campus network",
@@ -65,6 +73,7 @@ export const territoryAccounts: TerritoryAccount[] = [
       "A state-wide, multi-campus network is exactly the fragmented-footprint problem Matt has already solved once for a flagship account spanning dozens of sites, just at public-VET scale: land on one platform team's footprint, expand campus by campus.",
   },
   {
+    slug: "wsu",
     name: "Western Sydney University",
     state: "NSW",
     segment: "Growth university, multi-campus across Sydney's western growth corridor",
@@ -74,6 +83,7 @@ export const territoryAccounts: TerritoryAccount[] = [
       "A growth institution expanding physical and digital footprint simultaneously needs observability that scales with it, a timing-driven entry point tied to its own expansion roadmap.",
   },
   {
+    slug: "jcu",
     name: "James Cook University (JCU)",
     state: "QLD",
     segment: "Regional, multi-campus (Townsville, Cairns, Singapore)",
@@ -83,6 +93,7 @@ export const territoryAccounts: TerritoryAccount[] = [
       "A genuinely distributed, cross-border campus footprint (regional Queensland plus an international Singapore campus) makes centralised visibility a concrete technical need, not an abstract pitch.",
   },
   {
+    slug: "qut",
     name: "Queensland University of Technology (QUT)",
     state: "QLD",
     segment: "Australian Technology Network, applied/industry-focused",

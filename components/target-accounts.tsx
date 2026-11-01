@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { territoryAccounts, territoryFootnote } from "@/lib/content/target-accounts";
 import {
   getTargetAccountVerification,
@@ -32,7 +33,7 @@ export async function TargetAccounts() {
 
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {territoryAccounts.map((account) => (
-            <div key={account.name} className="card p-6">
+            <div key={account.name} className="card flex flex-col p-6">
               <div className="flex items-baseline justify-between gap-3">
                 <h3 className="text-base font-semibold">{account.name}</h3>
                 <span className="section-label whitespace-nowrap">
@@ -48,10 +49,16 @@ export async function TargetAccounts() {
                 {account.segment}
               </p>
 
-              <dl className="mt-4 space-y-2.5 border-t border-border pt-4 text-sm">
+              <dl className="mt-4 flex-1 space-y-2.5 border-t border-border pt-4 text-sm">
                 <Row label="Relationship" value={account.relationship} />
                 <Row label="Datadog entry angle" value={account.entry} />
               </dl>
+              <Link
+                href={`/gtm?account=${account.slug}#deep-dive`}
+                className="mt-5 inline-flex w-fit items-center rounded-full border border-purple/70 bg-purple/15 px-3.5 py-1.5 text-xs font-medium text-purple-text transition hover:bg-purple/30"
+              >
+                Run AI deep dive →
+              </Link>
             </div>
           ))}
         </div>

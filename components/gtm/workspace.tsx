@@ -60,21 +60,54 @@ function useStored<T>(key: string, fallback: T): T {
   }, [raw]);
 }
 
-export function GtmWorkspace({ initialBrief }: { initialBrief: MorningBrief | null }) {
+export function GtmWorkspace({
+  initialBrief,
+  initialAccount,
+}: {
+  initialBrief: MorningBrief | null;
+  initialAccount?: string;
+}) {
   const [brief, setBrief] = useState<MorningBrief | null>(initialBrief);
   const [briefState, setBriefState] = useState<"ready" | "loading" | "error">(
     initialBrief ? "ready" : "loading",
   );
 
-  const [slug, setSlug] = useState("monash");
+  const [slug, setSlug] = useState(initialAccount ?? "monash");
   const [dive, setDive] = useState<AccountDive | null>(null);
-  const [diveState, setDiveState] = useState<"idle" | "loading" | "error">("idle");
+  const [diveState, setDiveState] = useState<"idle" | "loading" | "error">(
+    initialAccount ? "loading" : "idle",
+  );
   const [diveError, setDiveError] = useState("");
 
   const syncDives = useStored<AccountDive[]>(NOTES_KEY, []);
   const bdrName = useStored<string>(BDR_KEY, "");
 
   const diveRef = useRef<HTMLElement>(null);
+
+  // Arriving from a territory card (/gtm?account=monash): open that plan straight away.
+  useEffect(() => {
+    if (!initialAccount) return;
+    let cancelled = false;
+    diveRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    fetch(`/api/gtm/account?slug=${encodeURIComponent(initialAccount)}`)
+      .then(async (res) => {
+        if (!res.ok) throw new Error((await res.text()) || "Something went wrong.");
+        return (await res.json()) as AccountDive;
+      })
+      .then((d) => {
+        if (cancelled) return;
+        setDive(d);
+        setDiveState("idle");
+      })
+      .catch((e: unknown) => {
+        if (cancelled) return;
+        setDiveError(e instanceof Error ? e.message : "Something went wrong.");
+        setDiveState("error");
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [initialAccount]);
 
   useEffect(() => {
     if (initialBrief) return;
