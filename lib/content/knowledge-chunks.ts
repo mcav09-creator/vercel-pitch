@@ -280,4 +280,8 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     id: "outside-of-work",
     text: "Asked to tell a bit about himself outside of work, as a person, Matt answers in his own words: \"I'm a devoted father to my two teenage sons, who don't think I'm too 'cringe'. Originally from Upstate New York, I'm a huge fan of summers on the Northern Beaches after the winters I grew up with, and a tragic Buffalo Bills fan with plenty of group chats with friends and family back home. With a background in high-level sport, I have to channel my exercise and competitiveness somewhere: currently CrossFit and golf (quite the combo!).\" Keep the answer warm, light and personal, close to these words, and don't turn it back into a work pitch.",
   },
+  {
+    id: "testimonials",
+    text: "What people who've worked with Matt say about him (quoted on this site with their permission). Brad Perriott, his former manager at monō ai: Matt opens doors most sellers can't, especially in education; he got the team in front of the president of the largest university in the US, builds his own prototypes to prove value, and is a true enterprise seller whose energy and enthusiasm made him a joy to have on the team. Mike O'Brien, a peer at Salesforce: Matt was the person colleagues went to for new products, learns faster than anyone Mike has worked with, and builds markets other reps wouldn't touch. Jeremy Kwok, Co-CEO of Christian Education Ministries: Matt helped them rethink how 17 schools could run as one, built the roadmap with them, stayed with it long after the contract was signed, and is still someone Jeremy calls.",
+  },
 ];

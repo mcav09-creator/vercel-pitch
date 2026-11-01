@@ -1,6 +1,7 @@
 import { Hero } from "@/components/hero";
 import { ProofBand } from "@/components/proof-band";
 import { StatusPanel } from "@/components/status-panel";
+import { Testimonials } from "@/components/testimonials";
 import { FitSection } from "@/components/fit-section";
 import { TechnicalFluency } from "@/components/technical-fluency";
 import { PartnerMotion } from "@/components/partner-motion";
@@ -26,6 +27,7 @@ export default function Home() {
       <Hero />
       <StatusPanel />
       <ProofBand />
+      <Testimonials />
       <FitSection />
       <TechnicalFluency aiConfigured={aiConfigured} />
       <PartnerMotion />
