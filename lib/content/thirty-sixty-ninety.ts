@@ -13,6 +13,8 @@ export const thirtySixtyNinety: PlanPhase[] = [
       "Map Datadog's partner surface in ANZ higher-ed: AWS/Azure/GCP Marketplace relationships, GSIs, and ed-tech integrators already inside these institutions.",
       "Build the first account plans using the same relationship/segment/entry structure as this site's Territory Map section.",
       "Shadow SE-led technical conversations to calibrate where I can run point vs. where I still need one.",
+      "Start Datadog's CAUDIT registration and shape a sector-wide offer, so universities can buy through a recognised, pre-vetted path instead of a fresh tender each time.",
+      "Lock in HEDx sponsorship for 2027, using my relationship with the HEDx leadership to secure time with the CIOs, CDOs and Vice-Chancellors who attend.",
     ],
   },
   {
@@ -22,6 +24,7 @@ export const thirtySixtyNinety: PlanPhase[] = [
       "Convert the top relationships into active outreach: multi-threaded, targeting both a technical buyer (Platform Engineering, SRE) and an economic buyer (CIO, CDO) per institution.",
       "Stand up the first co-sell motions with identified hyperscaler and GSI partners on 2-3 accounts.",
       "Get the first qualified opportunities into MEDDPICC-disciplined pipeline with real close dates.",
+      "Universities Australia Solutions Summit (23-24 February 2027, Canberra): pre-book meetings with VCs and senior leaders from target accounts, and follow up within the week.",
     ],
   },
   {
@@ -30,6 +33,7 @@ export const thirtySixtyNinety: PlanPhase[] = [
     items: [
       "First deals in late-stage evaluation with named economic buyers and validated technical champions.",
       "Refine the account-planning template based on what actually worked in the first 60 days.",
+      "Plan Datadog's presence at THETA 2027, CAUDIT's higher-ed technology conference, with a customer story from UNSW and a session on AI governance and reliability.",
       "Ramp toward full quota carrying, validated pipeline coverage in place for the next two quarters.",
     ],
   },
