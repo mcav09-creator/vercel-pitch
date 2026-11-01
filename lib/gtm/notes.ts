@@ -24,7 +24,8 @@ export function buildSyncNotes(opts: {
   start?: Date;
 }): string {
   const { brief, dives } = opts;
-  const bdr = opts.bdrName.trim() || "[BDR]";
+  const named = opts.bdrName.trim();
+  const bdr = named || "BDR";
   const start = opts.start ?? new Date();
   const today = start.toLocaleDateString("en-AU", {
     weekday: "long",
@@ -36,7 +37,7 @@ export function buildSyncNotes(opts: {
   const lines: string[] = [];
   lines.push(`# BDR sync · ${today}`);
   lines.push("");
-  lines.push(`**Attendees:** Matt Cavallaro (AE), ${bdr} (BDR)`);
+  lines.push(`**Attendees:** Matt Cavallaro (AE), ${named ? `${named} (BDR)` : "BDR (name TBC)"}`);
   lines.push(`**Goal:** agree focus accounts, who runs which touches, and what we need from each other this week.`);
   lines.push("");
 
@@ -44,7 +45,13 @@ export function buildSyncNotes(opts: {
   if (brief) {
     lines.push(`_${brief.topLine}_`);
     lines.push("");
-    const top = brief.sections.flatMap((s) => s.items).slice(0, 4);
+    // Lead with what a BDR can act on: account-tagged stories, then ed-tech/IT, policy, the rest.
+    const order: Record<string, number> = { edtech: 0, policy: 1, universities: 2, trends: 3 };
+    const top = brief.sections
+      .flatMap((s) => s.items.map((item) => ({ item, rank: order[s.key] ?? 4 })))
+      .sort((a, b) => Number(b.item.accounts.length > 0) - Number(a.item.accounts.length > 0) || a.rank - b.rank)
+      .slice(0, 4)
+      .map((x) => x.item);
     for (const item of top) {
       lines.push(`- **${item.headline}**: ${item.soWhat}${link(item.sourceIds, brief.sources)}`);
     }
