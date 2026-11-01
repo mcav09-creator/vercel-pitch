@@ -5,11 +5,10 @@ import { motion } from "framer-motion";
 import { profile } from "@/lib/content/profile";
 import { sections } from "@/lib/content/sections";
 
-const TYPE_SPEED = 22;
+const TYPE_SPEED = 10;
 
 export function Hero() {
   const [typed, setTyped] = useState("");
-  const [done, setDone] = useState(false);
 
   useEffect(() => {
     let i = 0;
@@ -17,10 +16,7 @@ export function Hero() {
     const interval = setInterval(() => {
       i += 1;
       setTyped(full.slice(0, i));
-      if (i >= full.length) {
-        clearInterval(interval);
-        setTimeout(() => setDone(true), 500);
-      }
+      if (i >= full.length) clearInterval(interval);
     }, TYPE_SPEED);
     return () => clearInterval(interval);
   }, []);
@@ -42,15 +38,17 @@ export function Hero() {
             <br />
             <span className="text-muted">
               {typed}
-              {!done && <span className="animate-pulse">▌</span>}
+              {typed.length < profile.terminalLine.length && (
+                <span className="animate-pulse">▌</span>
+              )}
             </span>
           </div>
         </div>
 
         <motion.div
           initial={{ opacity: 0, y: 12 }}
-          animate={done ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
         >
           <h1 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
             <HighlightedHeadline text={profile.headline} word="Datadog's" />
@@ -64,7 +62,9 @@ export function Hero() {
               {sections.map((section) => (
                 <li key={section.id}>
                   <a href={`#${section.id}`}>
-                    {section.number} · {section.label}
+                    <span className="section-nav-number">{section.number}</span>
+                    {" · "}
+                    {section.label}
                   </a>
                 </li>
               ))}

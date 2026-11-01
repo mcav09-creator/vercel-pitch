@@ -7,7 +7,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/matt-cavallaro-51435732/",
   resumeHref: "/resume",
   terminalLine:
-    "I don't just sell platforms, I build and monitor what I ship. Give me the ANZ higher-ed book and I'll show you the relationship map before you ask for it.",
+    "Education has been my whole career. First in the classroom, then in tech, opening institutions up to technology that serves their staff, their students and their mission.",
   headline: "Matt Cavallaro, built for Datadog's ANZ higher-ed book.",
   subhead:
     "Enterprise AE who unlocked a $25M untouched market from zero, then spent his last two years at Salesforce moving that discipline up into Tier-1 universities, TAFE, and public sector. This site is the proof, and it's built to be watched, not just read.",

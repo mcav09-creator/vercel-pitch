@@ -5,6 +5,7 @@ import { TechnicalFluency } from "@/components/technical-fluency";
 import { PartnerMotion } from "@/components/partner-motion";
 import { TargetAccounts } from "@/components/target-accounts";
 import { ClosePlan } from "@/components/close-plan";
+import { BackToTop } from "@/components/back-to-top";
 
 // The Target Accounts section reads a cron-updated "last verified" status
 // from Blob storage; revalidate hourly (ISR) rather than on every request
@@ -28,6 +29,7 @@ export default function Home() {
       <PartnerMotion />
       <TargetAccounts />
       <ClosePlan />
+      <BackToTop />
     </main>
   );
 }

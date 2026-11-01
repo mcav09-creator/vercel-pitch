@@ -49,7 +49,7 @@ export function PartnerMotion() {
 function HedxFeature() {
   const { title, points, podcast } = hedxFeature;
   return (
-    <div className="card mt-6 grid grid-cols-1 gap-6 p-6 md:grid-cols-2">
+    <div className="card mt-6 grid grid-cols-1 gap-6 p-4 sm:p-6 md:grid-cols-2">
       <div>
         <p className="mb-1.5 font-mono text-xs uppercase tracking-[0.08em] text-purple-text">
           Featured partner
@@ -65,7 +65,7 @@ function HedxFeature() {
         </ul>
       </div>
 
-      <div className="flex flex-col justify-center rounded-lg border border-border bg-surface-2 p-5">
+      <div className="flex flex-col justify-center rounded-lg border border-border bg-surface-2 p-3 sm:p-5">
         <p className="mb-1.5 font-mono text-xs uppercase tracking-[0.08em] text-accent-dim">
           HEDx podcast
         </p>

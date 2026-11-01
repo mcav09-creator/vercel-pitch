@@ -77,6 +77,11 @@ body {
   transition: color 0.2s ease;
 }
 
+.section-nav-number {
+  color: var(--foreground);
+  font-size: 0.875rem;
+}
+
 .section-nav a:hover,
 .section-nav a:focus-visible {
   color: var(--foreground);
