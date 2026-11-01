@@ -31,3 +31,25 @@ export const partnerSteps: PartnerStep[] = [
 
 export const partnerDatadog =
   "For Datadog higher ed, it's the same play: co-sell with AWS on the Sydney region, work the HEDx community and the ed-tech integrators already inside universities, and bring in the GSIs running modernisation work across the sector.";
+
+export const hedxFeature = {
+  title: "HEDx: a trusted adviser to the sector's leading community",
+  points: [
+    "Built the HEDx relationship at Salesforce, establishing the partnership, then brought it with me to monō ai.",
+    "Got us to the HEDx conference both times. It generated millions in pipeline for both companies.",
+    "Used the conference to open a deal with Western Governors University, the US's leading digital-native university, by researching its president and showing up to every session he spoke at.",
+    "Now a trusted adviser to the HEDx leadership team.",
+  ],
+  podcast: {
+    title: "EP 198. Why trust is our social capital for change",
+    guest: "Co-hosted with Kivanch Oner, CIO of the University of Nevada, Las Vegas",
+    episodeUrl: "https://hedx.com.au/ep-198-why-trust-is-our-social-capital-for-change/",
+    spotifyShowUrl: "https://open.spotify.com/show/0WMEzuejL9KW717kcyg2NB",
+    appleShowUrl: "https://podcasts.apple.com/au/podcast/hedx/id1531275586",
+    /**
+     * Paste the Spotify episode ID here (the part after /episode/ in the
+     * episode's share link) to show an embedded player instead of buttons.
+     */
+    spotifyEpisodeId: "",
+  },
+};

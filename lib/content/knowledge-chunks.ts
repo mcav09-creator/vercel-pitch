@@ -272,4 +272,8 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     id: "why-left-mono",
     text: "Matt spent about six months at monō ai. He built strong relationships and real pipeline across ANZ higher ed and in the US, but organisational and product challenges at an early-stage company were too great to overcome, so he moved on. He speaks about it positively and without blame: it sharpened how he evaluates companies, and confirmed he does his best work in a structured go-to-market team with a number and a territory, which is what this Datadog role offers.",
   },
+  {
+    id: "hedx-relationship",
+    text: "HEDx is one of Matt's biggest wins. He built the relationship at Salesforce, establishing the partnership, then fostered it again at monō ai, getting both companies to the HEDx conference, which generated millions in pipeline for each. He's a trusted adviser to the HEDx leadership team, and he co-hosted HEDx podcast episode 198, 'Why trust is our social capital for change', with Kivanch Oner, CIO of the University of Nevada, Las Vegas, on how partnerships and a trust-based culture speed up transformation in higher education. He used the HEDx conference to open a deal at monō ai with Western Governors University, the US's leading digital-native university.",
+  },
 ];
