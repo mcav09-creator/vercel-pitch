@@ -33,7 +33,7 @@ export const thirtySixtyNinety: PlanPhase[] = [
     items: [
       "First deals in late-stage evaluation with named economic buyers and validated technical champions.",
       "Refine the account-planning template based on what actually worked in the first 60 days.",
-      "Plan Datadog's presence at THETA 2027, CAUDIT's higher-ed technology conference, with a customer story from UNSW and a session on AI governance and reliability.",
+      "Lock in Datadog's presence at THETA 2027 (23-26 May, Melbourne Convention and Exhibition Centre), the sector's main higher-ed technology conference: submit an abstract with UNSW on reliability and AI governance, and plan exhibitor meetings with target accounts.",
       "Ramp toward full quota carrying, validated pipeline coverage in place for the next two quarters.",
     ],
   },
