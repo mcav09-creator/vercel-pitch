@@ -7,7 +7,7 @@ export function Testimonials() {
         <p className="mb-6 font-mono text-xs uppercase tracking-[0.08em] text-purple-text">
           What people say
         </p>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {testimonials.map((t) => (
             <figure key={t.name} className="card flex flex-col p-6">
               <span aria-hidden className="font-serif text-4xl leading-none text-purple-text">
