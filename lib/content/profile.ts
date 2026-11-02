@@ -10,6 +10,6 @@ export const profile = {
     "Education has been my whole career. First in the classroom, then in tech, opening institutions up to technology that serves their staff, their students and their mission.",
   headline: "Matt Cavallaro, built for Datadog's ANZ higher-ed book.",
   subhead:
-    "Twenty years in education, five selling into it. Enterprise AEs now need to be AI-native to keep up with their customers, so this site shows how I work: my track record, my territory, and the tools I use to run it.",
+    "Enterprise AEs now need to be AI-native to keep up with their customers. This site shows how I work: my track record, my territory, and the tools I use to run it.",
   githubRepo: "https://github.com/mcav09-creator/vercel-pitch",
 } as const;

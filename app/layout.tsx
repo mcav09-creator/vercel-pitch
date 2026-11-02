@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://mcavallaro.site"),
   title: "Matt Cavallaro, built for Datadog's ANZ higher-ed book",
   description:
-    "Twenty years in education, five selling into it. Enterprise AEs now need to be AI-native to keep up with their customers, so this site shows how I work: my track record, my territory, and the tools I use to run it.",
+    "Enterprise AEs now need to be AI-native to keep up with their customers. This site shows how I work: my track record, my territory, and the tools I use to run it.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
