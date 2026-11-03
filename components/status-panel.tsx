@@ -53,7 +53,7 @@ export function StatusPanel() {
   const okCount = monitors.filter((m) => m.status === "ok").length;
 
   return (
-    <section aria-label="Candidate status" className="px-6 pb-8">
+    <section aria-label="Candidate status" className="px-6 pb-8 pt-10 sm:pt-14">
       <div className="mx-auto max-w-5xl overflow-hidden rounded-xl border border-border bg-surface">
         <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border px-5 py-3 font-mono text-xs">
           <span className="text-foreground">
