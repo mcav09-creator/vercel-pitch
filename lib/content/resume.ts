@@ -18,7 +18,7 @@ export const resumeHeader = {
 };
 
 export const resumeSummary =
-  "Enterprise AE selling cloud and AI platforms into Australian education, preceded by fifteen years as an education leader. Five years' field closing experience across mid-market and enterprise, with 200%+ against multi-year targets in consecutive years, 140% new logo attainment, and 107% in the best full year. Builds pipeline independently: created an entire ANZ K-12 market for Salesforce from a standing start, convening the buying community, shaping the tenders that followed, and generating $3M+ in pipeline where no territory previously existed. Works the hybrid-to-cloud transition directly. Extensive experience working with a range of SI partners and consultants. Hands-on technical fluency across cloud architecture, APIs and AI workflows.";
+  "Enterprise AE selling cloud and AI platforms into Australian education, preceded by fifteen years as an education leader. Five years' field closing experience across mid-market and enterprise, with 200%+ against multi-year targets in consecutive years, 140% new logo attainment, and 107% in the best full year. Builds pipeline independently: opened the independent and Catholic K-12 market for Salesforce, convening the buying community, building out a partner solution that was the missing link, shaping the tenders that followed, and generating $3M+ in pipeline. Works the hybrid-to-cloud transition directly. Extensive experience working with a range of SI partners and consultants. Hands-on technical fluency across cloud architecture, APIs and AI workflows.";
 
 export const resumeCurrentRole: ResumeSection = {
   heading: "Current role",
@@ -58,7 +58,7 @@ export const resumePreviousExperience: ResumeSection = {
         "Higher education portfolio: UNSW, UTS and University of New England alongside TAFE NSW, the largest ANZ Catholic diocese and state-wide K-12 systems across the east coast.",
         "New logo performance: 94% attainment in a newly expanded territory, 200%+ against multi-year targets, 140% new logo attainment.",
         "Winning against an incumbent: Won an early tender at University of New England for their AI lab against an entrenched Microsoft footprint; built and sustained the Vice-Chancellor relationship, the only AE on the ANZ team to do so.",
-        "Hybrid-to-cloud pursuit: Partnered with the AWS field team on TAFE NSW's exit from on-premise infrastructure at Villawood, aligning platform value to the migration business case under NSW Government cloud-first direction.",
+        "Hybrid-to-cloud pursuit: Leveraged a strong AWS field relationship to build access and relationships at TAFE NSW during its exit from on-premise infrastructure at Villawood, under NSW Government cloud-first direction.",
         "National coverage under pressure: Covered the entire Australian education territory when the team turned over, identifying and closing a $200K expansion at QUT inside a compressed window by trading capability the customer needed against seats and licences we wanted.",
         "Market building: Established a Salesforce partnership with the HEDx higher education platform, described internally as the strongest education partnership the team had held; selected to represent the ANZ education team at Salesforce's Education Summit in Chicago.",
       ],
@@ -68,7 +68,7 @@ export const resumePreviousExperience: ResumeSection = {
       org: "Salesforce",
       dates: "June 2021 - February 2024",
       bullets: [
-        "Built a market with no installed base: K-12 buying in ANZ was organised around student information systems, which Salesforce did not offer. Convened independent and Catholic school groups with the Association of Independent Schools NSW into a recurring forum, brought in a partner who built the missing layer, and the resulting tenders were written around that architecture, generating $3M+ pipeline, $700K ACV and $2M TCV, with deals still closing four and five years on.",
+        "Opened the independent and Catholic K-12 market: buying in that segment was organised around student information systems, which Salesforce did not offer. Convened independent and Catholic school groups with the Association of Independent Schools NSW into a recurring forum, built out a solution with a partner that was the missing link, and the resulting tenders were written around that architecture, generating $3M+ pipeline, $700K ACV and $2M TCV, with deals still closing four and five years on.",
         "Deal range: Transactional through transformational deals, including land use cases from $50k to above $250K ACV and $750K-$1mil TCV.",
         "Reference customer: Closed Christian Education Ministries, which expanded across Education Cloud, Slack, Data Cloud, Agentforce and Marketing Cloud over 17 schools to become Salesforce's leading K-12 education reference customer, and a direct influence on subsequent Catholic and Anglican school system tenders.",
         "Sustained attainment: exceeded multi-year (TCV) targets in consecutive years at 200%+, with 107% in the best full financial year.",
@@ -115,12 +115,12 @@ export const resumeCompetencies = [
   {
     title: "Self-generated pipeline",
     detail:
-      "Repeatable methodology for opening markets with no installed base: relationship mapping, convening buying communities, pre-tender requirement shaping, partner-led coverage.",
+      "Repeatable methodology for opening new market segments: relationship mapping, convening buying communities, pre-tender requirement shaping, partner-led coverage.",
   },
   {
     title: "Hybrid-to-cloud transition",
     detail:
-      "On-premise legacy estates and migration drivers in the sector; joint pursuit with hyperscaler field teams; security, sovereignty and IRAP accreditation as evaluation criteria.",
+      "On-premise legacy estates and migration drivers in the sector; using hyperscaler field relationships to open doors; security, sovereignty and IRAP accreditation as evaluation criteria.",
   },
   {
     title: "Enterprise deal craft",

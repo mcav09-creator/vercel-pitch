@@ -23,9 +23,9 @@ export const proofStats: ProofStat[] = [
   },
   {
     value: "$25M",
-    label: "Market created from zero at Salesforce",
+    label: "Independent & Catholic K-12 market opened",
     detail:
-      "Unlocked a $25M TAM in a sector Salesforce had never meaningfully worked, through community events and a partner who built the missing capability. At monō ai, opened executive access at the largest university in the US.",
+      "Unlocked a $25M TAM in independent and Catholic schools at Salesforce, through community events and a partner solution that was the missing link. At monō ai, opened executive access at the largest university in the US.",
   },
   {
     value: "$1.3M+",

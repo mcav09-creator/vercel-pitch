@@ -15,7 +15,7 @@ export const fitPillars: FitPillar[] = [
   {
     title: "Market creation & pipeline build",
     proof:
-      "Created a brand-new market for Salesforce in education from zero, not by prospecting harder into an existing list: hosted regular community events to convene an entire untapped sector, then partnered with an SI to build the exact capability missing from the Salesforce product stack to actually capture it. That work opened up an estimated $25M+ untouched market across the Australian East Coast that had never been meaningfully worked, plus 140% New Logo Attainment in a newly expanded Tier-1 university and TAFE territory.",
+      "Opened the independent and Catholic K-12 segment for Salesforce, not by prospecting harder into an existing list: hosted regular community events to convene schools, then built out a solution with an SI partner that was the missing link in the Salesforce product stack. That work opened up an estimated $25M+ market across independent and Catholic schools on the Australian East Coast, plus 140% New Logo Attainment in a newly expanded Tier-1 university and TAFE territory.",
     application:
       "This is the exact bar the JD sets for breaking into a newly formalised higher-ed segment: not filling a quota against an existing patch, but building the go-to-market motion, events, and partner capability for a market that doesn't exist yet.",
   },

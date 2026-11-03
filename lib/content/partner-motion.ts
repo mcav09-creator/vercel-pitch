@@ -8,14 +8,14 @@ export const partnerIntro =
 
 export const partnerSteps: PartnerStep[] = [
   {
-    title: "Built networks where there weren't any",
+    title: "Opened a new segment with partners",
     detail:
-      "Opened a K-12 market at Salesforce with no installed base by recruiting hungry SI partners, convening schools into a recurring forum, and bringing in a partner who built the missing student-system layer. Result: $3M+ pipeline and $700K ACV.",
+      "Opened the independent and Catholic K-12 market at Salesforce by recruiting hungry SI partners, convening schools into a recurring forum, and building out a solution with a partner that was the missing link. Result: $3M+ pipeline and $700K ACV.",
   },
   {
-    title: "Co-sold on real deals",
+    title: "Used partners to open doors",
     detail:
-      "Partnered with the AWS field team on TAFE NSW's move off on-premise infrastructure, worked alongside GSIs on enterprise accounts, and established Salesforce's partnership with the HEDx higher-ed community.",
+      "Leveraged a strong AWS field relationship to build my own relationships at TAFE NSW during its move off on-premise infrastructure, worked alongside GSIs on enterprise accounts, and established Salesforce's partnership with the HEDx higher-ed community.",
   },
   {
     title: "Matched partners with each other",

@@ -10,11 +10,11 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "k12-market",
-    text: "Matt built and launched the ANZ K-12 Public District market from scratch at Salesforce, generating $700k ACV, $3M pipeline, and $2M TCV: a new market that hadn't existed for Salesforce in that region before.",
+    text: "Matt opened the independent and Catholic K-12 market for Salesforce in ANZ, generating $700k ACV, $3M pipeline and $2M TCV. Salesforce already had a large public K-12 footprint (the Victorian Department of Education, built out before Matt, was the largest public sector account in ANZ); what Matt did was crack the independent and Catholic segment by building out a solution with a partner that was the missing link.",
   },
   {
     id: "market-creation-tam",
-    text: "Beyond the K-12 Public District market, Matt created an entirely separate new market for Salesforce in education from zero: he hosted regular community events to convene an untapped sector, then partnered with an SI to build the specific capability missing from the Salesforce product stack that let the market actually be captured (the Student Information System later built for Christian Education Ministries came out of this same motion). That work opened up an estimated $25M+ untouched TAM (total addressable market) across the Australian East Coast, sized from the independent schools and Catholic diocesan systems across NSW, VIC, and QLD that had never been meaningfully worked before, using a conservative average deal size in line with what Matt actually landed and grew at Christian Education Ministries. Matt frames this deliberately as market creation, not just prospecting: the skill was building the events, the partner capability, and the category itself, not working harder against an existing list. He arrived at the $25M+ TAM number bottom-up: real deal economics he'd already proven, applied across the count of independent and diocesan schools in that untapped sector, not a top-down analyst estimate.",
+    text: "Separately from public K-12, Matt opened the independent and Catholic school segment for Salesforce: he hosted regular community events to convene schools, then built out a solution with an SI partner that was the missing link in the Salesforce product stack (the Student Information System later built for Christian Education Ministries came out of this same motion). That opened an estimated $25M+ TAM across independent schools and Catholic diocesan systems in NSW, VIC and QLD, sized bottom-up from the deal economics he'd proven at Christian Education Ministries. He frames it as opening a segment, not just prospecting: the skill was building the events, the partner solution and the category.",
   },
   {
     id: "christian-ed",
@@ -54,11 +54,11 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "partner-force-multiplier",
-    text: "Matt is naturally a networker: he builds partnerships to capture markets rather than selling solo. Early in building the K-12 market, he found a group of hungry solution SI partners looking to grow their own footprint and turned that into a force multiplier: himself, an internal marketing resource, and multiple SI/solution partners all working the market together instead of one rep going it alone. He ran two plays depending on the deal: land with smaller partners to get a foot in the door and prove value, or assemble coalitions of larger SIs for bigger enterprise deals that lacked in-house Education Cloud expertise.",
+    text: "Matt is naturally a networker: he builds partnerships to capture markets rather than selling solo. When opening the independent and Catholic K-12 segment, he found a group of hungry SI partners looking to grow their own footprint and turned that into a force multiplier: himself, an internal marketing resource, and multiple partners working the market together. He ran two plays depending on the deal: land with smaller partners to prove value, or assemble coalitions of larger SIs for bigger enterprise deals that lacked in-house Education Cloud expertise.",
   },
   {
     id: "partner-hyperscaler",
-    text: "Matt worked directly with AWS on enterprise accounts, aligning cloud infrastructure modernisation with institutional procurement and deployment timelines.",
+    text: "Matt had a strong relationship with the AWS field team and used it to build his own relationships and access at accounts, most notably TAFE NSW during its move off on-premise infrastructure at Villawood. It wasn't a co-sell to grow AWS's account; it was using a trusted partner relationship to open doors.",
   },
   {
     id: "partner-gsi-matchmaking",
@@ -90,7 +90,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "referenceability",
-    text: "Matt secured the first 3 Education Cloud enterprise customer implementations live across ANZ, establishing referenceability for the new K-12 market segment.",
+    text: "Matt secured the first 3 Education Cloud enterprise customer implementations live across ANZ, establishing referenceability for the independent and Catholic K-12 segment.",
   },
   {
     id: "prior-experience",
@@ -206,7 +206,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "grit-hustle-builder",
-    text: "Asked why he's suited for this role, Matt points first to grit, and to a track record of producing real results in a completely different field. He made his transition into a new career, tech sales, six years ago, while working two jobs and being a single dad. There was no safety net, no shortcut, no easing into it: you do what has to be done. That's not a talking point for him, it's the actual operating system underneath everything else on this site: the K-12 market he built from zero, the first commercial deal he closed at monō ai, this pitch site itself. He doesn't wait for ideal conditions, and he genuinely enjoys the challenge of a new arena, taking the strengths that already worked in one field and pointing them at another.",
+    text: "Asked why he's suited for this role, Matt points first to grit, and to a track record of producing real results in a completely different field. He made his transition into a new career, tech sales, six years ago, while working two jobs and being a single dad. There was no safety net, no shortcut, no easing into it: you do what has to be done. That's not a talking point for him, it's the actual operating system underneath everything else on this site: the independent and Catholic K-12 segment he opened, the first commercial deal he closed at monō ai, this pitch site itself. He doesn't wait for ideal conditions, and he genuinely enjoys the challenge of a new arena, taking the strengths that already worked in one field and pointing them at another.",
   },
   {
     id: "twenty-years-in-education-credibility",
@@ -266,7 +266,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "partners-multiply-reach",
-    text: "Matt's partner philosophy, learned early at Salesforce: one AE can only cover so much ground, so building a partner network is how you build your own sales team and multiply your reach. He's done all four parts of it: built partner networks where there weren't any (the K-12 market), co-sold on real deals (AWS on TAFE NSW, GSIs on enterprise accounts, the HEDx partnership), matched partners with each other to open accounts neither could reach alone, and built relationships deep enough that a Salesforce partner now has him helping grow its ANZ footprint.",
+    text: "Matt's partner philosophy, learned early at Salesforce: one AE can only cover so much ground, so building a partner network multiplies your reach. He opened the independent and Catholic K-12 segment with a partner solution that was the missing link, used relationships like AWS and GSIs to open doors at accounts, established Salesforce's partnership with HEDx, matched partners with each other to reach accounts neither could alone, and built relationships deep enough that a Salesforce partner now has him helping grow its ANZ footprint.",
   },
   {
     id: "why-left-mono",
