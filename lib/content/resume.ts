@@ -59,8 +59,8 @@ export const resumePreviousExperience: ResumeSection = {
         "New logo performance: 94% attainment in a newly expanded territory, 200%+ against multi-year targets, 140% new logo attainment.",
         "Winning against an incumbent: Won an early tender at University of New England for their AI lab against an entrenched Microsoft footprint; built and sustained the Vice-Chancellor relationship, the only AE on the ANZ team to do so.",
         "Hybrid-to-cloud pursuit: Leveraged a strong AWS field relationship to build access and relationships at TAFE NSW during its exit from on-premise infrastructure at Villawood, under NSW Government cloud-first direction.",
-        "National coverage under pressure: Covered the entire Australian education territory when the team turned over, identifying and closing a $200K expansion at QUT inside a compressed window by trading capability the customer needed against seats and licences we wanted.",
-        "Market building: Established a Salesforce partnership with the HEDx higher education platform, described internally as the strongest education partnership the team had held; selected to represent the ANZ education team at Salesforce's Education Summit in Chicago.",
+        "National coverage under pressure: Worked the entire Australian education territory alongside the education leader while three seats sat vacant and another rep was on extended leave, helping execute key deals and handling the administrative load. Represented the ANZ education team at Salesforce's Education Summit in 2025.",
+        "Market building: Established a Salesforce partnership with the HEDx higher education platform, described internally as the strongest education partnership the team had held.",
       ],
     },
     {

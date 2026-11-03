@@ -98,7 +98,7 @@ export const territoryAccounts: TerritoryAccount[] = [
     state: "QLD",
     segment: "Australian Technology Network, applied/industry-focused",
     relationship:
-      "Worked directly at Salesforce, including closing a $200K expansion inside a compressed window while covering the national education territory; QUT's applied, industry-partnership-driven culture makes it a natural fit for enterprise platform conversations.",
+      "Covered QUT at Salesforce while working the entire national education territory alongside the education leader during a period of vacant seats; QUT's applied, industry-partnership-driven culture makes it a natural fit for enterprise platform conversations.",
     entry:
       "QUT's industry-partnership model and applied-research computing footprint make a platform-engineering-led pitch (reliability, developer velocity) resonate more than a pure IT-operations angle.",
   },

@@ -158,7 +158,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "qut-plan",
-    text: "Queensland University of Technology, QUT (QLD, Australian Technology Network, applied/industry-focused): worked directly at Salesforce, including closing a $200K expansion in a compressed window while covering the national education territory; QUT's applied, industry-partnership-driven culture made it a natural fit for enterprise platform conversations. Datadog entry angle: QUT's industry-partnership model and applied-research computing footprint make a platform-engineering-led pitch, reliability and developer velocity, resonate more than a pure IT-operations angle.",
+    text: "Queensland University of Technology, QUT (QLD, Australian Technology Network, applied/industry-focused): covered at Salesforce while Matt worked the entire national education territory alongside the education leader during a period of vacant seats; QUT's applied, industry-partnership-driven culture made it a natural fit for enterprise platform conversations. Datadog entry angle: QUT's industry-partnership model and applied-research computing footprint make a platform-engineering-led pitch, reliability and developer velocity, resonate more than a pure IT-operations angle.",
   },
   {
     id: "vercel-ai-sdk",
@@ -291,5 +291,9 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   {
     id: "sector-engagement-plan",
     text: "Matt's sector engagement plan for his first 90 days at Datadog: start CAUDIT registration and shape a sector-wide offer so universities can buy through a recognised, pre-vetted procurement path; secure HEDx sponsorship for 2027 through his relationship with the HEDx leadership, to meet the executive decision makers who attend; work the Universities Australia Solutions Summit (23-24 February 2027 at the National Convention Centre Canberra, 1,000+ delegates including Vice-Chancellors and senior leaders) with pre-booked meetings; and lock in Datadog's presence at THETA 2027 (23-26 May 2027, Melbourne Convention and Exhibition Centre, theme 'Charting the Future'), the sector's main higher-ed technology conference, by submitting an abstract with UNSW on reliability and AI governance and planning exhibitor meetings with target accounts.",
+  },
+  {
+    id: "national-coverage",
+    text: "At Salesforce, Matt worked the entire Australian education territory alongside the education leader while three seats sat vacant and another rep was on extended leave, helping execute key deals and handling the administrative load. He represented the ANZ education team at Salesforce's Education Summit in 2025.",
   },
 ];

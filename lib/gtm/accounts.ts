@@ -19,7 +19,7 @@ export const gtmAccounts: GtmAccount[] = [
   { slug: "tafe-nsw", name: "TAFE NSW", state: "NSW", territory: true, relationship: "Matt worked TAFE NSW directly at Salesforce, using a strong AWS field relationship to build his own relationships there during its move off on-premise infrastructure at Villawood." },
   { slug: "wsu", name: "Western Sydney University", state: "NSW", territory: true, relationship: "Matt covered Western Sydney University in his NSW higher-ed territory at Salesforce." },
   { slug: "jcu", name: "James Cook University", state: "QLD", territory: true, relationship: "Matt facilitated discussions directly with JCU's Vice-Chancellor at HEDx, alongside Salesforce's Head of Education Cloud." },
-  { slug: "qut", name: "Queensland University of Technology", state: "QLD", territory: true, relationship: "Matt closed a $200K expansion at QUT for Salesforce while covering the national education territory." },
+  { slug: "qut", name: "Queensland University of Technology", state: "QLD", territory: true, relationship: "Matt covered QUT at Salesforce while working the entire national education territory alongside the education leader during a period of vacant seats." },
 
   { slug: "anu", name: "Australian National University", state: "ACT" },
   { slug: "canberra", name: "University of Canberra", state: "ACT" },
