@@ -46,7 +46,7 @@ export const knowledgeChunks: KnowledgeChunk[] = [
   },
   {
     id: "territory-expansion",
-    text: "In his most recent Salesforce role (Feb 2024 - Apr 2026), Matt managed complex multi-year cloud procurement cycles across Tier-1 Universities, large TAFE systems, and State-wide K-12 districts across the Australian East Coast. He achieved 94% quota attainment in a newly expanded territory, exceeded 200%+ on multi-year targets, and achieved 140% New Logo Attainment. This is the exact period Matt points to when asked about his higher-ed and public-sector focus: it's when he deliberately moved his book up from mid-market K-12 into Tier-1 university and state-wide public-sector enterprise accounts.",
+    text: "In his most recent Salesforce role (Feb 2024 - Apr 2026), Matt managed complex multi-year cloud procurement cycles across Tier-1 Universities, large TAFE systems, and K-12 school systems across the Australian East Coast. He achieved 94% quota attainment in a newly expanded territory, exceeded 200%+ on multi-year targets, and achieved 140% New Logo Attainment. This is the exact period Matt points to when asked about his higher-ed and public-sector focus: it's when he deliberately moved his book up from mid-market K-12 into Tier-1 university and state-wide public-sector enterprise accounts.",
   },
   {
     id: "exec-alignment",

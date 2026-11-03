@@ -55,7 +55,7 @@ export const resumePreviousExperience: ResumeSection = {
       org: "Salesforce",
       dates: "Feb 2024 - April 2026",
       bullets: [
-        "Higher education portfolio: UNSW, UTS and University of New England alongside TAFE NSW, the largest ANZ Catholic diocese and state-wide K-12 systems across the east coast.",
+        "Higher education portfolio: UNSW, UTS and University of New England alongside TAFE NSW, the largest ANZ Catholic diocese and K-12 school systems across the east coast.",
         "New logo performance: 94% attainment in a newly expanded territory, 200%+ against multi-year targets, 140% new logo attainment.",
         "Winning against an incumbent: Won an early tender at University of New England for their AI lab against an entrenched Microsoft footprint; built and sustained the Vice-Chancellor relationship, the only AE on the ANZ team to do so.",
         "Hybrid-to-cloud pursuit: Leveraged a strong AWS field relationship to build access and relationships at TAFE NSW during its exit from on-premise infrastructure at Villawood, under NSW Government cloud-first direction.",

@@ -22,7 +22,7 @@ export const fitPillars: FitPillar[] = [
   {
     title: "State, local, and education new-logo wins",
     proof:
-      "Not an adjacent vertical translated in: this is the vertical. The last two years at Salesforce were spent moving that education foundation up into Tier-1 Universities, large TAFE systems, and state-wide public-sector districts, landing the first 3 Education Cloud enterprise implementations live across ANZ.",
+      "Not an adjacent vertical translated in: this is the vertical. The last two years at Salesforce were spent moving that education foundation up into Tier-1 Universities, large TAFE systems, and K-12 school systems, landing the first 3 Education Cloud enterprise implementations live across ANZ.",
     application:
       "A Strategic AE for Higher Education who already has the relationship map, the procurement rhythm, and the stakeholder language for this exact buyer set across NSW, VIC, and QLD.",
   },
